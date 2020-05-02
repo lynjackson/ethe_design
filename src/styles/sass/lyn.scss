@@ -1,0 +1,320 @@
+@import 'store';
+$greyy: rgba(0,0,0,.55);
+
+@media screen and (min-width: 0px){
+    .lyn-section{
+    
+        h1{
+            @include font(poppins, 32px, 800, 32px, -1px);
+            color: hsl(0,0,70);
+            margin:0;
+        }
+        h2{
+            @include font(poppins, 18px, 600, 23px, -1px);
+            margin:0;
+        }
+        h3{
+            @include font(nunito sans, 14px, 400, auto, auto);
+            margin:0;
+        }
+        
+        margin-bottom:53px;
+
+        .tab{
+            @include box(flex, row, space-between, center);
+            width:100%;
+            margin-bottom: 37.5px;
+            height: 57px;
+            border-bottom: 1px solid hsla(0,0,44,.2);
+            
+            .tab-title{
+                @include font(poppins, 32px, 800, auto, -1px);
+                color: hsla(0,0,70);
+            }
+    
+            .little-arrow{
+                @include hw(19px, 14px);
+                transform: rotate(90deg);
+            }
+        }
+    }
+    
+    #profile{
+        @include box(flex, column, flex-start, flex-start);
+        margin-bottom:49px;
+        margin-top:86px;
+
+        #profile-image{
+            background-image: url('../../assets/images/lyn4.jpeg');
+            background-size: cover;
+            @include hw(449px, 100vw);
+            position:relative;
+            left:calc((100% - #{$width-mobile})/-2);
+            margin-bottom: 32px;
+        }
+        #name{
+            font-size:37px;
+            color: hsl(0,0,10);
+            
+        }
+        #title{
+            @include font(poppins, 32px, 800, auto, -1px);
+            color: hsl(0,0,70);
+        }
+        #location{
+            font-size:21px;
+            margin-bottom: 22px;
+        }
+
+    }
+
+    #portfolio{
+        
+        .project{
+            @include box(flex, row, space-between, flex-start);
+            margin-bottom:60.2px;
+            
+
+            .portfolio-image{
+                // @include hw(115px, 44.1%);
+                // background-size:cover;
+                width: 44.1%;
+            }
+            
+            .portfolio-info-div{
+                @include box(flex, column, space-between, flex-start);
+                width: 49.6%;
+                height: 100%;
+            }
+            .info-title{
+                @include font(poppins, 18px, 600, 23px, -1px);
+            }
+            
+            .design-doc-div{
+                @include box(flex, row, flex-start, center);
+            }
+            .xd-icon{
+                width: 21px;
+                margin-right:4.5px;
+            }
+            
+
+        }
+    }
+
+    #experience{
+        .experience-item{
+            margin-bottom: 37px;
+        }
+        .title{
+            @include font(poppins, 19px, 600, 23px, -1px);
+        }
+        .place{
+            @include font(poppins, 19px, 600, 23px, -1px);
+            color:hsl(0,0,70);
+        }
+        .time{
+            font-size:14px;
+            margin-bottom:18px;
+        }
+    }
+
+    #education{
+        
+        .education-item{
+            margin-bottom:27.8px;
+        }
+        .degree{
+            color: hsl(0,0,70);
+        }
+        
+    }
+
+    #more{
+        p{
+            margin-bottom:15px;
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    #profile{
+        width:34.1%;
+        margin-top:86px;
+        
+        #profile-image{
+            left:calc( (100% - #{$width-iPad}) * -1);
+            // left:auto;
+            width:inherit;
+            position:absolute;
+            left:0px;
+        }
+        #nameTitleLocation{
+            margin-top: 484px;
+        }
+    }
+    #right-side{
+        // width: 55.4vw;
+        width:551px;
+        margin:125px 0 0 65px;
+    }
+
+    #portfolio{
+        .project{
+            align-items:center;
+            .portfolio-image{
+                width:203px;
+                height:141px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media screen and (min-width: 0px){
+//     #lyn-image-div{
+//         width:100vw;
+//         @include hw(276px, 100vw);
+//         margin-top:86px;
+//         left:0;
+//         overflow:hidden;
+//         img{
+//             width:100%;
+//             position:relative;
+//             bottom:4em;
+//         }
+//     }
+    
+//     #lyn-text-div{
+//         @include box(flex, column, flex-start, center);
+//         margin-top:26px;
+//         h1{
+//             @include font(raleway, 53px, 700, auto, -1.7px);
+//             margin:0;
+//         }
+//         h2{
+//             @include font(raleway, 32px, 700, auto, -1.7px);
+//             color: $greyy;
+//             margin:0;
+//         }
+//         h3{
+//             @include font(nunito sans, 21px, 200, auto, -1.7px);
+//             margin: 4px 0 0 0;
+//         }
+//     }
+    
+//     #stack_lyn{
+//         width: 259px;
+//         margin: 27.2px auto 0 auto;
+//         @include box(flex, row, space-between, auto);
+        
+//         .stack-column_lyn{
+//             @include box(flex, column, space-between, auto);
+//         }
+//     }
+    
+//     .section-lyn{
+//         @include box(flex, column, space-between, auto);
+//         @include hw(auto, 90%);
+//         margin: 0 auto;
+        
+//         .section-title_lyn{
+//             @include font(raleway, 48px, 700, auto, auto);
+//             color:$greyy;
+//             margin: 52px auto 0 auto;
+//         }
+//     }
+    
+//     #portfolio_lyn{
+//         @include hw(800px, 90%);
+        
+//         .portfolio-item{
+//             @include box(flex, column, auto, center);
+//             div{
+//                 @include box(flex, column, space-between, center);
+//             }
+//             img{
+//                 width: 167px;
+//             }
+//             h1{
+//                 margin: 0;
+//                 @include font(open sans, 22px, 700, auto, -1px);
+//             }
+//             h2{
+//                 margin: 0;
+//                 @include font(open sans, 18px, 400, auto, -1px);
+//             }
+//             a{
+//                 margin: 0;
+//                 @include font(raleway, 13px, 500, auto, auto);
+//             }
+//         }
+//     }
+
+//     #experience-lyn{
+//         .experience-item{
+//             .item-stats{
+//                 @include box(flex, column, auto, auto);
+//             }
+//             h1{
+//                 @include font(open sans, 22px, 400, auto, -1px);
+//                 margin:0;
+//             }
+//             h2{
+//                 @include font(open sans, 22px, 700, auto, -1px);
+//                 margin:0;
+//             }
+//             h3{
+//                 @include font(open sans, 17px, 300, auto, -1px);
+//                 margin:0;
+//             }
+//             .item-description{
+//                 @include font(open sans, 16px, 400, auto, .3px);
+//             }
+            
+//         }
+//     }
+
+//     #education-lyn{
+//         .education-item{
+//             margin: 25px 0 0 0;
+//             h1{
+//                 @include font(open sans, 19px, 400, auto, .3px);
+//                 margin:0;
+//             }
+//             h2{
+//                 @include font(raleway, 16px, 500, auto, auto);
+//                 margin:0;
+//             }
+//         }
+//     }
+
+//     #more-lyn{
+//         @include box(flex, column, auto, auto);
+//         p{
+//             @include font(open sans, 16px, 400, auto, 1px);
+//         }
+//     }
+    
+    
+    
+// }

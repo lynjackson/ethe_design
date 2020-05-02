@@ -1,0 +1,111 @@
+@media screen and (min-width:0px){
+  #services-view{
+    opacity:1;
+    transition:opacity 1s;
+    z-index: 1;
+  }
+
+  .services-div{
+    display: flex;
+    flex-direction: column;
+    margin: 52px 0;
+    opacity:0;
+    transition:opacity .5s;
+  }
+  #services-content{
+    z-index:1;
+  }
+
+  #services-strategy-div{
+    margin-top: 0px;
+  }
+
+  .services-title-div{
+      width: auto;
+      /* border: 1px solid; */
+      position: relative;
+      font-family:rockwell;
+      font-weight:bold;
+      font-size:12px;
+  }
+
+  .services-title{
+    margin: 0;
+    font-family: 'Poppins-Semibold';
+    font-size: 1.5em;
+    font-weight:600;
+  }
+
+  .services-description-text{
+    font-family: 'OpenSans-Regular';
+    font-size:17px;
+    line-height: 1.5;
+    margin:17px 0;
+  }
+
+  #services-service-div{
+    height:95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .services-service-text{
+    font-family: 'Poppins-Semibold';
+    font-size:1.06em;
+    font-weight:600;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width:1024px){
+  .services-div {
+    padding:0px;
+    width:30%;
+    flex-direction:column;
+    justify-content: flex-start;
+    border-bottom:0px;
+    height: auto;
+    margin:0;
+  }
+  #services-content{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #services-view{
+    margin: 0 auto;
+    padding-top:0vh;
+  }
+  .services-title-div {
+      text-align:left;
+      width:100%;
+      margin-bottom:30px;
+  }
+  .services-title{
+    font-size:1.83em;
+    font-weight:600;
+    font-family: 'Poppins-Bold';
+  }
+  .services-icon{
+    width:100px;
+    margin-bottom:30px;
+    align-self: center;
+  }
+  .services-description-div{
+    width: auto;
+    flex-direction:column;
+  }
+  .services-description-text{
+    width:auto;
+    font-size: 15px;
+    letter-spacing: .5px;
+    margin: 23px 0;
+  }
+  .services-service-text{
+    font-size:1em;
+    font-weight:500;
+    margin: 0;
+    
+  }
+}

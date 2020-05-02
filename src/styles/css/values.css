@@ -1,0 +1,93 @@
+.tester {
+  color: red;
+}
+
+@media screen and (min-width: 0px) {
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  #value-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 89.8%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    animation: fade 1s;
+    transition: opacity 0.2s;
+  }
+  #value-con #value-title {
+    transition: opacity 0.5s;
+  }
+  #value-con #value-text {
+    transition: opacity 0.5s;
+  }
+  #value-con h3 {
+    font-family: poppins;
+    font-size: 54.35px;
+    font-weight: 700;
+    line-height: auto;
+    letter-spacing: auto;
+    margin: 9.3px auto;
+  }
+  #value-con p {
+    font-family: open sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: auto;
+    letter-spacing: 1.5px;
+    border-top: 0.1px solid #707070;
+    border-bottom: 0.1px solid #707070;
+    padding: 23.6px 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  #value-con h2 {
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: auto;
+    letter-spacing: 8px;
+    margin: 25.3px auto 104px auto;
+  }
+  #value-con img {
+    width: 29.25px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #value-con {
+    height: 100%;
+    width: 615px;
+  }
+  #value-con h3 {
+    margin: 27.5px auto;
+  }
+  #value-con p {
+    padding: 30.5px 0;
+  }
+  #value-con h2 {
+    margin: 37.5px auto 104px auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #value-con h3 {
+    margin: 27.5px auto;
+    font-size: 44px;
+  }
+  #value-con p {
+    padding: 30.5px 0;
+  }
+  #value-con h2 {
+    margin: 37.5px auto 104px auto;
+  }
+}
+
+/*# sourceMappingURL=values.css.map */

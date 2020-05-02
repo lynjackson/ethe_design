@@ -1,0 +1,111 @@
+@media screen and (min-width: 0px){
+  #section1_about{
+      margin-top: 11.57vh;
+      flex-direction:column;
+      justify-content: space-between;
+  }
+  #about-section1-title{
+    margin:0 auto 4.06vh auto;
+    width:87%;
+  }
+
+  .about-section1-image-div{
+    width: 120vw;
+    height: 23vh;
+    overflow:hidden;
+    position: relative;
+    /* margin-top: 16.13vh; */
+    left:-10%;
+  }
+
+  #fisherman1_div{
+    background-image: url('../../assets/images/fisherman.png');
+    height: 187px;
+    background-position: 0 0;
+    background-size: cover;
+    position: absolute;
+    width: 100vw;
+    left: 0;
+  }
+
+  #section1-text-div_about{
+
+  }
+
+  #fisherman2{
+    display:none;
+  }
+
+  .first-paragraph_about{
+    margin-top: 34.84vh;
+  }
+
+  #fisherman{
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  #section1_about{
+      margin-top: 15.9vh;
+      flex-direction: row;
+  }
+
+  #about-section1-title{
+    margin: 0 0 36.8px 0;
+    width: 508px;
+    text-align: left;
+    /* font-size: 41.93px; */
+  }
+  .about-section1-image-div {
+    /* height: 41.40vh; */
+        width: 42.87vw;
+        left: 2.9vw;
+        display:flex;
+        height:505px;
+  }
+
+  #fisherman1_div{
+    background-image: url('../../assets/images/fisherman.png');
+    height:282px;
+    width:267px;
+    position:absolute;
+    background-position: center;
+    background-size: cover;
+  }
+  #fisherman2_div{
+    background-image: url('../../assets/images/fisherman22.jpg');
+    height:249px;
+    width:252px;
+    position:absolute;
+    top: 203.1px;
+    box-shadow: -6px 6px 15px rgba(0, 0, 0, 0.34);
+    background-position: center;
+    background-size: cover;
+    z-index:3;
+    right:3vw;
+  }
+
+  #section1_titleandtext{
+      width: 55.5%;
+  }
+
+    #section1-content_about{
+      display:flex;
+      flex-direction:row;
+    }
+    #section1-text_about{
+      display:flex;
+      flex-direction: column;
+    }
+    #fisherman2{
+      display:flex;
+      width:29.5%;
+    }
+
+    #fisherman{
+      top: -12vh;
+    }
+}

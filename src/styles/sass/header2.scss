@@ -1,0 +1,134 @@
+@import 'store';
+
+@media screen and (min-width:0px){
+    
+  #header2{
+    
+      display:flex;
+      flex-direction: column;
+    
+        width:100vw;
+      position:fixed;
+      transition: background-color 1s, height .5s;
+      z-index:20;
+      overflow:hidden;
+      
+    
+      #header-items2{
+        @include box(flex, auto, space-between, center);
+        width:90%;
+        margin: 11px  auto 0 auto; 
+      }
+
+      #nav-options{
+      //   @include box(flex, column, space-between, auto);
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family:poppins;
+        font-size:46.35px;
+        align-self:center;
+        position:relative;
+        top:200px;
+        height: 36vh;
+        text-align:center;
+        
+      }
+      .nav-option{
+          text-decoration: none;
+          color:white;
+      }
+      #logo2{
+        width:59px;
+      }
+      #menu2{
+        width:38px;
+        height:31px;
+        z-index:100;
+      }
+  }
+  
+  #footer{
+    background-color:'rgb(26,26,26)';
+    @include box(flex, row, space-between, center);
+    @include hw(90px, 100vw);
+    left:0;
+    position: absolute;
+    padding:0px, 100px;
+    color:white;
+    padding-left: calc((100% - #{$width-mobile})/2);
+    padding-right:calc((100% - #{$width-mobile})/2);
+    box-sizing: border-box;
+
+    #next-tab{
+      @include box(flex, row, flex-end, center);
+      
+      h2{
+        font-family:'poppins';
+        font-size: 18px;
+        font-weight:600;
+        margin-left: 25px;
+      }
+  
+      hr{
+        height: 36px;
+        margin: 0;
+        border-left: .5px solid $greyish;
+        border-right: .5px solid $greyish;
+      }
+      
+      img{
+        @include hw(19px, 14px);
+        margin-left:13px
+      }
+    }
+    
+    h1{
+      font-family:'poppins';
+      letter-spacing: -.5px;
+      font-weight:400;
+      font-size:27.6px;
+    }
+    
+  }
+}
+
+@media screen and (min-width: 1024px){
+  
+  #header2{
+    #header-items2{
+      width: $width-iPad;
+    }
+  }
+  
+  #footer{
+    padding-left: calc((100% - #{$width-iPad})/2);
+    padding-right:calc((100% - #{$width-iPad})/2);
+    #next-tab{
+      h2{
+        margin-left: 95px;
+        @include font(poppins, 27.6px, 500, auto, auto);
+        // @extend .title2;
+      }
+    }
+    h1{
+      // @extend .title1;
+      @include font(poppins, 46px, 400, auto, -.5px);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px){
+  #header2{
+    #header-items2{
+      width: $width-13;
+    }
+  }
+  #footer{
+    padding-left: calc((100% - #{$width-13})/2);
+    padding-right:calc((100% - #{$width-13})/2);
+  }
+  
+  
+}
+

@@ -1,0 +1,77 @@
+@import 'store';
+
+@media screen and (min-width: 0px){
+    @keyframes fade{
+        0% {opacity:0};
+        100% {opacity:1};
+    }
+    
+    #value-con{
+        @include box(flex, column, center, center);
+        @include hw(100%, 89.8%);        
+        margin: 0 auto;
+        color:white;
+        text-align:center;
+        animation:fade 1s;
+        transition: opacity .2s;
+        
+        #value-title{
+            transition:opacity .5s;
+        }
+        #value-text{
+            transition:opacity .5s;
+        }
+
+        h3{
+            @include font(poppins, 54.35px, 700, auto, auto);
+            margin: 9.3px auto;
+        }
+        p{
+            @include font(open sans, 17px, 400, auto, 1.5px);
+            border-top: .1px solid rgba(112, 112, 112, 1);
+            border-bottom: .1px solid rgba(112, 112, 112, 1);
+            padding: 23.6px 0;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        h2{
+            @include font(poppins, 16px, 700, auto, 8px);
+            margin:25.3px auto 104px auto ;
+        }
+        img{
+            width:29.25px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    #value-con{
+        @include hw(100%, 615px);
+        
+        h3{
+            margin: 27.5px auto;
+        }
+        p{
+            padding: 30.5px 0;
+        }
+        h2{
+            margin:37.5px auto 104px auto ;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px){
+    #value-con{
+        
+        h3{
+            margin: 27.5px auto;
+            font-size: 44px;
+        }
+        p{
+            padding: 30.5px 0;
+        }
+        h2{
+            margin:37.5px auto 104px auto ;
+        }
+    }
+}

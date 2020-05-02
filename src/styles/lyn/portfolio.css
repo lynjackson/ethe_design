@@ -1,0 +1,73 @@
+@media screen and (min-width: 0px){
+  #projects_lyn{
+
+  }
+
+  .project-div_lyn{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin: 0 0 37px 0;
+  }
+
+  .project-title_lyn{
+    font-family: 'OpenSans-Regular';
+    font-size:14px;
+    text-decoration: underline;
+    color:black;
+  }
+  .project-stack_lyn{
+    font-family:'Raleway-Regular';
+    font-size:12px;
+  }
+  .design-docs_lyn{
+    font-family:'Raleway-Regular';
+    font-size:12px;
+    text-decoration: none;
+    color:black;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  #projects_lyn{
+    margin-top:114px;
+    width: 93%;
+
+  }
+  #projects-div_lyn{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .project-div_lyn{
+    flex-direction:column;
+    align-items:center;
+
+  }
+  .project-title-text-div_lyn{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+  }
+  .qr_portfolio{
+    height: 100px;
+    width: 100px;
+    background-size:cover;
+    margin-bottom:9.2px;
+  }
+  #ethe-qr_portfolio{
+
+    background-image:url('../../assets/images/ethe_qr.jpg');
+
+  }
+  #bill-qr_portfolio{
+
+    background-image:url('../../assets/images/bill_qr.jpg');
+
+  }
+  #pt-qr_portfolio{
+
+    background-image:url('../../assets/images/pt_qr.jpg');
+
+  }
+}

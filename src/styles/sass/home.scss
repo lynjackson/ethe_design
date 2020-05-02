@@ -1,0 +1,197 @@
+@import 'store';
+
+@media screen and (min-width: 0px){
+  
+  .para{
+    font-family:'nunito sans';
+    font-size: 19px;
+    text-align:center;
+  }
+  .title2{
+    font-family:'poppins';
+    font-size: 18px;
+    font-weight:600;
+
+  }
+  
+  #above-fold{
+    @keyframes fadeIn {
+      0%{opacity:0};
+      100%{opacity:1};
+  }
+  animation: fadeIn 2s;
+    
+    @include box(flex, column, auto, center);
+    @include hw(62.11vh, 100%);
+    position: relative;
+    z-index:0;
+
+    #above-title{
+      position: relative;
+      top: 25vh;
+      text-align:left;
+      @include font('Poppins-Medium', 46.35px, 400, 47.02px, -14);
+      transition: opacity .5s;
+    }
+
+    #arrow-div{
+      @include hw(100px, 100vw);
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: 74.75vh;
+      background: linear-gradient(rgba(255,255,255, .1), rgba(255,255,255, 1));
+  
+    }
+  
+    #above-background{
+      background-image: url('../../assets/images/white-back.jpg');
+      background-size:cover;
+      position:absolute;
+      @include hw(86vh, 100vw);
+      z-index: -1;
+      border: 0px solid white;
+    }
+  }
+
+  #services{
+    @include box(flex, column, space-between, center);
+    @include hw(auto, 100%);
+    z-index:1;
+    transition: opacity .5s;
+    margin-top: 134px;
+
+    .service{
+      @include hw(auto, 100%);
+      z-index:1;
+      @include box(flex, column, space-between, center);
+      margin-bottom: 46px;
+    
+      
+      img{
+        @include hw(55px, 55px)
+      }
+      h3{
+        @include font(poppins, 18.4px, 600, auto, auto);
+        text-align:center;
+        margin:17px auto;
+      }
+      
+      p{
+        @extend .para;
+        // @include font(pt sans caption, 14px, 300, 22px, auto);
+        margin: 0;
+        
+      }
+    }
+  
+  }
+
+  #projects{
+    width: 100%;
+    margin-bottom:88px;
+    
+    .project{
+      height:200px;
+      width:100%;
+      background-size: cover; 
+      border-radius: 3px;
+      margin-bottom:30px;
+      
+      .overlay{
+        @include hw(100%, 100%);
+        @include box(flex, row, flex-start, flex-end);
+        @extend .title2;
+        
+        
+        p{
+          margin-bottom:14.4px;
+        }
+
+      }
+      
+      .logo{
+        margin-left:11px;
+          margin-right: 26px;
+          margin-bottom:-3px;
+          width:87px;
+      }
+    }
+  
+  }
+
+  
+}
+
+
+@media screen and (min-width: 1024px){
+  #above-fold{
+    background-position: -187px 0;
+    /* height:74.8vh; */
+    height:623px;
+    z-index: 0;
+
+    #above-title{
+      padding: 0;
+      font-size: 46px;
+      width:707px;
+      @include box(flex, column, space-between, auto);
+      
+      p{
+        margin: 5px;
+      }
+    
+    }
+  
+    #above-title-bottom{
+      align-self:flex-end;
+    }
+  }
+
+  #services{
+    @include box(flex, row, space-between, flex-start);
+    margin-top:0px;
+    .service{
+      margin-bottom:0px;
+      width:32%;
+    }
+  }
+
+  #projects{
+    margin:142px 0;
+    @include box(flex, row, space-between, flex-start);
+    .project{
+      width:50%;
+      height:307px;
+      box-shadow: 0px 3px 6px rgba(0,0,0, .3);
+      .logo{
+        width:96px;
+      }
+      .tagline{
+        @include font(poppins, 27.6px, 500, auto, auto);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px){
+  #projects{
+    .project{
+      .logo{
+        margin-right: 71px;
+      }
+    }
+  }
+  
+}
+
+@media screen and (min-width: 1440px){
+  #projects{
+    .project{
+      .logo{
+        margin-right: 96px;
+      }
+    }
+  }
+  
+}

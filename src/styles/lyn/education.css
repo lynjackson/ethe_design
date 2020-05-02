@@ -1,0 +1,24 @@
+
+
+.school_lyn{
+  font-family: 'OpenSans-Regular';
+  font-size:14px;
+  margin: 0 0 18px 0;
+}
+.degree_lyn{
+  font-family:raleway;
+  font-size:12px;
+  opacity:.77;
+  margin:0;
+}
+
+#more-text_lyn{
+  font-family: 'OpenSans-Regular';
+  font-size:14px;
+}
+
+@media screen and (min-width: 1024px){
+  #education_lyn{
+    width:245px;
+  }
+}

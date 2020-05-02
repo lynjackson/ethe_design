@@ -1,0 +1,47 @@
+
+@media screen and (min-width: 0px){
+  #jobs_lyn{
+
+  }
+  .job_lyn{
+    font-family:'OpenSans-Regular';
+    font-size: 14px;
+    margin: 0 0 31px 0;
+  }
+  .role-company_lyn{
+    display:flex;
+    justify-content: space-between;
+    font-size:
+    /* font-family:'OpenSans-Regular'; */
+  }
+  .job-title_lyn{
+    font-family:'OpenSans-Semibold';
+    margin:0;
+  }
+  .company_lyn{
+    margin:0;
+    font-style: italic;
+  }
+  .job-desc_lyn{
+    margin:9px 0 0 0;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  #experience_lyn{
+    width: 93%;
+  }
+  .role-company_lyn{
+    flex-direction: column;
+    width: 40%;
+  }
+  .job_lyn{
+    display: flex;
+    justify-content: space-between;
+  }
+  .job-desc_lyn{
+    margin:0;
+    width:86%;
+  }
+
+}

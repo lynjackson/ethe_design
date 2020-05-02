@@ -1,0 +1,40 @@
+@mixin box($flex, $dir, $jus, $align){
+    display: $flex;
+    flex-direction: $dir;
+    justify-content: $jus;
+    align-items: $align;
+}
+
+@mixin hw($h, $w){
+    height: $h;
+    width: $w;
+}
+
+@mixin font($font, $size, $weight, $height, $spacing){
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    letter-spacing: $spacing;
+}
+
+$blackish: rgba(26,26,26,1);
+$greyish: rgba(112,112,112,1);
+
+$width-mobile: 90.5%;
+$width-iPad: 90.1%;
+$width-13: 85.3%;
+
+.tester{
+    color: red;
+}
+
+
+
+// $para-text: font-family: 'nunito-sans';
+
+// %para-text{
+//     font-family:nunito sans;
+//     font-size: 50px;
+// }
+

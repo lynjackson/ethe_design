@@ -1,0 +1,130 @@
+.tester {
+  color: red;
+}
+
+@media screen and (min-width: 0px) {
+  #header2 {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: fixed;
+    transition: background-color 1s, height 0.5s;
+    z-index: 20;
+    overflow: hidden;
+  }
+  #header2 #header-items2 {
+    display: flex;
+    flex-direction: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 11px auto 0 auto;
+  }
+  #header2 #nav-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: poppins;
+    font-size: 46.35px;
+    align-self: center;
+    position: relative;
+    top: 200px;
+    height: 36vh;
+    text-align: center;
+  }
+  #header2 .nav-option {
+    text-decoration: none;
+    color: white;
+  }
+  #header2 #logo2 {
+    width: 59px;
+  }
+  #header2 #menu2 {
+    width: 38px;
+    height: 31px;
+    z-index: 100;
+  }
+
+  #footer {
+    background-color: "rgb(26,26,26)";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    width: 100vw;
+    left: 0;
+    position: absolute;
+    padding: 0px, 100px;
+    color: white;
+    padding-left: calc((100% - 90.5%)/2);
+    padding-right: calc((100% - 90.5%)/2);
+    box-sizing: border-box;
+  }
+  #footer #next-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  #footer #next-tab h2 {
+    font-family: "poppins";
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 25px;
+  }
+  #footer #next-tab hr {
+    height: 36px;
+    margin: 0;
+    border-left: 0.5px solid #707070;
+    border-right: 0.5px solid #707070;
+  }
+  #footer #next-tab img {
+    height: 19px;
+    width: 14px;
+    margin-left: 13px;
+  }
+  #footer h1 {
+    font-family: "poppins";
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #header2 #header-items2 {
+    width: 90.1%;
+  }
+
+  #footer {
+    padding-left: calc((100% - 90.1%)/2);
+    padding-right: calc((100% - 90.1%)/2);
+  }
+  #footer #next-tab h2 {
+    margin-left: 95px;
+    font-family: poppins;
+    font-size: 27.6px;
+    font-weight: 500;
+    line-height: auto;
+    letter-spacing: auto;
+  }
+  #footer h1 {
+    font-family: poppins;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: auto;
+    letter-spacing: -0.5px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #header2 #header-items2 {
+    width: 85.3%;
+  }
+
+  #footer {
+    padding-left: calc((100% - 85.3%)/2);
+    padding-right: calc((100% - 85.3%)/2);
+  }
+}
+
+/*# sourceMappingURL=header2.css.map */
