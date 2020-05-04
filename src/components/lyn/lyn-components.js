@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {ContactLink} from './contact-link';
 // import '../../styles/lyn/profile.css';
 import '../../styles/css/lyn.css';
@@ -18,18 +18,26 @@ import XDIcon from '../../assets/icons/xd1.png';
 import PTStudio from '../../assets/images/ptstudio.jpeg';
 import Ethe from '../../assets/images/ethe.png';
 import Bill from '../../assets/images/phone2.png';
-import littleArrow from '../../assets/icons/little-arrow.png';
+import dropArrow from '../../assets/icons/dropArrow.png';
 
 export const Profile = ()=>{
+  
+  const [height, setHeight] = useState('auto')
+  
   return(
-    <div id='profile' className='lyn-section'>
+    <div id='profile' className='lyn-section' >
       <div id='profile-image'></div>
       <div id='nameTitleLocation'>
-        <h1 id='name'>Lyn Jackson</h1>
-        <h1 id='title'>UI Developer</h1>
-        <p id='location'>Brooklyn, NY</p>
-        <p id='email'>lynjacksonoconnor@gmail.com</p>
-        <p id='phone'>267.243.8796</p>
+        <h2 id='name'>Lyn Jackson</h2>
+        <h2 id='title'>UI Developer</h2>
+        <h3 id='location'>Brooklyn, NY</h3>
+
+        <div id='contact-div'>
+          <a id='email'>lynjacksonoconnor@gmail.com</a>
+          <a id='phone'>267.243.8796</a>
+          <a id='phone'>LinkedIn</a>
+        </div>
+      
       </div>
     </div>
   )
@@ -37,23 +45,27 @@ export const Profile = ()=>{
 
 export const Portfolio = ()=>{
   
+  const [stateHeight, setStateHeight] = useState('auto')
+  const [arrowPos, setArrowPos] = useState('rotate(0deg)')
+  
+
   const Project = (props)=>{
     return(
       <div className='project'>
           {/* <div className='portfolio-image' id='bill-image'></div> */}
           <img className='portfolio-image' src={props.image}></img>
           <div className='portfolio-info-div'>
-            <h2 className='info-title'>{props.projectName}</h2>
-            <h3 className='info-tech'>{props.projectTech}</h3>
-            <div className='design-doc-div'><img className='xd-icon' src={XDIcon}></img><h3 className='design-doc-text'>Design Documents</h3></div>
+            <h3 className='info-title'>{props.projectName}</h3>
+            <h5 className='info-tech'>{props.projectTech}</h5>
+            <div className='design-doc-div'><img className='xd-icon' src={XDIcon}></img><h5 className='design-doc-text'>Design Documents</h5></div>
           </div>
         </div>
     )
   }
   
   return(
-    <div id='portfolio' className='lyn-section'>
-      <div id='portfolio-tab' className='tab'> <h1 className='tab-title'>Portfolio</h1> <img className='little-arrow' src={littleArrow}></img> </div>
+    <div id='portfolio' className='lyn-section' style={{height: stateHeight}}>
+      <div id='portfolio-tab' className='tab' onClick={()=>{setStateHeight((stateHeight === 69)? 'auto': 69); setArrowPos((arrowPos === 'rotate(0deg)')? 'rotate(-90deg)': 'rotate(0deg)');}}> <h2 className='tab-title'>Portfolio</h2> <img className='little-arrow' src={dropArrow} style={{transform: arrowPos}}></img> </div>
       <Project image={Bill} projectName={'Bill Android Pay App'} projectTech={'React Native, REST API , Redux, Firebase'}/>
       <Project image={Ethe} projectName={'Ethe Design Firm Site'} projectTech={'React Native, REST API , Redux, Firebase'}/>
       <Project image={PTStudio} projectName={'Perfect Touch Studio Site'} projectTech={'React Native, REST API , Redux, Firebase'}/>
@@ -67,9 +79,9 @@ export const Experience = (props) =>{
     return(
       <div className='experience-item'>
         <div className='item-stats'>
-          <h2 className='title'>{props.title}</h2>
-          <h1 className='place'>{props.place}</h1>
-          <p className='time'>{props.time}</p>
+          <h3 className='title'>{props.title}</h3>
+          <h3 className='place'>{props.place}</h3>
+          <h5 className='time'>{props.time}</h5>
         </div>
         <p className='description'>{props.description}</p>
       </div>
@@ -78,10 +90,10 @@ export const Experience = (props) =>{
   
   return(
     <div className='lyn-section' id='experience'>
-      <div id='portfolio-tab' className='tab'> <h1 className='tab-title'>Experience</h1> <img className='little-arrow' src={littleArrow}></img> </div>
-      <ExperienceItem place='Freelance' title='UI Developer' time='Past six months' description='Working directly and closely with clients to design and create websites. I make use of an iterative human centered design process to understand each client’s vision and business, and craft it into a product. '/>
-      <ExperienceItem place='Bill, Inc.' title='Mobile Developer' time="Jan '19 - May '19" description='Developed Bill, a mobile application for both iOS and Android that enables restaurant diners to place orders and pay from their mobile devices. Bill is a prototype created as part of a larger experience design process and built using React Native & Expo.'/>
-      <ExperienceItem place='Jones Day' title='Legal Associate' time="Oct '15 = Jun '18" description='Facilitated large corporate transactions by coordinating review of our client’s contracts by several lawyers. Frequently served as the principal point of contact for clients. These transactions were often Learned what it means to be a professional and good teammate.'/>
+      <div id='portfolio-tab' className='tab'> <h2 className='tab-title'>Experience</h2> <img className='little-arrow' src={dropArrow}></img> </div>
+      <ExperienceItem place='Bill, Inc.' title='Mobile Developer' time="Jan '19 - May '19" description='Working on the design & development teams creating an iOS/Android application that enables restaurant diners to place orders and pay with mobile devices. Creating Bill’s UI with React Native, and managing its REST API and Firebase database. Wireframed Bill with Adobe XD. Continuously learning about mobile UI/UX design and development.'/>
+      <ExperienceItem place='Freelance' title='UI Developer' time='12/18 - 7/19' description='Working directly and closely with clients to design and create websites. I make use of an iterative human centered design process to understand each client’s vision and business, and craft it into a product. '/>
+      <ExperienceItem place='Jones Day' title='Legal Associate' time="Oct '15 - Jun '18" description='Led large teams reviewing company agreements to identify potential issues and create legal snapshots for corporate transactions. Teams usually changed from deal to deal, so quickly learning to work with people was important. Usually served as a principal point of communication between my team and our clients. My experience taught me the meaning of professionalism, to understand and take ownership of the larger mission and to be a good teammate.'/>
     </div>
   )
 }
@@ -91,15 +103,15 @@ export const Education = (props) =>{
   const EducationItem = (props) =>{
     return(
       <div className='education-item'>
-        <h2 className='school'>{props.school}</h2>
-        <h2 className='degree'>{props.degree}</h2>
+        <h3 className='school'>{props.school}</h3>
+        <h3 className='degree'>{props.degree}</h3>
       </div>
     )
   }
 
   return(
     <div className='lyn-section' id='education'>
-      <div id='portfolio-tab' className='tab'> <h1 className='tab-title'>Education</h1> <img className='little-arrow' src={littleArrow}></img> </div>
+      <div id='portfolio-tab' className='tab'> <h2 className='tab-title'>Education</h2> <img className='little-arrow' src={dropArrow}></img> </div>
       <EducationItem school='University of Pennsylvania' degree='Juris Doctor, 2015'/>
       <EducationItem school='Johns Hopkins University' degree='B.A., 2012'/>
     </div>
@@ -109,7 +121,7 @@ export const Education = (props) =>{
 export const More =(props) =>{
   return(
     <div className='lyn-section' id='more'>
-      <div id='portfolio-tab' className='tab'> <h1 className='tab-title'>More</h1> <img className='little-arrow' src={littleArrow}></img> </div>
+      <div id='portfolio-tab' className='tab'> <h2 className='tab-title'>More</h2> <img className='little-arrow' src={dropArrow}></img> </div>
       <p>I am a User Interface Developer. I love designing experiences and then making them real. I believe the quality of our digital experiences is very important, and in several ways. It’s important that users find experiences intuitive, not simply because it makes them more enjoyable, but because it often makes the difference in the user actually getting what they need. It’s important from a business standpoint because customers and potential customers remember even slightly unpleasant experiences, and that alone can cause them to write a company off. So, I  like to create and improve digital experiences so that they’re in a place that users will really appreciate. </p>
       <p>I mostly create web experiences and mobile apps. I design responsive wireframes and prototypes in Adobe XD. I then adapt them in JavaScript using the React framework and other front-end technologies to create fast, intuitive stuff.</p>
       <p>I’m a student of the game when it comes to both design and development. I’m adherent to design principles and conventions, but have my opinions, if say, a convention hurts the experience. With development, my focus shifts to the developer experience. I write clean and efficient code, and am always keen to learn the latest language capabilities and technologies. I love getting better at what I do.</p>

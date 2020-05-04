@@ -52,7 +52,10 @@
 
     #next-link{
       @include box(flex, row, flex-end, center);
-      margin-right:14px;
+      // margin-right:14px;
+      padding-right:3.5%;
+      padding-left:3.5%;
+      text-decoration: none;
       
       #next-text{
         color:white;

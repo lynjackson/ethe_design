@@ -93,8 +93,10 @@ export const Projects = ()=>{
     return(
       <div id='projects'>
         <h2 id='projects-title'>Projects</h2>
-        <Project background={bill_back} logo={bill_logo} tagline={'A better way to order'} color1={'#000000B2'} color2={'#00000014'} textColor={'#FFFFFFC4'}/>
-        <Project background={art} logo={studio} tagline={'The creative space'} color1={'#FFFFFFC4'} color2={'#FFFFFF14'} textColor={'#000000B2'}/>
+        <div id='project-container'>
+            <Project background={bill_back} logo={bill_logo} tagline={'A better way to order'} color1={'#000000B2'} color2={'#00000014'} textColor={'#FFFFFFC4'}/>
+            <Project background={art} logo={studio} tagline={'The creative space'} color1={'#FFFFFFC4'} color2={'#FFFFFF14'} textColor={'#000000B2'}/>
+        </div>
       </div>
     )
   }

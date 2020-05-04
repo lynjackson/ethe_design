@@ -84,15 +84,19 @@
         margin:0;
     }
     h2{
-      @include font(poppins, 34px, 800, 61px, -1px);  
+      @include font(poppins, 34px, 700, 61px, -1px);  
       margin:0;
     }
     h3{
-      @include font(poppins, 18.4px, 800, 23.48px, 0px);
+      @include font(poppins, 18.4px, 700, 23.48px, 0px);
       margin: 0;
     }
     h4{
       @include font(poppins, 16px, 800, 23.48px, 0px);
+      margin: 0;
+    }
+    h5{
+      @include font(nunito sans, 14px, 400, 14.48px, 0px);
       margin: 0;
     }
 

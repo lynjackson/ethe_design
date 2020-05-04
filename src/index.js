@@ -39,7 +39,7 @@ ReactDOM.render(
 				<Route exact='true' path='/bill_q' component={Bill}/>
 				<Route exact='true' path='/bill_app' component={BillApp_Mobile}/>
 				<Route exact='true' path='/lyn' component={Lyn2}/>
-				<Route exact='true' path='/people' component={People}/>
+				{/* <Route exact='true' path='/people' component={People}/> */}
 			<Route path='/' component={Contact} />
 			</Suspense>
 			</div>

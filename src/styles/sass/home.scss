@@ -46,14 +46,13 @@
   }
 
   #services{
-    @include box(flex, column, space-between, center);
+    @include box(flex, column, space-between, flex-start);
     @include hw(auto, 100%);
     z-index:1;
     transition: opacity .5s;
     margin-top: 78.9px;
 
       .service{
-        @include hw(auto, 100%);
         z-index:1;
         @include box(flex, row, space-between, flex-start);
         margin-bottom: 39px;
@@ -85,12 +84,19 @@
       color:$greyish;
       margin-bottom:18.2px;
     }
+
+    #project-container{
+      @include box(flex, row, flex-start, flex-start);
+      flex-wrap: wrap;
+    }
     .project{
       height:156px;
       width:100%;
+      max-width:452px;
       background-size: cover; 
       border-radius: 3px;
       margin-bottom:28px;
+      box-shadow: 0 3px 6px hsla(0,0,0,.18);
       
       .overlay{
         @include hw(100%, 100%);

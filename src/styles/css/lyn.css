@@ -5,31 +5,8 @@
 @media screen and (min-width: 0px) {
   .lyn-section {
     margin-bottom: 53px;
-  }
-  .lyn-section h1 {
-    font-family: poppins;
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 32px;
-    letter-spacing: -1px;
-    color: #b3b3b3;
-    margin: 0;
-  }
-  .lyn-section h2 {
-    font-family: poppins;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 23px;
-    letter-spacing: -1px;
-    margin: 0;
-  }
-  .lyn-section h3 {
-    font-family: nunito sans;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: auto;
-    letter-spacing: auto;
-    margin: 0;
+    overflow: hidden;
+    transition: height 1s;
   }
   .lyn-section .tab {
     display: flex;
@@ -40,19 +17,11 @@
     margin-bottom: 37.5px;
     height: 57px;
     border-bottom: 1px solid rgba(112, 112, 112, 0.2);
-  }
-  .lyn-section .tab .tab-title {
-    font-family: poppins;
-    font-size: 32px;
-    font-weight: 800;
-    line-height: auto;
-    letter-spacing: -1px;
     color: #b3b3b3;
   }
   .lyn-section .tab .little-arrow {
-    height: 19px;
-    width: 14px;
-    transform: rotate(90deg);
+    height: 13.5px;
+    width: 23.62px;
   }
 
   #profile {
@@ -61,7 +30,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: 49px;
-    margin-top: 86px;
+    margin-top: 58.67px;
   }
   #profile #profile-image {
     background-image: url("../../assets/images/lyn4.jpeg");
@@ -70,23 +39,32 @@
     width: 100vw;
     position: relative;
     left: calc((100% - 90.5%)/-2);
-    margin-bottom: 32px;
+    margin-bottom: 35px;
   }
   #profile #name {
-    font-size: 37px;
-    color: #1a1a1a;
+    line-height: 32px;
+    margin-bottom: 3px;
   }
   #profile #title {
-    font-family: poppins;
-    font-size: 32px;
-    font-weight: 800;
-    line-height: auto;
-    letter-spacing: -1px;
     color: #b3b3b3;
+    line-height: 32px;
+    margin-bottom: 3px;
   }
   #profile #location {
-    font-size: 21px;
     margin-bottom: 22px;
+    font-weight: 400;
+  }
+  #profile #contact-div {
+    font-family: poppins;
+    font-size: 18.4px;
+    font-weight: 400;
+    line-height: 23.48px;
+    letter-spacing: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: auto;
+    height: 84px;
   }
 
   #portfolio .project {
@@ -107,12 +85,8 @@
     width: 49.6%;
     height: 100%;
   }
-  #portfolio .project .info-title {
-    font-family: poppins;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 23px;
-    letter-spacing: -1px;
+  #portfolio .project .info-tech {
+    margin: 3% auto;
   }
   #portfolio .project .design-doc-div {
     display: flex;
@@ -128,23 +102,11 @@
   #experience .experience-item {
     margin-bottom: 37px;
   }
-  #experience .title {
-    font-family: poppins;
-    font-size: 19px;
-    font-weight: 600;
-    line-height: 23px;
-    letter-spacing: -1px;
-  }
   #experience .place {
-    font-family: poppins;
-    font-size: 19px;
-    font-weight: 600;
-    line-height: 23px;
-    letter-spacing: -1px;
     color: #b3b3b3;
+    margin: 1% 0;
   }
   #experience .time {
-    font-size: 14px;
     margin-bottom: 18px;
   }
 

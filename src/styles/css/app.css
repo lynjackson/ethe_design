@@ -84,7 +84,7 @@
   h2 {
     font-family: poppins;
     font-size: 34px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 61px;
     letter-spacing: -1px;
     margin: 0;
@@ -93,7 +93,7 @@
   h3 {
     font-family: poppins;
     font-size: 18.4px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 23.48px;
     letter-spacing: 0px;
     margin: 0;
@@ -104,6 +104,15 @@
     font-size: 16px;
     font-weight: 800;
     line-height: 23.48px;
+    letter-spacing: 0px;
+    margin: 0;
+  }
+
+  h5 {
+    font-family: nunito sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14.48px;
     letter-spacing: 0px;
     margin: 0;
   }
