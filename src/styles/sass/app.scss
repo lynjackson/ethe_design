@@ -71,39 +71,37 @@
     body{
       margin: 0;
       overscroll-behavior: none;
-      background-color: rgb(26,26,26);
     }
   
     #routes{
     width:100%;
-    margin: 0 auto;
-    background-color: white;
     }
   
-    #app{
-  
-    }
-  
-    img{
-  
-    }
 
     h1{
-        @include font(poppins, 27.6px, 400, 32px, auto);
+        // @include font(poppins, 27.6px, 400, 32px, auto);
+        @include font(poppins, 56px, 800, 61px, -1px);
         margin:0;
     }
     h2{
-        font-family: poppins;
-        font-size: 18px;
-        font-weight: 600;
-        margin:0;
+      @include font(poppins, 34px, 800, 61px, -1px);  
+      margin:0;
+    }
+    h3{
+      @include font(poppins, 18.4px, 800, 23.48px, 0px);
+      margin: 0;
+    }
+    h4{
+      @include font(poppins, 16px, 800, 23.48px, 0px);
+      margin: 0;
     }
 
     p{
-        font-family: nunito sans;
-        font-size:19px;
-        margin:0;
+      @include font(nunito sans, 16px, 400, 23.13px, 0px);
+      margin:0;
     }
+
+    
   
   
   

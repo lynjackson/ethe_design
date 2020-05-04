@@ -18,12 +18,14 @@
     letter-spacing: $spacing;
 }
 
-$blackish: rgba(26,26,26,1);
-$greyish: rgba(112,112,112,1);
+$blackish: hsla(0,0,10,1);
+$greyish: hsla(0,0,70,1);
 
 $width-mobile: 90.5%;
 $width-iPad: 90.1%;
 $width-13: 85.3%;
+
+$header-height: 58.67px;
 
 .tester{
     color: red;

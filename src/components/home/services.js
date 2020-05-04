@@ -5,17 +5,12 @@ import Data from '../../assets/icons/report.png';
 import Performance from '../../assets/icons/speed.png';
 
 
-export const Services2 = ()=>{
+export const Services = ()=>{
   const [servicesOpacity, setOpacity] = useState(0)
   
   useEffect(()=>{
     window.addEventListener('scroll', ()=>{
-      if(window.pageYOffset > 5){
-        setOpacity(1);
-      }
-      else{
-        setOpacity(0);
-      }
+      (window.pageYOffset > 5) ? setOpacity(1) : setOpacity(0)
     })
   })
 
@@ -36,7 +31,6 @@ export const Service = (props)=>{
       <p>{props.description}</p>
   </div>
   )
-  
 }
 
 

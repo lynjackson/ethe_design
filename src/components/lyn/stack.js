@@ -1,6 +1,6 @@
 import React from 'react';
 import {StackLink} from './contact-link';
-import '../../styles/lyn/stack.css';
+// import '../../styles/lyn/stack.css';
 
 export class Stack_Mobile extends React.Component{
   constructor(){

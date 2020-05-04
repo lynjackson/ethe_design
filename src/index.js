@@ -16,7 +16,8 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './reducers';
 import {BrowserRouter, Route} from 'react-router-dom'
-import{Header2} from './components/header.js'
+import{Header} from './components/header.js'
+import{Contact} from './components/contact.js'
 
 const Vision = lazy(() => import('./pages/vision'));
 const Lyn2 = lazy(() => import('./pages/lyn'));
@@ -30,15 +31,16 @@ ReactDOM.render(
 	  <BrowserRouter>
 	    
 			<div id='routes'>
-			<Route path='/' component={Header2} />
+			<Route path='/' component={Header} />
 			<Suspense fallback={<div style={{height:1, borderColor: 'red', borderWidth:2}}><p style={{color:'white', fontSize:200}}>'loading'</p></div>}>
 				<Route exact='true' path='/' component={Home2}/>
 				<Route exact='true' path='/values' component={Values}/>
-				<Route exact='true' path='/vision' component={Vision} />
+				{/* <Route exact='true' path='/vision' component={Vision} /> */}
 				<Route exact='true' path='/bill_q' component={Bill}/>
 				<Route exact='true' path='/bill_app' component={BillApp_Mobile}/>
 				<Route exact='true' path='/lyn' component={Lyn2}/>
 				<Route exact='true' path='/people' component={People}/>
+			<Route path='/' component={Contact} />
 			</Suspense>
 			</div>
 		

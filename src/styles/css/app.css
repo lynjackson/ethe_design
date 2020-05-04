@@ -66,34 +66,54 @@
   body {
     margin: 0;
     overscroll-behavior: none;
-    background-color: #1a1a1a;
   }
 
   #routes {
     width: 100%;
-    margin: 0 auto;
-    background-color: white;
   }
 
   h1 {
     font-family: poppins;
-    font-size: 27.6px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: auto;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 61px;
+    letter-spacing: -1px;
     margin: 0;
   }
 
   h2 {
     font-family: poppins;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 61px;
+    letter-spacing: -1px;
+    margin: 0;
+  }
+
+  h3 {
+    font-family: poppins;
+    font-size: 18.4px;
+    font-weight: 800;
+    line-height: 23.48px;
+    letter-spacing: 0px;
+    margin: 0;
+  }
+
+  h4 {
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 23.48px;
+    letter-spacing: 0px;
     margin: 0;
   }
 
   p {
     font-family: nunito sans;
-    font-size: 19px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.13px;
+    letter-spacing: 0px;
     margin: 0;
   }
 

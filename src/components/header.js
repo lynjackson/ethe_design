@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useLayoutEffect, useCallback} from 'react';
-import '../styles/home/home.css';
+// import '../styles/home/home.css';
 // import '../styles/css/header.css';
 import '../styles/css/header2.css';
 import { HashRouter, Switch, Link, Route, Redirect } from "react-router-dom";
@@ -8,63 +8,47 @@ import menuButton from '../assets/icons/header/menu.png'
 import plus from '../assets/images/plus-sign.png';
 
 
-export const Header2 = ()=>{
+export const Header = ()=>{
   
   const blackish = 'rgb(26,26,26)'
-  const [headerBackground, setBack] = useState((window.location.pathname === '/' && window.pageYOffset < 5) ? 'rgba(255,255,255, .2)' : blackish)
-  const [logoInvert, setInvert] = useState((window.location.pathname !== '/') ? 'invert(1)' : 'invert(0)')
-  const [headerHeight, setHeight] = useState(86)
-  const [path, setPath] = useState(window.location.pathname);
-  // ^ Setting...
+  const whitish = 'rgb(244,244,244)'
 
-  // useLayoutEffect(()=>{
-  //   setBack('white');
-  // }, []);
+  const [headerBackground, setBack] = useState((window.location.pathname === '/' && window.pageYOffset < 5) ? 'hsla(0,0,96, 1)' : blackish)
+  const [headerHeight, setHeight] = useState(58.67)
+  const [offset, setOffset] = useState(0);
+  
   
   useEffect(()=>{
-    setPath(window.location.pathname);
-    
     window.addEventListener('scroll', (e)=>{
-      if (window.location.pathname==='/' && window.pageYOffset < 5){
-        setBack('rgba(255,255,255, .2)')
-        setInvert('invert(0)')
-      }
-      else{
-        setBack(blackish)
-        setInvert('invert(1)')
-      }      
+      setOffset(window.pageYOffset);
+      console.log(offset, 'offset')
     })
-
     document.getElementById('header2').addEventListener('wheel', (e)=>{
       if(headerHeight === '100vh'){ e.preventDefault() }
     })
   })
   
   return (
-    <div id='header2' style={{backgroundColor: (window.location.pathname === '/' && window.pageYOffset < 5 && headerBackground !== 'black') ? 'rgba(255,255,255, .2)' : blackish, height: headerHeight}}>
-      
+    <div id='header2' style={{height: headerHeight, backgroundColor: (offset < 5 && headerHeight < 60 && window.location.pathname === '/') ? whitish : blackish }}>
       <div id='header-items2'>
-        <Link to='/'><img src={ethey} id='logo2' style={{filter: logoInvert}} /></Link>
+        <Link to='/'><img src={ethey} id='logo2' style={{filter: (offset >=5 || headerHeight === '100vh' || window.location.pathname !== '/') ? 'invert(1)' : 'invert(0)'}} /></Link>
+        
         <img src={menuButton} id='menu2' onClick={()=>{
-          
-          if(headerHeight === '100vh'){
-            setHeight(86);
-            (window.pageYOffset < 5) ? setBack('white') : console.log('a');
-            (window.pageYOffset < 5) ? setInvert('invert(0)') : console.log('a');
+          if(headerHeight === 58.67){
+            setHeight('100vh');
          }
          else{
-            setHeight('100vh')
-            setBack('black');
-            setInvert('invert(1)')
+            setHeight(58.67)
          }
         }}/>
       </div>
       
       <div id='nav-options'>
-        <Link to='/vision' className='nav-option' onClick={()=>{setHeight(86); setBack(blackish)}}>Vision</Link>
-        <Link to='/values' className='nav-option' onClick={()=>{setHeight(86); setBack(blackish)}}>Values</Link>
-        <Link to='/people' className='nav-option' onClick={()=>{setHeight(86); setBack(blackish)}}>People</Link>
+        <Link to='/vision' className='nav-option' onClick={()=>{setHeight(58.67); setBack(blackish)}}>Vision</Link>
+        <Link to='/values' className='nav-option' onClick={()=>{setHeight(58.67); setBack(blackish)}}>Values</Link>
+        <Link to='/people' className='nav-option' onClick={()=>{setHeight(58.67); setBack(blackish)}}>People</Link>
       </div>
+    
     </div>
   )
 }

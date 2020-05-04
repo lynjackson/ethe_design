@@ -12,7 +12,7 @@ import dataImage from '../../assets/images/sec3.jpeg'
 import fisherman2 from '../../assets/images/fisherman22.jpg'
 import data from '../../assets/images/dining.jpeg'
 // import '../../styles/about/about2.css';
-import '../../styles/about/section1.css'
+// import '../../styles/about/section1.css'
 import {PageTitle} from '../header';
 
 

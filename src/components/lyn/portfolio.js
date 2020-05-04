@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/lyn/portfolio.css';
+// import '../../styles/lyn/portfolio.css';
 
 
 

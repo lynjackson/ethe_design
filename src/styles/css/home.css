@@ -3,29 +3,6 @@
 }
 
 @media screen and (min-width: 0px) {
-  .para, #services .service p {
-    font-family: "nunito sans";
-    font-size: 19px;
-    text-align: center;
-  }
-
-  .title2, #projects .project .overlay {
-    font-family: "poppins";
-    font-size: 18px;
-    font-weight: 600;
-  }
-
-  #above-fold {
-    animation: fadeIn 2s;
-    display: flex;
-    flex-direction: column;
-    justify-content: auto;
-    align-items: center;
-    height: 62.11vh;
-    width: 100%;
-    position: relative;
-    z-index: 0;
-  }
   @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -34,16 +11,23 @@
       opacity: 1;
     }
   }
+  #above-fold {
+    animation: fadeIn 2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: auto;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    margin-top: 58.67px;
+  }
   #above-fold #above-title {
     position: relative;
-    top: 25vh;
     text-align: left;
-    font-family: "Poppins-Medium";
-    font-size: 46.35px;
-    font-weight: 400;
-    line-height: 47.02px;
-    letter-spacing: -14;
     transition: opacity 0.5s;
+    margin-top: 49.5px;
   }
   #above-fold #arrow-div {
     height: 100px;
@@ -73,30 +57,25 @@
     width: 100%;
     z-index: 1;
     transition: opacity 0.5s;
-    margin-top: 134px;
+    margin-top: 78.9px;
   }
   #services .service {
     height: auto;
     width: 100%;
     z-index: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 46px;
+    align-items: flex-start;
+    margin-bottom: 39px;
   }
   #services .service img {
-    height: 55px;
-    width: 55px;
+    height: 46px;
+    width: 46px;
+    margin-right: 40px;
   }
   #services .service h3 {
-    font-family: poppins;
-    font-size: 18.4px;
-    font-weight: 600;
-    line-height: auto;
-    letter-spacing: auto;
-    text-align: center;
-    margin: 17px auto;
+    margin-bottom: 8px;
   }
   #services .service p {
     margin: 0;
@@ -106,29 +85,28 @@
     width: 100%;
     margin-bottom: 88px;
   }
+  #projects #projects-title {
+    color: #b3b3b3;
+    margin-bottom: 18.2px;
+  }
   #projects .project {
-    height: 200px;
+    height: 156px;
     width: 100%;
     background-size: cover;
     border-radius: 3px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
   #projects .project .overlay {
     height: 100%;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  #projects .project .overlay p {
-    margin-bottom: 14.4px;
-  }
-  #projects .project .logo {
-    margin-left: 11px;
-    margin-right: 26px;
-    margin-bottom: -3px;
+  #projects .project .overlay .logo {
     width: 87px;
+    margin-bottom: 21px;
   }
 }
 @media screen and (min-width: 1024px) {

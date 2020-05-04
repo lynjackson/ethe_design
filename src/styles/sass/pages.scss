@@ -1,8 +1,12 @@
 @import 'store';
 
 @media screen and (min-width: 0px){
-    #home{
-      width:90%;
+  .page{
+    width: 93%;
+    margin: 0 auto;
+  }
+  
+  #home{
       margin: 0% auto;
       max-width:1280px;
       
@@ -10,7 +14,6 @@
   
     #page_about{
       margin: 0 auto;
-      width:90.5%;
       max-width:1280px;
     }
     #page_value{

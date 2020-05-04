@@ -6,6 +6,19 @@ import bill_logo from '../../assets/icons/bill.png'
 import '../../styles/home/projects.css'
 
 export const Projects = ()=>{
+  
+  const Project = (props) =>{
+    return(
+      <div className='project' style={{backgroundImage: `url(${props.background})`, color: props.textColor }}>
+        <div className='overlay' style={{background:`linear-gradient(359deg, ${props.color1}, ${props.color2})`}}>
+          <img className='logo' src={props.logo}></img>
+          <p className='tagline'>{props.tagline}</p>
+        </div>
+        
+      </div>
+    )
+  }
+  
   return(
     <div id='projects'>
       <Project background={bill_back} logo={bill_logo} tagline={'A better way to order'} color1={'#000000B2'} color2={'#00000014'} textColor={'#FFFFFFC4'}/>
@@ -14,14 +27,4 @@ export const Projects = ()=>{
   )
 }
 
-const Project = (props) =>{
-  return(
-    <div className='project' style={{backgroundImage: `url(${props.background})`, color: props.textColor }}>
-      <div className='overlay' style={{background:`linear-gradient(359deg, ${props.color1}, ${props.color2})`}}>
-        <img className='logo' src={props.logo}></img>
-        <p className='tagline'>{props.tagline}</p>
-      </div>
-      
-    </div>
-  )
-}
+

@@ -2,56 +2,47 @@
 
 @media screen and (min-width: 0px){
   
-  .para{
-    font-family:'nunito sans';
-    font-size: 19px;
-    text-align:center;
-  }
-  .title2{
-    font-family:'poppins';
-    font-size: 18px;
-    font-weight:600;
-
-  }
   
-  #above-fold{
-    @keyframes fadeIn {
-      0%{opacity:0};
-      100%{opacity:1};
+  
+  @keyframes fadeIn {
+    0%{opacity:0};
+    100%{opacity:1};
   }
-  animation: fadeIn 2s;
-    
+
+  #above-fold{
+    animation: fadeIn 2s;
     @include box(flex, column, auto, center);
-    @include hw(62.11vh, 100%);
+    @include hw(auto, 100%);
     position: relative;
     z-index:0;
+    margin-top:$header-height;
 
-    #above-title{
-      position: relative;
-      top: 25vh;
-      text-align:left;
-      @include font('Poppins-Medium', 46.35px, 400, 47.02px, -14);
-      transition: opacity .5s;
-    }
+      #above-title{
+        position: relative;
+        // top: 25vh;
+        text-align:left;
+        // @include font('Poppins-Medium', 46.35px, 400, 47.02px, -14);
+        transition: opacity .5s;
+        margin-top:49.5px;
+      }
 
-    #arrow-div{
-      @include hw(100px, 100vw);
-      display: flex;
-      justify-content: center;
-      position: absolute;
-      top: 74.75vh;
-      background: linear-gradient(rgba(255,255,255, .1), rgba(255,255,255, 1));
+        #arrow-div{
+          @include hw(100px, 100vw);
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          top: 74.75vh;
+          background: linear-gradient(rgba(255,255,255, .1), rgba(255,255,255, 1));
+        }
   
-    }
-  
-    #above-background{
-      background-image: url('../../assets/images/white-back.jpg');
-      background-size:cover;
-      position:absolute;
-      @include hw(86vh, 100vw);
-      z-index: -1;
-      border: 0px solid white;
-    }
+        #above-background{
+          background-image: url('../../assets/images/white-back.jpg');
+          background-size:cover;
+          position:absolute;
+          @include hw(86vh, 100vw);
+          z-index: -1;
+          border: 0px solid white;
+        }
   }
 
   #services{
@@ -59,30 +50,29 @@
     @include hw(auto, 100%);
     z-index:1;
     transition: opacity .5s;
-    margin-top: 134px;
+    margin-top: 78.9px;
 
-    .service{
-      @include hw(auto, 100%);
-      z-index:1;
-      @include box(flex, column, space-between, center);
-      margin-bottom: 46px;
-    
+      .service{
+        @include hw(auto, 100%);
+        z-index:1;
+        @include box(flex, row, space-between, flex-start);
+        margin-bottom: 39px;
       
-      img{
-        @include hw(55px, 55px)
-      }
-      h3{
-        @include font(poppins, 18.4px, 600, auto, auto);
-        text-align:center;
-        margin:17px auto;
-      }
-      
-      p{
-        @extend .para;
-        // @include font(pt sans caption, 14px, 300, 22px, auto);
-        margin: 0;
         
-      }
+        img{
+          @include hw(46px, 46px);
+          margin-right:40px;
+        }
+        h3{
+          margin-bottom:8px;
+        }
+        
+        p{
+          // @extend .para;
+          // @include font(pt sans caption, 14px, 300, 22px, auto);
+          margin: 0;
+          
+        }
     }
   
   }
@@ -91,31 +81,30 @@
     width: 100%;
     margin-bottom:88px;
     
+    #projects-title{
+      color:$greyish;
+      margin-bottom:18.2px;
+    }
     .project{
-      height:200px;
+      height:156px;
       width:100%;
       background-size: cover; 
       border-radius: 3px;
-      margin-bottom:30px;
+      margin-bottom:28px;
       
       .overlay{
         @include hw(100%, 100%);
-        @include box(flex, row, flex-start, flex-end);
-        @extend .title2;
+        @include box(flex, column, center, center);
+        // @extend .title2;
         
-        
-        p{
-          margin-bottom:14.4px;
-        }
+          .logo{  
+            width:87px;
+            margin-bottom:21px;
+          }  
 
       }
       
-      .logo{
-        margin-left:11px;
-          margin-right: 26px;
-          margin-bottom:-3px;
-          width:87px;
-      }
+      
     }
   
   }
