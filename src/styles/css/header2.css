@@ -53,8 +53,8 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 3.5%;
-    padding-left: 3.5%;
+    padding-right: 7%;
+    padding-left: 7%;
     text-decoration: none;
   }
   #footer #next-link #next-text {

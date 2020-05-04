@@ -26,6 +26,7 @@ $greyy: rgba(0,0,0,.55);
         @include box(flex, column, flex-start, flex-start);
         margin-bottom:49px;
         margin-top:58.67px;
+        overflow:visible;
 
         #profile-image{
             background-image: url('../../assets/images/lyn4.jpeg');
@@ -57,41 +58,36 @@ $greyy: rgba(0,0,0,.55);
 
     }
 
-    #portfolio{
+    .project{
+        @include box(flex, row, space-between, flex-start);
+        margin-bottom:60.2px;
         
-        .project{
-            @include box(flex, row, space-between, flex-start);
-            margin-bottom:60.2px;
-            
-            .portfolio-image{
-                width: 44.1%;
-            }
-            
-            .portfolio-info-div{
-                @include box(flex, column, space-between, flex-start);
-                width: 49.6%;
-                height: 100%;
-            }
-            .info-tech{
-                margin: 3% auto;
-            }
-            
-            .design-doc-div{
-                @include box(flex, row, flex-start, center);
-            }
-            .xd-icon{
-                width: 21px;
-                margin-right:4.5px;
-            }
-            
-
+        .portfolio-image{
+            width: 44.1%;
         }
+        
+        .portfolio-info-div{
+            @include box(flex, column, space-between, flex-start);
+            width: 49.6%;
+            height: 100%;
+        }
+        .info-tech{
+            margin: 3% auto;
+        }
+        
+        .design-doc-div{
+            @include box(flex, row, flex-start, center);
+        }
+        .xd-icon{
+            width: 21px;
+            margin-right:4.5px;
+        }
+        
     }
-
-    #experience{
-        .experience-item{
-            margin-bottom: 37px;
-        }
+    
+    .experience-item{
+        margin-bottom: 37px;
+        
         .title{
             // @include font(poppins, 19px, 600, 23px, -1px);
         }
@@ -104,23 +100,19 @@ $greyy: rgba(0,0,0,.55);
             margin-bottom:18px;
         }
     }
-
-    #education{
         
-        .education-item{
-            margin-bottom:27.8px;
-        }
+    .education-item{
+        margin-bottom:27.8px;
+        
         .degree{
             color: hsl(0,0,70);
         }
-        
     }
-
-    #more{
-        p{
-            margin-bottom:15px;
-        }
+    
+    p{
+        margin-bottom:15px;
     }
+    
 }
 
 @media screen and (min-width:1024px){

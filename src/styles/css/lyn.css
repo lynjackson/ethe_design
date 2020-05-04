@@ -31,6 +31,7 @@
     align-items: flex-start;
     margin-bottom: 49px;
     margin-top: 58.67px;
+    overflow: visible;
   }
   #profile #profile-image {
     background-image: url("../../assets/images/lyn4.jpeg");
@@ -67,17 +68,17 @@
     height: 84px;
   }
 
-  #portfolio .project {
+  .project {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 60.2px;
   }
-  #portfolio .project .portfolio-image {
+  .project .portfolio-image {
     width: 44.1%;
   }
-  #portfolio .project .portfolio-info-div {
+  .project .portfolio-info-div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -85,39 +86,39 @@
     width: 49.6%;
     height: 100%;
   }
-  #portfolio .project .info-tech {
+  .project .info-tech {
     margin: 3% auto;
   }
-  #portfolio .project .design-doc-div {
+  .project .design-doc-div {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
   }
-  #portfolio .project .xd-icon {
+  .project .xd-icon {
     width: 21px;
     margin-right: 4.5px;
   }
 
-  #experience .experience-item {
+  .experience-item {
     margin-bottom: 37px;
   }
-  #experience .place {
+  .experience-item .place {
     color: #b3b3b3;
     margin: 1% 0;
   }
-  #experience .time {
+  .experience-item .time {
     margin-bottom: 18px;
   }
 
-  #education .education-item {
+  .education-item {
     margin-bottom: 27.8px;
   }
-  #education .degree {
+  .education-item .degree {
     color: #b3b3b3;
   }
 
-  #more p {
+  p {
     margin-bottom: 15px;
   }
 }

@@ -20,6 +20,10 @@ import Ethe from '../../assets/images/ethe.png';
 import Bill from '../../assets/images/phone2.png';
 import dropArrow from '../../assets/icons/dropArrow.png';
 
+
+
+
+
 export const Profile = ()=>{
   
   const [height, setHeight] = useState('auto')
@@ -43,10 +47,33 @@ export const Profile = ()=>{
   )
 }
 
+const LynTab = (props) =>{
+  
+  const [stateHeight, setStateHeight] = useState('auto')
+  const [arrowPos, setArrowPos] = useState('rotate(0deg)')
+  const [tabStyle, setTabStyle] = useState({height: 'auto', transform: 'rotate(0deg)', marginBottom: 49})
+
+  const toggleTab = () => {
+    (tabStyle.height === 'auto') ? setTabStyle({height: 69, transform: 'rotate(-90deg)', marginBottom: 0}):setTabStyle({height: 'auto', transform: 'rotate(0deg)', marginBottom: 49})
+  }
+  
+  return(
+    <div className='lyn-section' style={{height: tabStyle.height, marginBottom: tabStyle.marginBottom}}>
+      <div id='portfolio-tab' className='tab' onClick={()=>{toggleTab()}}> <h2 className='tab-title'>{props.title}</h2> <img className='little-arrow' src={dropArrow} style={{transform: tabStyle.transform}}></img> </div>
+      {props.children}
+    </div>
+  )
+}
+
 export const Portfolio = ()=>{
   
   const [stateHeight, setStateHeight] = useState('auto')
   const [arrowPos, setArrowPos] = useState('rotate(0deg)')
+  const [tabStyle, setTabStyle] = useState({height: 'auto', transform: 'rotate(0deg)', marginBottom: 49})
+
+  const toggleTab = () => {
+    (tabStyle.height === 'auto') ? setTabStyle({height: 69, transform: 'rotate(-90deg)', marginBottom: 0}):setTabStyle({height: 'auto', transform: 'rotate(0deg)', marginBottom: 49})
+  }
   
 
   const Project = (props)=>{
@@ -64,12 +91,11 @@ export const Portfolio = ()=>{
   }
   
   return(
-    <div id='portfolio' className='lyn-section' style={{height: stateHeight}}>
-      <div id='portfolio-tab' className='tab' onClick={()=>{setStateHeight((stateHeight === 69)? 'auto': 69); setArrowPos((arrowPos === 'rotate(0deg)')? 'rotate(-90deg)': 'rotate(0deg)');}}> <h2 className='tab-title'>Portfolio</h2> <img className='little-arrow' src={dropArrow} style={{transform: arrowPos}}></img> </div>
+    <LynTab title={'Portfolio'}>
       <Project image={Bill} projectName={'Bill Android Pay App'} projectTech={'React Native, REST API , Redux, Firebase'}/>
       <Project image={Ethe} projectName={'Ethe Design Firm Site'} projectTech={'React Native, REST API , Redux, Firebase'}/>
       <Project image={PTStudio} projectName={'Perfect Touch Studio Site'} projectTech={'React Native, REST API , Redux, Firebase'}/>
-    </div>
+    </LynTab>
   )
 }
 
@@ -89,12 +115,12 @@ export const Experience = (props) =>{
   }
   
   return(
-    <div className='lyn-section' id='experience'>
-      <div id='portfolio-tab' className='tab'> <h2 className='tab-title'>Experience</h2> <img className='little-arrow' src={dropArrow}></img> </div>
+    <LynTab title={'Experience'}>
       <ExperienceItem place='Bill, Inc.' title='Mobile Developer' time="Jan '19 - May '19" description='Working on the design & development teams creating an iOS/Android application that enables restaurant diners to place orders and pay with mobile devices. Creating Bill’s UI with React Native, and managing its REST API and Firebase database. Wireframed Bill with Adobe XD. Continuously learning about mobile UI/UX design and development.'/>
       <ExperienceItem place='Freelance' title='UI Developer' time='12/18 - 7/19' description='Working directly and closely with clients to design and create websites. I make use of an iterative human centered design process to understand each client’s vision and business, and craft it into a product. '/>
       <ExperienceItem place='Jones Day' title='Legal Associate' time="Oct '15 - Jun '18" description='Led large teams reviewing company agreements to identify potential issues and create legal snapshots for corporate transactions. Teams usually changed from deal to deal, so quickly learning to work with people was important. Usually served as a principal point of communication between my team and our clients. My experience taught me the meaning of professionalism, to understand and take ownership of the larger mission and to be a good teammate.'/>
-    </div>
+    </LynTab>
+    
   )
 }
 
@@ -110,24 +136,22 @@ export const Education = (props) =>{
   }
 
   return(
-    <div className='lyn-section' id='education'>
-      <div id='portfolio-tab' className='tab'> <h2 className='tab-title'>Education</h2> <img className='little-arrow' src={dropArrow}></img> </div>
+    <LynTab title={'Education'}>
       <EducationItem school='University of Pennsylvania' degree='Juris Doctor, 2015'/>
       <EducationItem school='Johns Hopkins University' degree='B.A., 2012'/>
-    </div>
+    </LynTab>
   )
 }
 
 export const More =(props) =>{
   return(
-    <div className='lyn-section' id='more'>
-      <div id='portfolio-tab' className='tab'> <h2 className='tab-title'>More</h2> <img className='little-arrow' src={dropArrow}></img> </div>
+    <LynTab title={'More'}>
       <p>I am a User Interface Developer. I love designing experiences and then making them real. I believe the quality of our digital experiences is very important, and in several ways. It’s important that users find experiences intuitive, not simply because it makes them more enjoyable, but because it often makes the difference in the user actually getting what they need. It’s important from a business standpoint because customers and potential customers remember even slightly unpleasant experiences, and that alone can cause them to write a company off. So, I  like to create and improve digital experiences so that they’re in a place that users will really appreciate. </p>
       <p>I mostly create web experiences and mobile apps. I design responsive wireframes and prototypes in Adobe XD. I then adapt them in JavaScript using the React framework and other front-end technologies to create fast, intuitive stuff.</p>
       <p>I’m a student of the game when it comes to both design and development. I’m adherent to design principles and conventions, but have my opinions, if say, a convention hurts the experience. With development, my focus shifts to the developer experience. I write clean and efficient code, and am always keen to learn the latest language capabilities and technologies. I love getting better at what I do.</p>
       <p>I want to be part of a team of people who create products and experiences, and are passionate about doing so. For a few years, I worked for years as a corporate lawyer in a fast paced, often high pressure environment. I know what it is to be a professional, and a good teammate. I prioritize streamlining my workflow for myself and teammates as much as I can.</p>
       <p>Some of my other interests are summer, basketball, cooking, crashing open houses and new experiences.</p>
-    </div>
+    </LynTab>
   )
 }
 
