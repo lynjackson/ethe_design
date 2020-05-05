@@ -21,6 +21,8 @@ export const Values = ()=>{
   const [valueTitle, setTitle] = useState(title[counter])
   const [valueText, setText] = useState(text[counter])
   const [stateChange, setStateChange] = useState(0);
+
+  const [swipeDirection, setSwipeDirection] = useState(0);
   
   // useEffect(()=>{
   //   window.addEventListener('wheel', (e)=>{
