@@ -70,6 +70,7 @@
     h1{
         // @include font(poppins, 27.6px, 400, 32px, auto);
         @include font('Poppins-Bold', 56px, 800, 61px, -14px);
+        letter-spacing:-14px;
         margin:0;
     }
     h2{
