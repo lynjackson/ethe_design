@@ -27,26 +27,6 @@
   letter-spacing: -14px;
   src: url("../../assets/fonts/poppins/poppins-bold-webfont.woff") format("woff"), url("../../assets/fonts/poppins/poppins-bold-webfont.woff2") format("woff2"), url("../../assets/fonts/poppins/Poppins-Bold.otf") format("opentype");
 }
-@font-face {
-  font-family: "Raleway-Light";
-  src: url("../../assets/fonts/raleway/Raleway-Light.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Raleway-Regular";
-  src: url("../../assets/fonts/raleway/Raleway-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Raleway-Medium";
-  src: url("../../assets/fonts/raleway/Raleway-Medium.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Raleway-SemiBold";
-  src: url("../../assets/fonts/raleway/Raleway-SemiBold.ttf") format("truetype");
-}
-.tester {
-  color: red;
-}
-
 @media screen and (min-width: 0px) {
   html {
     overscroll-behavior: none;
@@ -57,17 +37,12 @@
     overscroll-behavior: none;
   }
 
-  #routes {
-    width: 100%;
-  }
-
   h1 {
     font-family: "Poppins-Bold";
     font-size: 56px;
     font-weight: 800;
     line-height: 61px;
-    letter-spacing: -14px;
-    letter-spacing: -14px;
+    letter-spacing: -1px;
     margin: 0;
   }
 
@@ -128,24 +103,6 @@
   .view {
     margin: 0 auto;
     width: 100%;
-  }
-
-  h1 {
-    font-family: poppins;
-    font-size: 46px;
-    font-weight: 400;
-    line-height: 51px;
-    letter-spacing: auto;
-    margin: 0;
-  }
-
-  h2 {
-    font-family: poppins;
-    font-size: 27.6px;
-    font-weight: 600;
-    line-height: auto;
-    letter-spacing: auto;
-    margin: 0;
   }
 }
 @media screen and (min-width: 1366px) {

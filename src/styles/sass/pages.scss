@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 0px){
   .page{
-    width: 93%;
+    width: $width-mobile;
     margin: 0 auto;
   }
   
@@ -36,7 +36,7 @@
   
   @media screen and (min-width: 1024px){
     #home{
-    width:90.1%;
+      width: $width-iPad;
     }
   
     #page_about{

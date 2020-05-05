@@ -40,7 +40,7 @@ export const AboveFold = (props)=>{
     <div id='above-fold' style={{display: 'flex'}}>
         <h1 id='above-title' style={{opacity: titleOpacity}}>Digital products & solutions for modern companies</h1>
         {/* <div id='arrow-div' onClick={()=>{window.scrollTo({top:document.getElementById('above-fold').offsetHeight -100, behavior: 'smooth'})}}><img src={arrow} id='down-arrow' style={{width:31, height:18, opacity:arrowOpacity}} /></div> */}
-        <div id='above-background'></div>
+        {/* <div id='above-background'></div> */}
     </div>
   )
 }
@@ -51,7 +51,7 @@ export const Services = ()=>{
   
   useEffect(()=>{
     window.addEventListener('scroll', ()=>{
-      (window.pageYOffset > 5) ? setOpacity(1) : setOpacity(.18)
+      (window.pageYOffset > 5 && window.pageYOffset < 500) ? setOpacity(1) : setOpacity(.18)
     })
   })
 
@@ -79,6 +79,13 @@ export const Services = ()=>{
 
 export const Projects = ()=>{
   
+  const [stateOpacity, setOpacity] = useState(.18)
+  
+  useEffect(()=>{
+    window.addEventListener('scroll', ()=>{
+      (window.pageYOffset > document.getElementById('projects').offsetTop - 423) ? setOpacity(1) : setOpacity(.18)
+    })
+  })
     const Project = (props) =>{
       return(
         <div className='project' style={{backgroundImage: `url(${props.background})`, color: props.textColor }}>
@@ -91,7 +98,7 @@ export const Projects = ()=>{
     }
     
     return(
-      <div id='projects'>
+      <div id='projects' style={{opacity:stateOpacity}}>
         <h2 id='projects-title'>Projects</h2>
         <div id='project-container'>
             <Project background={bill_back} logo={bill_logo} tagline={'A better way to order'} color1={'#000000B2'} color2={'#00000014'} textColor={'#FFFFFFC4'}/>

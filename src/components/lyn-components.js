@@ -1,24 +1,24 @@
 import React, {useState} from 'react';
-import {ContactLink} from './contact-link';
+import {ContactLink} from './lyn/contact-link';
 // import '../../styles/lyn/profile.css';
-import '../../styles/css/lyn.css';
-import LynImage from '../../assets/images/lyn2.jpg';
-// import ReactIcon from '../../assets/icons/react1.png';
-// import WebpackIcon from '../../assets/icons/webpack1.png';
-// import JSIcon from '../../assets/icons/javascript.png';
-// import NodeIcon from '../../assets/icons/nodejs.jpg';
-import XDIcon from '../../assets/icons/xd1.png';
-// import SketchIcon from '../../assets/icons/sketch1.png';
-// import NextIcon from '../../assets/icons/bulb.png';
-// import ReduxIcon from '../../assets/icons/redux1.png';
-// import CSSIcon from '../../assets/icons/css31.png';
-// import GraphQLIcon from '../../assets/icons/graphql1.png';
-// import SassIcon from '../../assets/icons/sass1.png';
-// import TypescriptIcon from '../../assets/icons/typescript1.png';
-import PTStudio from '../../assets/images/ptstudio.jpeg';
-import Ethe from '../../assets/images/ethe.png';
-import Bill from '../../assets/images/phone2.png';
-import dropArrow from '../../assets/icons/dropArrow.png';
+import '../styles/css/lyn.css';
+import LynImage from '../assets/images/lyn2.jpg';
+// import ReactIcon from '../assets/icons/react1.png';
+// import WebpackIcon from '../assets/icons/webpack1.png';
+// import JSIcon from '../assets/icons/javascript.png';
+// import NodeIcon from '../assets/icons/nodejs.jpg';
+import XDIcon from '../assets/icons/xd1.png';
+// import SketchIcon from '../assets/icons/sketch1.png';
+// import NextIcon from '../assets/icons/bulb.png';
+// import ReduxIcon from '../assets/icons/redux1.png';
+// import CSSIcon from '../assets/icons/css31.png';
+// import GraphQLIcon from '../assets/icons/graphql1.png';
+// import SassIcon from '../assets/icons/sass1.png';
+// import TypescriptIcon from '../assets/icons/typescript1.png';
+import PTStudio from '../assets/images/ptstudio.jpeg';
+import Ethe from '../assets/images/ethe.png';
+import Bill from '../assets/images/phone2.png';
+import dropArrow from '../assets/icons/dropArrow.png';
 
 
 

@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 // import '../styles/lyn/lyn.css'
 // import '../styles/css/pages.css'
 // import {ContactLink} from '../components/lyn/contact-link'
-import {Profile_Mobile, Profile, Stack, Portfolio, Experience, Education, More} from '../components/lyn/lyn-components'
+import {Profile_Mobile, Profile, Stack, Portfolio, Experience, Education, More} from '../components/lyn-components'
 // import {Stack_Mobile, Stack_Desktop} from '../components/lyn/stack'
 // import {Portfolio_Mobile, Portfolio_Desktop} from '../components/lyn/portfolio'
 // import {Experience, Experience_Desktop} from '../components/lyn/experience'

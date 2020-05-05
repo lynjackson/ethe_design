@@ -8,15 +8,23 @@
       flex-direction: column;
       width:100vw;
       position:fixed;
-      transition: background-color 1s, height .5s;
+      transition: background-color .5s, height .5s;
       z-index:20;
       overflow:hidden;
       
-    
       #header-items2{
-        @include box(flex, auto, space-between, center);
-        width:90%;
+        @include box(flex, row, space-between, center);
+        width:$width-mobile;
         margin: 11px  auto 0 auto; 
+
+        #logo2{
+          width:37.49px;
+        }
+        #menu2{
+          width:26.63px;
+          height:17.08px;
+          z-index:100;
+        }
       }
 
       #nav-options{
@@ -24,9 +32,6 @@
         display:flex;
         flex-direction: column;
         justify-content: space-between;
-        font-family:poppins;
-        font-size:46.35px;
-        align-self:center;
         position:relative;
         top:200px;
         height: 36vh;
@@ -37,14 +42,7 @@
           text-decoration: none;
           color:white;
       }
-      #logo2{
-        width:37.49px;
-      }
-      #menu2{
-        width:38px;
-        height:31px;
-        z-index:100;
-      }
+      
   }
   
   #footer{
@@ -77,19 +75,14 @@
   }
   
   #footer{
-    padding-left: calc((100% - #{$width-iPad})/2);
-    padding-right:calc((100% - #{$width-iPad})/2);
-    #next-tab{
-      h2{
-        margin-left: 95px;
-        @include font(poppins, 27.6px, 500, auto, auto);
-        // @extend .title2;
-      }
+    // padding-left: calc((100% - #{$width-iPad})/2);
+    
+    #next-link{
+      padding-left: 4.9%;
+        padding-right:4.9%;
+      
     }
-    h1{
-      // @extend .title1;
-      @include font(poppins, 46px, 400, auto, -.5px);
-    }
+    
   }
 }
 

@@ -32,25 +32,6 @@
     url("../../assets/fonts/poppins/Poppins-Bold.otf") format("opentype"),
   }
   
-  @font-face {
-    font-family: 'Raleway-Light';
-    src: url("../../assets/fonts/raleway/Raleway-Light.ttf") format("truetype");
-  }
-  @font-face {
-    font-family: 'Raleway-Regular';
-    src: url("../../assets/fonts/raleway/Raleway-Regular.ttf") format("truetype");
-  }
-  @font-face {
-    font-family: 'Raleway-Medium';
-    src: url("../../assets/fonts/raleway/Raleway-Medium.ttf") format("truetype");
-  }
-  
-  @font-face {
-    font-family: 'Raleway-SemiBold';
-    src: url("../../assets/fonts/raleway/Raleway-SemiBold.ttf") format("truetype");
-  }
-  
-  
   @import 'store';
   
   @media screen and (min-width:0px){
@@ -65,15 +46,14 @@
       overscroll-behavior: none;
     }
   
-    #routes{
-    width:100%;
-    }
+    #root{}
+
+    #routes{}
   
 
     h1{
         // @include font(poppins, 27.6px, 400, 32px, auto);
-        @include font('Poppins-Bold', 56px, 800, 61px, -14px);
-        letter-spacing:-14px;
+        @include font('Poppins-Bold', 56px, 800, 61px, -1px);
         margin:0;
     }
     h2{
@@ -118,14 +98,14 @@
       margin: 0 auto;
       width:100%;
     }
-    h1{
-        @include font(poppins, 46px, 400, 51px, auto);
-        margin:0;
-    }
-    h2{
-        @include font(poppins, 27.6px, 600, auto, auto);
-        margin:0;
-    }
+    // h1{
+    //     @include font(poppins, 46px, 400, 51px, auto);
+    //     margin:0;
+    // }
+    // h2{
+    //     @include font(poppins, 27.6px, 600, auto, auto);
+    //     margin:0;
+    // }
   }
   
   
