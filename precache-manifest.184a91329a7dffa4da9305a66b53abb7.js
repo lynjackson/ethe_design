@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5104fe002e480244b3de16906b9e4e9d",
+    "revision": "b5c86ba7faa10dcb9c3dcde38d48c8be",
     "url": "/ethe_design/index.html"
   },
   {
-    "revision": "3ed06ebeb1e5f0e1844d",
-    "url": "/ethe_design/static/css/3.2e2f3ab5.chunk.css"
+    "revision": "27fb4f4098d3282b8b82",
+    "url": "/ethe_design/static/css/3.d89a11f5.chunk.css"
   },
   {
-    "revision": "5bf5d571a2e9f791bd84",
-    "url": "/ethe_design/static/css/4.9e48540a.chunk.css"
+    "revision": "f4465b0d243124e648c8",
+    "url": "/ethe_design/static/css/4.ee0249a1.chunk.css"
   },
   {
-    "revision": "51323f4f91a88b2f74da",
-    "url": "/ethe_design/static/css/5.399e4fbd.chunk.css"
+    "revision": "072ca970164b6ea6e780",
+    "url": "/ethe_design/static/css/5.5d4a9421.chunk.css"
   },
   {
     "revision": "658591b65f36b1b0f494",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/css/7.453d8803.chunk.css"
   },
   {
-    "revision": "9b7eeacc223007f04889",
-    "url": "/ethe_design/static/css/main.8add314e.chunk.css"
+    "revision": "082a82c7a5bcdb285c22",
+    "url": "/ethe_design/static/css/main.f74065f2.chunk.css"
   },
   {
     "revision": "225ae358429adb17c103",
@@ -36,15 +36,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/js/2.712ea255.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3ed06ebeb1e5f0e1844d",
-    "url": "/ethe_design/static/js/3.588de3be.chunk.js"
+    "revision": "27fb4f4098d3282b8b82",
+    "url": "/ethe_design/static/js/3.78311f8d.chunk.js"
   },
   {
-    "revision": "5bf5d571a2e9f791bd84",
-    "url": "/ethe_design/static/js/4.fc989b60.chunk.js"
+    "revision": "f4465b0d243124e648c8",
+    "url": "/ethe_design/static/js/4.dc6a0c75.chunk.js"
   },
   {
-    "revision": "51323f4f91a88b2f74da",
+    "revision": "072ca970164b6ea6e780",
     "url": "/ethe_design/static/js/5.39cc1a58.chunk.js"
   },
   {
@@ -60,12 +60,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/js/8.992fa274.chunk.js"
   },
   {
-    "revision": "9b7eeacc223007f04889",
-    "url": "/ethe_design/static/js/main.808049c2.chunk.js"
+    "revision": "082a82c7a5bcdb285c22",
+    "url": "/ethe_design/static/js/main.5d9b2adc.chunk.js"
   },
   {
-    "revision": "32bceed9a4e7b78affb6",
-    "url": "/ethe_design/static/js/runtime-main.4ea6caaa.js"
+    "revision": "751cc7254ca9a3642158",
+    "url": "/ethe_design/static/js/runtime-main.eefc8f4a.js"
   },
   {
     "revision": "50145685042b4df07a1fd19957275b81",
@@ -222,10 +222,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "29337b1b12d288662a0a7a2ec6066e88",
     "url": "/ethe_design/static/media/values-down-arrow.29337b1b.png"
-  },
-  {
-    "revision": "dd70e284fb4a887f9b9f8eb6036b0ed0",
-    "url": "/ethe_design/static/media/white-back.dd70e284.jpg"
   },
   {
     "revision": "61742a4e85e57118995250ef93329e97",
