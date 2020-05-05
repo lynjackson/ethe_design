@@ -61,6 +61,16 @@
   #header2 #header-items2 {
     width: 90.2%;
   }
+  #header2 #header-items2 #nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 348px;
+  }
+  #header2 #header-items2 .nav-link {
+    text-decoration: none;
+  }
 
   #footer #next-link {
     padding-left: 4.9%;

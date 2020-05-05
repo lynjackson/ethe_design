@@ -16,7 +16,7 @@ import {Profile_Mobile, Profile, Stack, Portfolio, Experience, Education, More} 
 
 const Lyn2 = ()=>{
   return(
-    <div id='page_lyn'>
+    <div id='page_lyn' className='page'>
       <Profile />
       <div id='right-side'>
         <Portfolio />

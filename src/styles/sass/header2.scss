@@ -71,6 +71,14 @@
   #header2{
     #header-items2{
       width: $width-iPad;
+
+      #nav-links{
+        @include box(flex, row, space-between, center);
+        width:348px;
+      }
+      .nav-link{
+        text-decoration:none;
+      }
     }
   }
   

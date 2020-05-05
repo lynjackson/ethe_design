@@ -73,6 +73,7 @@
   }
   .project .portfolio-image {
     width: 44.1%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
   }
   .project .portfolio-info-div {
     display: flex;
@@ -83,7 +84,7 @@
     height: 100%;
   }
   .project .info-tech {
-    margin: 3% auto;
+    margin: 3% 0;
   }
   .project .design-doc-div {
     display: flex;
@@ -121,10 +122,8 @@
 @media screen and (min-width: 1024px) {
   #profile {
     width: 34.1%;
-    margin-top: 86px;
   }
   #profile #profile-image {
-    left: calc( (100% - 90.2%) * -1);
     width: inherit;
     position: absolute;
     left: 0px;
@@ -135,15 +134,37 @@
 
   #right-side {
     width: 551px;
-    margin: 125px 0 0 65px;
+    margin: 86px 0 0 61px;
   }
-
-  #portfolio .project {
+  #right-side .project {
     align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 40.5px;
   }
-  #portfolio .project .portfolio-image {
+  #right-side .project .portfolio-image {
     width: 203px;
     height: 141px;
+    margin-right: 51px;
+  }
+  #right-side .project .design-doc-div {
+    margin-top: 5px;
+    text-decoration: underline;
+  }
+  #right-side .project .xd-icon {
+    margin-right: 7px;
+    width: 18px;
+  }
+  #right-side .experience-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #right-side .experience-item .item-stats {
+    width: 119px;
+  }
+  #right-side .experience-item .description {
+    width: 386px;
   }
 }
 

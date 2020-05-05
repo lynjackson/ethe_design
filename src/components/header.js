@@ -16,9 +16,16 @@ export const Header = ()=>{
   const [headerBackground, setBack] = useState((window.location.pathname === '/' && window.pageYOffset < 5) ? 'hsla(0,0,96, 1)' : blackish)
   const [headerHeight, setHeight] = useState(58.67)
   const [offset, setOffset] = useState(0);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  console.log(screenWidth, 'screenWidth');
   
   
   useEffect(()=>{
+    window.addEventListener('resize', (e)=>{
+      setScreenWidth(window.innerWidth);
+    })
+    
     window.addEventListener('scroll', (e)=>{
       setOffset(window.pageYOffset);
       console.log(offset, 'offset')
@@ -33,7 +40,7 @@ export const Header = ()=>{
       <div id='header-items2'>
         <Link to='/'><img src={ethey} id='logo2' style={{filter: (offset >=5 || headerHeight === '100vh' || window.location.pathname !== '/') ? 'invert(1)' : 'invert(0)'}} /></Link>
         
-        <img src={menuButton} id='menu2' onClick={()=>{
+        <img src={menuButton} style={{display: (screenWidth < 1024) ? 'flex':'none'}}  id='menu2' onClick={()=>{
           if(headerHeight === 58.67){
             setHeight('100vh');
          }
@@ -41,6 +48,14 @@ export const Header = ()=>{
             setHeight(58.67)
          }
         }}/>
+
+        <div id='nav-links' style={ (screenWidth < 1024) ? {display: 'none'}:(offset >=5 || headerHeight === '100vh' || window.location.pathname !== '/') ? {filter:'invert(1)', display: 'flex'} : {filter:'invert(0)', display: 'flex'} }>
+          <Link to='/vision' className='nav-link'><h4 style={{fontSize:16, fontWeight:600, color:'black'}}>vision</h4></Link>
+          <Link to='/values' className='nav-link'><h4 style={{fontSize:16, fontWeight:600, color:'black'}}>values</h4></Link>
+          <Link to='/lyn' className='nav-link'><h4 style={{fontSize:16, fontWeight:600, color:'black'}}>people</h4></Link>  
+        </div>
+      
+      
       </div>
       
       <div id='nav-options'>
