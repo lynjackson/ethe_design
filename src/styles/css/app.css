@@ -25,7 +25,7 @@
 @font-face {
   font-family: "Poppins-Bold";
   letter-spacing: -14px;
-  src: url("../../assets/fonts/poppins/Poppins-Bold.otf") format("opentype"), url("../../assets/fonts/poppins/poppins-bold-webfont.woff") format("woff"), url("../../assets/fonts/poppins/poppins-bold-webfont.woff2") format("woff2");
+  src: url("../../assets/fonts/poppins/poppins-bold-webfont.woff") format("woff"), url("../../assets/fonts/poppins/poppins-bold-webfont.woff2") format("woff2"), url("../../assets/fonts/poppins/Poppins-Bold.otf") format("opentype");
 }
 @font-face {
   font-family: "Raleway-Light";
