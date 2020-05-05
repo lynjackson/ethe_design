@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ethe_design/static/css/main.d820ac98.chunk.css",
+    "main.css": "/ethe_design/static/css/main.d27c77e6.chunk.css",
     "main.js": "/ethe_design/static/js/main.808049c2.chunk.js",
     "main.js.map": "/ethe_design/static/js/main.808049c2.chunk.js.map",
     "runtime-main.js": "/ethe_design/static/js/runtime-main.4ea6caaa.js",
@@ -25,14 +25,14 @@
     "static/js/8.992fa274.chunk.js": "/ethe_design/static/js/8.992fa274.chunk.js",
     "static/js/8.992fa274.chunk.js.map": "/ethe_design/static/js/8.992fa274.chunk.js.map",
     "index.html": "/ethe_design/index.html",
-    "precache-manifest.177b9b0b30a9285dc056462daf7cf8ed.js": "/ethe_design/precache-manifest.177b9b0b30a9285dc056462daf7cf8ed.js",
+    "precache-manifest.c5328cf0409c72311afb8ea510ccbadf.js": "/ethe_design/precache-manifest.c5328cf0409c72311afb8ea510ccbadf.js",
     "service-worker.js": "/ethe_design/service-worker.js",
     "static/css/3.2e2f3ab5.chunk.css.map": "/ethe_design/static/css/3.2e2f3ab5.chunk.css.map",
     "static/css/4.9e48540a.chunk.css.map": "/ethe_design/static/css/4.9e48540a.chunk.css.map",
     "static/css/5.399e4fbd.chunk.css.map": "/ethe_design/static/css/5.399e4fbd.chunk.css.map",
     "static/css/6.6a735a72.chunk.css.map": "/ethe_design/static/css/6.6a735a72.chunk.css.map",
     "static/css/7.453d8803.chunk.css.map": "/ethe_design/static/css/7.453d8803.chunk.css.map",
-    "static/css/main.d820ac98.chunk.css.map": "/ethe_design/static/css/main.d820ac98.chunk.css.map",
+    "static/css/main.d27c77e6.chunk.css.map": "/ethe_design/static/css/main.d27c77e6.chunk.css.map",
     "static/js/2.712ea255.chunk.js.LICENSE.txt": "/ethe_design/static/js/2.712ea255.chunk.js.LICENSE.txt",
     "static/media/app.css": "/ethe_design/static/media/Raleway-SemiBold.17ba6410.ttf",
     "static/media/bill-background.jpeg": "/ethe_design/static/media/bill-background.bd235d72.jpeg",
@@ -62,7 +62,7 @@
   "entrypoints": [
     "static/js/runtime-main.4ea6caaa.js",
     "static/js/2.712ea255.chunk.js",
-    "static/css/main.d820ac98.chunk.css",
+    "static/css/main.d27c77e6.chunk.css",
     "static/js/main.808049c2.chunk.js"
   ]
 }
