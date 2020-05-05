@@ -40,110 +40,7 @@ export const Values = ()=>{
 
   
 
-  function debounce(func, wait, immediate) {
-    var timeout;
-    return function() {
-      var context = this, args = arguments;
-      clearTimeout(timeout);
-      timeout = setTimeout(function() {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
-      }, wait);
-      if (immediate && !timeout) func.apply(context, args);
-    };
-  }
-
   
-
-  function throttle(func, wait, immediate) {
-    var timeout;
-    return function() {
-      var context = this, args = arguments;
-      var later = function() {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
-      };
-      var callNow = immediate && !timeout;
-      if ( !timeout ) timeout = setTimeout( later, wait );
-      if (callNow) func.apply(context, args);
-    };
-  };
-
-  function debounce2(func, wait, immediate) {
-    var timeout;
-    return function() {
-      var context = this, args = arguments;
-      clearTimeout(timeout);
-      //Moving this line above timeout assignment
-      if (immediate && !timeout) func.apply(context, args);
-      timeout = setTimeout(function() {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
-      }, wait);
-    };
-  };
-
-  const debounce3 = (func, wait, immediate) => {
-    let timeout;
-  
-    return function() {
-      let context = this;
-      let args = arguments;
-  
-      clearTimeout(timeout);
-  
-      timeout = setTimeout(function() {
-        timeout = null;
-  
-        if (!immediate) {
-          func.apply(context, args)
-        }
-      }, wait);
-  
-      if (immediate && !timeout) {
-        func.apply(context, args)
-      }
-    };
-  };
-
-  function debounce4(func, wait, immediate) {
-    var timeout;
-    
-    return function executedFunction() {
-      var context = this;
-      var args = arguments;
-      
-      var later = function() {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
-      };
-  
-      var callNow = immediate && !timeout;
-    
-      clearTimeout(timeout);
-  
-      timeout = setTimeout(later, wait);
-    
-      if (callNow) func.apply(context, args);
-    };
-  };
-
-  var myEfficientFnUp = thot(function() {
-    setCounter(counter-1);
-  }, 300, {'trailing': true});
-
-  var myEfficientFnDown = thot(function() {
-    setCounter(counter+1);
-  }, 3000, {'leading': true});
-  
-  // useEffect(()=>{
-  //   window.addEventListener('click', ()=>{
-  //     deb(()=>{
-  //       setCounter(counter+1);
-  //       console.log('scrolly')
-  //     }, 300, {'leading': true})
-  //   });
-  // })
 
   useEffect(()=>{
     
@@ -153,6 +50,7 @@ export const Values = ()=>{
     
     const funky = (e)=>{
       // document.getElementById('value-con').style.opacity = 0;
+      e.preventDefault();
       document.getElementById('value-title').style.opacity = 0;
       document.getElementById('value-text').style.opacity = 0;
 
@@ -162,11 +60,7 @@ export const Values = ()=>{
     }
     
     setTimeout(()=>{
-      
       window.addEventListener('wheel', funky)
-      // setStateChange(stateChange + 1);
-      // console.log('remove');
-    
     }, 1500)
     
 

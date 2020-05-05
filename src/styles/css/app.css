@@ -37,6 +37,10 @@
     overscroll-behavior: none;
   }
 
+  #routes {
+    background-color: #212121;
+  }
+
   h1 {
     font-family: "Poppins-Bold";
     font-size: 56px;
