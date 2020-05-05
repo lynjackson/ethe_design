@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ethe_design/static/css/main.c7fb69a2.chunk.css",
+    "main.css": "/ethe_design/static/css/main.8add314e.chunk.css",
     "main.js": "/ethe_design/static/js/main.808049c2.chunk.js",
     "main.js.map": "/ethe_design/static/js/main.808049c2.chunk.js.map",
     "runtime-main.js": "/ethe_design/static/js/runtime-main.4ea6caaa.js",
@@ -25,16 +25,16 @@
     "static/js/8.992fa274.chunk.js": "/ethe_design/static/js/8.992fa274.chunk.js",
     "static/js/8.992fa274.chunk.js.map": "/ethe_design/static/js/8.992fa274.chunk.js.map",
     "index.html": "/ethe_design/index.html",
-    "precache-manifest.af48c7c99e07a282edf93a8450362c76.js": "/ethe_design/precache-manifest.af48c7c99e07a282edf93a8450362c76.js",
+    "precache-manifest.bd956165f2fe28ac1da8ab804562de0b.js": "/ethe_design/precache-manifest.bd956165f2fe28ac1da8ab804562de0b.js",
     "service-worker.js": "/ethe_design/service-worker.js",
     "static/css/3.2e2f3ab5.chunk.css.map": "/ethe_design/static/css/3.2e2f3ab5.chunk.css.map",
     "static/css/4.9e48540a.chunk.css.map": "/ethe_design/static/css/4.9e48540a.chunk.css.map",
     "static/css/5.399e4fbd.chunk.css.map": "/ethe_design/static/css/5.399e4fbd.chunk.css.map",
     "static/css/6.6a735a72.chunk.css.map": "/ethe_design/static/css/6.6a735a72.chunk.css.map",
     "static/css/7.453d8803.chunk.css.map": "/ethe_design/static/css/7.453d8803.chunk.css.map",
-    "static/css/main.c7fb69a2.chunk.css.map": "/ethe_design/static/css/main.c7fb69a2.chunk.css.map",
+    "static/css/main.8add314e.chunk.css.map": "/ethe_design/static/css/main.8add314e.chunk.css.map",
     "static/js/2.712ea255.chunk.js.LICENSE.txt": "/ethe_design/static/js/2.712ea255.chunk.js.LICENSE.txt",
-    "static/media/app.css": "/ethe_design/static/media/Raleway-SemiBold.17ba6410.ttf",
+    "static/media/app.css": "/ethe_design/static/media/poppins-bold-webfont.1124ae2f.woff",
     "static/media/bill-background.jpeg": "/ethe_design/static/media/bill-background.bd235d72.jpeg",
     "static/media/bill.png": "/ethe_design/static/media/bill.2d60eb1d.png",
     "static/media/bill.css": "/ethe_design/static/media/expo.8c644749.png",
@@ -62,7 +62,7 @@
   "entrypoints": [
     "static/js/runtime-main.4ea6caaa.js",
     "static/js/2.712ea255.chunk.js",
-    "static/css/main.c7fb69a2.chunk.css",
+    "static/css/main.8add314e.chunk.css",
     "static/js/main.808049c2.chunk.js"
   ]
 }

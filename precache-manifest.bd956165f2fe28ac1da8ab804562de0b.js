@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "008e065e41f1780eeb528116293f8260",
+    "revision": "5104fe002e480244b3de16906b9e4e9d",
     "url": "/ethe_design/index.html"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/css/7.453d8803.chunk.css"
   },
   {
-    "revision": "c99261b9c8c65ed12916",
-    "url": "/ethe_design/static/css/main.c7fb69a2.chunk.css"
+    "revision": "9b7eeacc223007f04889",
+    "url": "/ethe_design/static/css/main.8add314e.chunk.css"
   },
   {
     "revision": "225ae358429adb17c103",
@@ -60,7 +60,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/js/8.992fa274.chunk.js"
   },
   {
-    "revision": "c99261b9c8c65ed12916",
+    "revision": "9b7eeacc223007f04889",
     "url": "/ethe_design/static/js/main.808049c2.chunk.js"
   },
   {
@@ -190,6 +190,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a68f19e902db6b3f15e5eeed191a7d87",
     "url": "/ethe_design/static/media/phone2.a68f19e9.png"
+  },
+  {
+    "revision": "09c1c70ad7a0def1a25edbebf968db5f",
+    "url": "/ethe_design/static/media/poppins-bold-webfont.09c1c70a.woff2"
+  },
+  {
+    "revision": "1124ae2f22dda9358a8142f905913597",
+    "url": "/ethe_design/static/media/poppins-bold-webfont.1124ae2f.woff"
   },
   {
     "revision": "13ddacc7e927a258bfd2e476de90d327",
