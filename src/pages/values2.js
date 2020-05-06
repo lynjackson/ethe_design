@@ -25,29 +25,59 @@ export const Values = ()=>{
   const [swipeDirection, setSwipeDirection] = useState(0);
   
   
-  useEffect(()=>{
+  const valueUp = ()=>{
+    document.getElementById('value-title').style.opacity = 0;
+    document.getElementById('value-text').style.opacity = 0;  
+    setTimeout(()=>{
+      setCounter(counter + 1)
+      document.getElementById('value-title').style.opacity = 1;
+      document.getElementById('value-text').style.opacity = 1;  
+    }, 200)
+  }      
+  
+  const valueDown = ()=>{
+    document.getElementById('value-title').style.opacity = 0;
+    document.getElementById('value-text').style.opacity = 0;  
+    setTimeout(()=>setCounter(counter - 1), 200)
+  }      
+  
+useEffect(()=>{
     
-    // document.getElementById('value-con').style.opacity = 1;
     document.getElementById('value-title').style.opacity = 1;
     document.getElementById('value-text').style.opacity = 1;
     
     const funky = (e)=>{
-      // document.getElementById('value-con').style.opacity = 0;
-      document.getElementById('value-title').style.opacity = 0;
-      document.getElementById('value-text').style.opacity = 0;
-      setTimeout(()=>(e.deltaY > 0) ? setCounter(counter + 1) : setCounter(counter - 1), 500)
+      
+      // document.getElementById('value-title').style.opacity = 0;
+      // document.getElementById('value-text').style.opacity = 0;
+      
+      setTimeout(()=>{
+        if(e.deltaY > 0 && counter <= 5){
+          valueUp();
+        }  
+        else if(e.deltaY < 0 && counter >= 1){
+          valueDown();
+        }
+      }, 300)
       window.removeEventListener('wheel', funky)
     }
 
     const swiper = (e)=>{
-      // document.getElementById('value-con').style.opacity = 0;
-      // console.log(e);
-      e.preventDefault();
-      document.getElementById('value-title').style.opacity = 0;
-      document.getElementById('value-text').style.opacity = 0;
-      setTimeout(()=>(e.changedTouches[0].clientY > swipeDirection) ? setCounter(counter + 1) : setCounter(counter - 1), 500)
+      setTimeout(()=>{
+        if(e.changedTouches[0].clientY > swipeDirection + 100 && counter <= 5){
+          valueUp();
+        }  
+        else if(e.changedTouches[0].clientY < swipeDirection - 100 && counter >= 1){
+          valueDown();
+        }
+      }, 300)
       window.removeEventListener('touchend', swiper)
     }
+
+    // const clicker = () =>{
+    //   (counter <= 5) ? valueUp():console.log('nah')
+    //   window.removeEventListener('click', clicker)
+    // }
     
     setTimeout(()=>{
       window.addEventListener('wheel', funky)    
@@ -59,18 +89,20 @@ export const Values = ()=>{
     
     window.addEventListener('touchend', swiper)
 
+    // window.addEventListener('click', clicker)
 
-    
 
   })
   
   return(
-    <div id='page_value' >
+    <div id='page_value' className='page' >
       <div id='value-con'>
-        <h3 id='value-title'>{title[counter]}</h3>
+        <h1 id='value-title'>{title[counter]}</h1>
         <p id='value-text'>{text[counter]} </p>
-        <h2>{`0${counter + 1}`}/07</h2>
-        <img src={DownArrow} />
+        <div id='counterAndArrow'>
+          <h4 id='value-counter'>{`0${counter + 1}`}/07</h4>
+          <img src={DownArrow}  onClick={()=>{(counter <= 5) ? valueUp():console.log('nah')}}/>
+        </div>
       </div>
     </div>
   )

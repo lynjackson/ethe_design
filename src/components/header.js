@@ -50,9 +50,9 @@ export const Header = ()=>{
         }}/>
 
         <div id='nav-links' style={ (screenWidth < 1024) ? {display: 'none'}:(offset >=5 || headerHeight === '100vh' || window.location.pathname !== '/') ? {filter:'invert(1)', display: 'flex'} : {filter:'invert(0)', display: 'flex'} }>
-          <Link to='/vision' className='nav-link'><h4 style={{fontSize:16, fontWeight:600, color:'black'}}>vision</h4></Link>
           <Link to='/values' className='nav-link'><h4 style={{fontSize:16, fontWeight:600, color:'black'}}>values</h4></Link>
           <Link to='/lyn' className='nav-link'><h4 style={{fontSize:16, fontWeight:600, color:'black'}}>people</h4></Link>  
+          <Link to='/vision' className='nav-link'><h4 style={{fontSize:16, fontWeight:600, color:'black'}}>vision</h4></Link>
         </div>
       
       
