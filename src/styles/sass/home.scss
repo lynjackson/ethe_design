@@ -104,16 +104,17 @@
         @include box(flex, column, center, center);
         border-radius: 3px;
         // @extend .title2;
-        
-          .logo{  
-            width:87px;
-            margin-bottom:21px;
-          }  
-
       }
       
+      .logo{  
+        width:87px;
+        margin-bottom:21px;
+      }  
       
     }
+    // .project:hover{
+      
+    // }
   
   }
 
@@ -147,7 +148,7 @@
 
   #projects{
     
-    margin:78px 0;
+    margin: 0px 0 54px 0;
     
     #project-container{
       width:100%;

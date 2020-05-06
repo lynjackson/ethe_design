@@ -4,7 +4,7 @@ import DownArrow from '../assets/icons/values-down-arrow.png'
 import deb from 'lodash.debounce';
 import thot from 'lodash.throttle';
 
-export const Values = ()=>{
+const Values = ()=>{
   
   const title = ['Openness', 'Service', 'Evaluation', 'experience', 'renounce', 'enjoy', 'diligence'];
   const text = [
@@ -47,9 +47,6 @@ useEffect(()=>{
     document.getElementById('value-text').style.opacity = 1;
     
     const funky = (e)=>{
-      
-      // document.getElementById('value-title').style.opacity = 0;
-      // document.getElementById('value-text').style.opacity = 0;
       
       setTimeout(()=>{
         if(e.deltaY > 0 && counter <= 5){
@@ -107,3 +104,5 @@ useEffect(()=>{
     </div>
   )
 }
+
+export default Values;

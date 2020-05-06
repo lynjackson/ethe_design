@@ -108,7 +108,7 @@
     align-items: center;
     border-radius: 3px;
   }
-  #projects .project .overlay .logo {
+  #projects .project .logo {
     width: 87px;
     margin-bottom: 21px;
   }
@@ -126,7 +126,7 @@
   }
 
   #projects {
-    margin: 78px 0;
+    margin: 0px 0 54px 0;
   }
   #projects #project-container {
     width: 100%;

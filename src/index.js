@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 // import {Home2} from './pages/home'
 // import Values from './pages/values';
 // import Values3 from './pages/values3';
-import {Values} from './pages/values2';
+// import {Values} from './pages/values2';
 // import Bill from './pages/bill';
 // import {BillApp_Mobile, BillApp_Desktop} from './pages/bill_app';
 // import About from './pages/about'
@@ -20,6 +20,7 @@ import{Header} from './components/header.js'
 import{Contact} from './components/contact.js'
 
 const Vision = lazy(() => import('./pages/vision'));
+const Values = lazy(() => import('./pages/values2'));
 const Lyn2 = lazy(() => import('./pages/lyn'));
 const Bill = lazy(() => import('./pages/bill'));
 const BillApp_Mobile = lazy(() => import('./pages/bill_app'));

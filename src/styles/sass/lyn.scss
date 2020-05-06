@@ -50,15 +50,17 @@ $greyy: rgba(0,0,0,.55);
             font-weight:400;
         }
         #contact-div{
-            @include font(poppins, 18.4px, 400, 23.48px, 0px);
+            @include font(nunito sans, 16px, 400, 23.13px, 0px);
+            margin:0;
             @include box(flex, column, space-between, auto);
             height:84px;
+            text-decoration:none;
         }
         
 
     }
 
-    .project{
+    .portfolio-project{
         @include box(flex, row, space-between, flex-start);
         margin-bottom:60.2px;
         
@@ -72,6 +74,9 @@ $greyy: rgba(0,0,0,.55);
             width: 49.6%;
             height: 100%;
         }
+        .info-title{
+            color: $blackish;
+        }
         .info-tech{
             margin: 3% 0;
         }
@@ -82,6 +87,9 @@ $greyy: rgba(0,0,0,.55);
         .xd-icon{
             width: 21px;
             margin-right:4.5px;
+        }
+        .design-doc-text{
+            color:$blackish;
         }
         
     }
@@ -136,7 +144,7 @@ $greyy: rgba(0,0,0,.55);
         width:551px;
         margin:86px 0 0 61px;
 
-        .project{
+        .portfolio-project{
             align-items:center;
             justify-content:flex-start;
             margin-bottom:40.5px;

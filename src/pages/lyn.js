@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, useEffect } from 'react';
 import {HeaderMobile, HeaderDesktop} from '../components/header';
 import { selectBook, overlay, menu, valueNextPage, valuePrevPage, defaultView, defaultHeader, invertHeader, menuHeader, scrollHeader, values} from '../actions/index.js'
 import { bindActionCreators } from 'redux'
@@ -15,6 +15,13 @@ import {Profile_Mobile, Profile, Stack, Portfolio, Experience, Education, More} 
 
 
 const Lyn2 = ()=>{
+  
+  // useEffect(()=>{
+  //   window.removeEventListener('scroll', ()=>{
+  //     (window.pageYOffset > document.getElementById('projects').offsetTop - 423) ? setOpacity(1) : setOpacity(.18)
+  //   })
+  // })
+  
   return(
     <div id='page_lyn' className='page'>
       <Profile />

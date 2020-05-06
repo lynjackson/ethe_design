@@ -1,27 +1,12 @@
 import React, {useState} from 'react';
 import {ContactLink} from './lyn/contact-link';
-// import '../../styles/lyn/profile.css';
 import '../styles/css/lyn.css';
 import LynImage from '../assets/images/lyn2.jpg';
-// import ReactIcon from '../assets/icons/react1.png';
-// import WebpackIcon from '../assets/icons/webpack1.png';
-// import JSIcon from '../assets/icons/javascript.png';
-// import NodeIcon from '../assets/icons/nodejs.jpg';
 import XDIcon from '../assets/icons/xd1.png';
-// import SketchIcon from '../assets/icons/sketch1.png';
-// import NextIcon from '../assets/icons/bulb.png';
-// import ReduxIcon from '../assets/icons/redux1.png';
-// import CSSIcon from '../assets/icons/css31.png';
-// import GraphQLIcon from '../assets/icons/graphql1.png';
-// import SassIcon from '../assets/icons/sass1.png';
-// import TypescriptIcon from '../assets/icons/typescript1.png';
 import PTStudio from '../assets/images/ptstudio.jpeg';
 import Ethe from '../assets/images/ethe.png';
 import Bill from '../assets/images/phone2.png';
 import dropArrow from '../assets/icons/dropArrow.png';
-
-
-
 
 
 export const Profile = ()=>{
@@ -37,30 +22,13 @@ export const Profile = ()=>{
         <h3 id='location'>Brooklyn, NY</h3>
 
         <div id='contact-div'>
-          <a id='email'>lynjacksonoconnor@gmail.com</a>
-          <a id='phone'>267.243.8796</a>
-          <a id='phone'>LinkedIn</a>
+          <a className='contact-link' href="mailto:lynjacksonoconnor@gmail.com" id='email'>lynjacksonoconnor@gmail.com</a>
+          <a className='contact-link' href="tel:+2672438796" id='phone'>267.243.8796</a>
+          <a className='contact-link' href='https://www.linkedin.com/in/lyndon-jackson-541a5b18/' target='_blank' id='linkedin'>LinkedIn</a>
+          <a className='contact-link' href='https://drive.google.com/file/d/1z4Kqu8joAprX7M2sZHaEh2q7U38I7pPA/view?usp=sharing' target='_blank' id='linkedin'>Resume</a>
         </div>
       
       </div>
-    </div>
-  )
-}
-
-const LynTab = (props) =>{
-  
-  const [stateHeight, setStateHeight] = useState('auto')
-  const [arrowPos, setArrowPos] = useState('rotate(0deg)')
-  const [tabStyle, setTabStyle] = useState({height: 'auto', transform: 'rotate(0deg)', marginBottom: 49})
-
-  const toggleTab = () => {
-    (tabStyle.height === 'auto') ? setTabStyle({height: 69, transform: 'rotate(-90deg)', marginBottom: 0}):setTabStyle({height: 'auto', transform: 'rotate(0deg)', marginBottom: 49})
-  }
-  
-  return(
-    <div className='lyn-section' style={{height: tabStyle.height, marginBottom: tabStyle.marginBottom}}>
-      <div id='portfolio-tab' className='tab' onClick={()=>{toggleTab()}}> <h2 className='tab-title'>{props.title}</h2> <img className='little-arrow' src={dropArrow} style={{transform: tabStyle.transform}}></img> </div>
-      {props.children}
     </div>
   )
 }
@@ -78,13 +46,13 @@ export const Portfolio = ()=>{
 
   const Project = (props)=>{
     return(
-      <div className='project'>
+      <div className='portfolio-project'>
           {/* <div className='portfolio-image' id='bill-image'></div> */}
-          <img className='portfolio-image' src={props.image}></img>
+          <a href={props.imageLink} target='_blank'><img className='portfolio-image' src={props.image}></img></a>
           <div className='portfolio-info-div'>
-            <h3 className='info-title'>{props.projectName}</h3>
+          <a href={props.imageLink} target='_blank'><h3 className='info-title'>{props.projectName}</h3></a>
             <h5 className='info-tech'>{props.projectTech}</h5>
-            <div className='design-doc-div'><img className='xd-icon' src={XDIcon}></img><h5 className='design-doc-text'>Design Documents</h5></div>
+            <a href={props.xdLink} target='_blank'><div className='design-doc-div'><img className='xd-icon' src={XDIcon}></img><h5 className='design-doc-text'>Design Documents</h5></div></a>
           </div>
         </div>
     )
@@ -93,8 +61,8 @@ export const Portfolio = ()=>{
   return(
     <LynTab title={'Portfolio'}>
       <Project image={Bill} projectName={'Bill Android Pay App'} projectTech={'React Native, REST API , Redux, Firebase'}/>
-      <Project image={Ethe} projectName={'Ethe Design Firm Site'} projectTech={'React Native, REST API , Redux, Firebase'}/>
-      <Project image={PTStudio} projectName={'Perfect Touch Studio Site'} projectTech={'React Native, REST API , Redux, Firebase'}/>
+      <Project image={Ethe} projectName={'Ethe Design Firm Site'} projectTech={'React Native, REST API , Redux, Firebase'} imageLink={'/'} xdLink={'https://xd.adobe.com/view/5c54b440-3964-4159-7353-f2eb278083b7-2a65/screen/26a9b51d-f537-4eb0-be5c-214f3870daf8/Vision-15-1'}/>
+      <Project image={PTStudio} projectName={'Perfect Touch Studio Site'} projectTech={'React Native, REST API , Redux, Firebase'} imageLink={'https://studio.ljoconnor5.now.sh/'}/>
     </LynTab>
   )
 }
@@ -155,7 +123,23 @@ export const More =(props) =>{
   )
 }
 
+const LynTab = (props) =>{
+  
+  const [stateHeight, setStateHeight] = useState('auto')
+  const [arrowPos, setArrowPos] = useState('rotate(0deg)')
+  const [tabStyle, setTabStyle] = useState({height: 'auto', transform: 'rotate(0deg)', marginBottom: 49})
 
+  const toggleTab = () => {
+    (tabStyle.height === 'auto') ? setTabStyle({height: 69, transform: 'rotate(-90deg)', marginBottom: 0}):setTabStyle({height: 'auto', transform: 'rotate(0deg)', marginBottom: 49})
+  }
+  
+  return(
+    <div className='lyn-section' style={{height: tabStyle.height, marginBottom: tabStyle.marginBottom}}>
+      <div id='portfolio-tab' className='tab' onClick={()=>{toggleTab()}}> <h2 className='tab-title'>{props.title}</h2> <img className='little-arrow' src={dropArrow} style={{transform: tabStyle.transform}}></img> </div>
+      {props.children}
+    </div>
+  )
+}
 
 
 

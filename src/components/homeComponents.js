@@ -88,12 +88,16 @@ export const Projects = ()=>{
   })
     const Project = (props) =>{
       return(
+        
         <div className='project' style={{backgroundImage: `url(${props.background})`, color: props.textColor }}>
-          <div className='overlay' style={{background:`linear-gradient(359deg, ${props.color1}, ${props.color2})`}}>
-            <img className='logo' src={props.logo}></img>
-            <h4 className='tagline'>{props.tagline}</h4>
-          </div>
+          <a href={props.link} target='_blank'>
+            <div className='overlay' style={{background:`linear-gradient(359deg, ${props.color1}, ${props.color2})`}}>
+              <img className='logo' src={props.logo}></img>
+              <h4 className='tagline' style={{color: props.textColor}}>{props.tagline}</h4>
+            </div>
+          </a>
         </div>
+        
       )
     }
     
@@ -101,8 +105,8 @@ export const Projects = ()=>{
       <div id='projects' style={{opacity:stateOpacity}}>
         <h2 id='projects-title'>Projects</h2>
         <div id='project-container'>
-            <Project background={bill_back} logo={bill_logo} tagline={'A better way to order'} color1={'#000000B2'} color2={'#00000014'} textColor={'#FFFFFFC4'}/>
-            <Project background={art} logo={studio} tagline={'The creative space'} color1={'#FFFFFFC4'} color2={'#FFFFFF14'} textColor={'#000000B2'}/>
+            <Project background={bill_back} logo={bill_logo} tagline={'A better way to order'} color1={'#000000B2'} color2={'#00000014'} textColor={'#FFFFFFC4'} link={'https://www.google.com/'}/>
+            <Project background={art} logo={studio} tagline={'The creative space'} color1={'#FFFFFFC4'} color2={'#FFFFFF14'} textColor={'#000000B2'} link={'https://studio.ljoconnor5.now.sh/'}/>
         </div>
       </div>
     )

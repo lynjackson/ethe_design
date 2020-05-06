@@ -37,20 +37,18 @@
   @media screen and (min-width:0px){
   
     html{
-      // overscroll-behavior: none;
+      overscroll-behavior: none;
   
     }
   
     body{
       margin: 0;
-      // overscroll-behavior: none;
+      overscroll-behavior: none;
     }
   
     #root{}
 
-    #routes{
-      background-color: hsl(0,0,13);
-    }
+    #routes{}
   
 
     h1{
@@ -59,25 +57,34 @@
         margin:0;
     }
     h2{
-      @include font(poppins, 34px, 700, 61px, -1px);  
+      @include font('Poppins-Semibold', 34px, 700, 61px, -1px);  
       margin:0;
     }
     h3{
-      @include font(poppins, 18.4px, 700, 23.48px, 0px);
+      @include font('Poppins-Semibold', 18.4px, 700, 23.48px, 0px);
       margin: 0;
     }
     h4{
-      @include font(poppins, 16px, 800, 23.48px, 0px);
+      @include font('Poppins-Bold', 16px, 800, 23.48px, 0px);
       margin: 0;
     }
     h5{
       @include font(nunito sans, 14px, 400, 14.48px, 0px);
       margin: 0;
     }
+    h6{
+      @include font('Poppins-Semibold', 16px, 800, 23.48px, 0px);
+      margin:0;
+    }
 
     p{
       @include font(nunito sans, 16px, 400, 23.13px, 0px);
       margin:0;
+    }
+
+    a{
+      text-decoration:none;
+      color:$blackish;
     }
 
     
