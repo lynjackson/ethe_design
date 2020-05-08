@@ -73,8 +73,11 @@
     align-items: flex-start;
     margin-bottom: 60.2px;
   }
-  .portfolio-project .portfolio-image {
+  .portfolio-project .portfolio-image-link {
     width: 44.1%;
+  }
+  .portfolio-project .portfolio-image-link .portfolio-image {
+    width: 100%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
   }
   .portfolio-project .portfolio-info-div {

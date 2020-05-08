@@ -3,7 +3,7 @@ import React, {useState, useEffect, useLayoutEffect, useCallback} from 'react';
 // import '../styles/css/header.css';
 import '../styles/css/header2.css';
 import { HashRouter, Switch, Link, Route, Redirect } from "react-router-dom";
-import ethey from '../assets/icons/header/logo.png';
+import ethey from '../assets/icons/header/logo-semibold.png';
 import menuButton from '../assets/icons/header/menu.png'
 import plus from '../assets/images/plus-sign.png';
 

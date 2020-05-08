@@ -48,7 +48,7 @@ export const Portfolio = ()=>{
     return(
       <div className='portfolio-project'>
           {/* <div className='portfolio-image' id='bill-image'></div> */}
-          <a href={props.imageLink} target='_blank'><img className='portfolio-image' src={props.image}></img></a>
+          <a className='portfolio-image-link' href={props.imageLink} target='_blank'><img className='portfolio-image' src={props.image}></img></a>
           <div className='portfolio-info-div'>
           <a href={props.imageLink} target='_blank'><h3 className='info-title'>{props.projectName}</h3></a>
             <h5 className='info-tech'>{props.projectTech}</h5>

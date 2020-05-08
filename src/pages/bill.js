@@ -17,12 +17,6 @@ const BillAndroid =()=>{
   )
 }
 
-
-
-
-
-
-
 const Bill = (props) => {
   if(window.innerWidth > 475){
     return window.location.href = '/bill_app'

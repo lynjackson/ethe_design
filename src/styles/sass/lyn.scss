@@ -64,9 +64,14 @@ $greyy: rgba(0,0,0,.55);
         @include box(flex, row, space-between, flex-start);
         margin-bottom:60.2px;
         
-        .portfolio-image{
+        .portfolio-image-link{
             width: 44.1%;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, .3);
+            // box-shadow: 0 3px 6px rgba(0, 0, 0, .3);
+
+            .portfolio-image{
+                width: 100%;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, .3);
+            }
         }
         
         .portfolio-info-div{
