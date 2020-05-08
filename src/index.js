@@ -32,10 +32,10 @@ ReactDOM.render(
 	  <BrowserRouter>
 	    
 			<div id='routes'>
-			<Route path='/' component={Header} />
+			<Route path='/ethe__design' component={Header} />
 			<Suspense fallback={<div style={{height:1, borderColor: 'red', borderWidth:2}}><p style={{color:'white', fontSize:200}}>'loading'</p></div>}>
-				<Route exact='true' path='/' component={Home2}/>
-				<Route exact='true' path='/values' component={Values}/>
+				<Route exact='true' path='/ethe__design' component={Home2}/>
+				<Route exact='true' path='/ethe__design/values' component={Values}/>
 				{/* <Route exact='true' path='/vision' component={Vision} /> */}
 				<Route exact='true' path='/bill' component={Bill}/>
 				<Route exact='true' path='/bill_app' component={BillApp_Mobile}/>
