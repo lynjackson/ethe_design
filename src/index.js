@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom';
-import {Home2} from './pages/home'
+import Home2 from './pages/home'
 // import Values from './pages/values';
 // import Values3 from './pages/values3';
 // import {Values} from './pages/values2';
