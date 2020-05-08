@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom';
-// import {Home2} from './pages/home'
+import {Home2} from './pages/home'
 // import Values from './pages/values';
 // import Values3 from './pages/values3';
 // import {Values} from './pages/values2';
@@ -24,7 +24,7 @@ const Values = lazy(() => import('./pages/values2'));
 const Lyn2 = lazy(() => import('./pages/lyn'));
 const Bill = lazy(() => import('./pages/bill'));
 const BillApp_Mobile = lazy(() => import('./pages/bill_app'));
-const Home2 = lazy(() => import('./pages/home'));
+// const Home2 = lazy(() => import('./pages/home'));
 const People = lazy(() => import('./pages/people'));
 
 ReactDOM.render(
@@ -33,8 +33,8 @@ ReactDOM.render(
 	    
 			<div id='routes'>
 			<Route path='/' component={Header} />
+			<Route exact='true' path='/' component={Home2}/>
 			<Suspense fallback={<div style={{height:1, borderColor: 'red', borderWidth:2}}><p style={{color:'white', fontSize:200}}>'loading'</p></div>}>
-				<Route exact='true' path='/' component={Home2}/>
 				<Route exact='true' path='/values' component={Values}/>
 				{/* <Route exact='true' path='/vision' component={Vision} /> */}
 				<Route exact='true' path='/bill' component={Bill}/>
