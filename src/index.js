@@ -33,7 +33,7 @@ ReactDOM.render(
 	    
 			<div id='routes'>
 			<Route path='/' component={Header} />
-			<Route exact='true' path='/home' component={Home2}/>
+			<Route exact='true' path='/' component={Home2}/>
 			<Suspense fallback={<div style={{height:1, borderColor: 'red', borderWidth:2}}><p style={{color:'white', fontSize:200}}>'loading'</p></div>}>
 				<Route exact='true' path='/values' component={Values}/>
 				{/* <Route exact='true' path='/vision' component={Vision} /> */}
