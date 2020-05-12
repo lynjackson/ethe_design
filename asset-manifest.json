@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ethe_design/static/css/main.cc88fd67.chunk.css",
-    "main.js": "/ethe_design/static/js/main.a5d5d218.chunk.js",
-    "main.js.map": "/ethe_design/static/js/main.a5d5d218.chunk.js.map",
+    "main.js": "/ethe_design/static/js/main.601e8573.chunk.js",
+    "main.js.map": "/ethe_design/static/js/main.601e8573.chunk.js.map",
     "runtime-main.js": "/ethe_design/static/js/runtime-main.2b7567b3.js",
     "runtime-main.js.map": "/ethe_design/static/js/runtime-main.2b7567b3.js.map",
     "static/js/2.dd7f7993.chunk.js": "/ethe_design/static/js/2.dd7f7993.chunk.js",
@@ -26,7 +26,7 @@
     "static/js/8.00467145.chunk.js": "/ethe_design/static/js/8.00467145.chunk.js",
     "static/js/8.00467145.chunk.js.map": "/ethe_design/static/js/8.00467145.chunk.js.map",
     "index.html": "/ethe_design/index.html",
-    "precache-manifest.7c56c28eec4390e440690e54f808556e.js": "/ethe_design/precache-manifest.7c56c28eec4390e440690e54f808556e.js",
+    "precache-manifest.ca131c4967e14c1817d679942067f816.js": "/ethe_design/precache-manifest.ca131c4967e14c1817d679942067f816.js",
     "service-worker.js": "/ethe_design/service-worker.js",
     "static/css/3.ebb43265.chunk.css.map": "/ethe_design/static/css/3.ebb43265.chunk.css.map",
     "static/css/4.5d4a9421.chunk.css.map": "/ethe_design/static/css/4.5d4a9421.chunk.css.map",
@@ -63,6 +63,6 @@
     "static/js/runtime-main.2b7567b3.js",
     "static/js/2.dd7f7993.chunk.js",
     "static/css/main.cc88fd67.chunk.css",
-    "static/js/main.a5d5d218.chunk.js"
+    "static/js/main.601e8573.chunk.js"
   ]
 }
