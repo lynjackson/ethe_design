@@ -38,7 +38,7 @@ export const Header = ()=>{
   return (
     <div id='header2' style={{height: headerHeight, backgroundColor: (offset < 5 && headerHeight < 60 && window.location.pathname === '/') ? whitish : blackish }}>
       <div id='header-items2'>
-        <Link to='/ethe_design/'><img src={ethey} id='logo2' style={{filter: (offset >=5 || headerHeight === '100vh' || window.location.pathname !== '/') ? 'invert(1)' : 'invert(0)'}} /></Link>
+        <Link to='/ethe_design'><img src={ethey} id='logo2' style={{filter: (offset >=5 || headerHeight === '100vh' || window.location.pathname !== '/') ? 'invert(1)' : 'invert(0)'}} /></Link>
         
         <img src={menuButton} style={{display: (screenWidth < 1024) ? 'flex':'none'}}  id='menu2' onClick={()=>{
           if(headerHeight === 58.67){

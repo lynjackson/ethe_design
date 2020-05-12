@@ -40,6 +40,7 @@
 
   #footer {
     background-color: #1a1a1a;
+    justify-content: flex-end;
   }
   #footer #next-link {
     display: flex;
