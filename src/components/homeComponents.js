@@ -105,7 +105,7 @@ export const Projects = ()=>{
       <div id='projects' style={{opacity:stateOpacity}}>
         <h2 id='projects-title'>Projects</h2>
         <div id='project-container'>
-            <Project background={bill_back} logo={bill_logo} tagline={'A better way to order'} color1={'#000000B2'} color2={'#00000014'} textColor={'#FFFFFFC4'} link={'/bill_app'}/>
+            <Project background={bill_back} logo={bill_logo} tagline={'A better way to order'} color1={'#000000B2'} color2={'#00000014'} textColor={'#FFFFFFC4'} link={'/ethe_design/bill_app'}/>
             <Project background={art} logo={studio} tagline={'The creative space'} color1={'#FFFFFFC4'} color2={'#FFFFFF14'} textColor={'#000000B2'} link={'https://studio.ljoconnor5.now.sh/'}/>
         </div>
       </div>
