@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useCallback} from 'react';
 // import '../../styles/home/aboveFold.css';
 import '../styles/css/home.css';
+import { HashRouter, Switch, Link, Route, Redirect } from "react-router-dom";
 
 import Experiences from '../assets/icons/campaign.png';
 import Data from '../assets/icons/report.png';
@@ -105,8 +106,31 @@ export const Projects = ()=>{
       <div id='projects' style={{opacity:stateOpacity}}>
         <h2 id='projects-title'>Projects</h2>
         <div id='project-container'>
-            <Project background={bill_back} logo={bill_logo} tagline={'A better way to order'} color1={'#000000B2'} color2={'#00000014'} textColor={'#FFFFFFC4'} link={'/ethe_design/bill_app'}/>
-            <Project background={art} logo={studio} tagline={'The creative space'} color1={'#FFFFFFC4'} color2={'#FFFFFF14'} textColor={'#000000B2'} link={'https://studio.ljoconnor5.now.sh/'}/>
+
+          <div className='project' style={{backgroundImage: `url(${bill_back})`, color: '#FFFFFFC4' }}>
+            <Link to='/ethe_design/bill_app' target='_blank'>
+              <div className='overlay' style={{background:`linear-gradient(359deg, ${'#000000B2'}, ${'#00000014'})`}}>
+                <img className='logo' src={bill_logo}></img>
+                <h4 className='tagline' style={{color: '#FFFFFFC4'}}>{'A better way to order'}</h4>
+              </div>
+            </Link>
+          </div>
+
+
+
+
+
+            {/* <Project background={bill_back} logo={bill_logo} tagline={'A better way to order'} color1={'#000000B2'} color2={'#00000014'} textColor={'#FFFFFFC4'} link={'/ethe_design/bill_app'}>
+              <Link to='/ethe_design/bill_app' className='nav-link'>
+                <div className='overlay' style={{background:`linear-gradient(359deg, ${props.color1}, ${props.color2})`}}>
+                  <img className='logo' src={props.logo}></img>
+                  <h4 className='tagline' style={{color: props.textColor}}>{props.tagline}</h4>
+                </div>
+              </Link>  
+            </Project> */}
+            
+            <Project background={art} logo={studio} tagline={'The creative space'} color1={'#FFFFFFC4'} color2={'#FFFFFF14'} textColor={'#000000B2'} link={'https://studio.ljoconnor5.now.sh/'}>
+            </Project>
         </div>
       </div>
     )
