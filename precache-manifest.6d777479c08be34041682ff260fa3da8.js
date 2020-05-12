@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "49cc70a3f29023a7791d74d6169cbc82",
+    "revision": "69b19173df2cb886f121d87c0e410853",
     "url": "/ethe_design/index.html"
   },
   {
-    "revision": "82999df9760235309770",
+    "revision": "747ba3d1d2c42d90e741",
     "url": "/ethe_design/static/css/3.ebb43265.chunk.css"
   },
   {
@@ -28,20 +28,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/css/8.6a735a72.chunk.css"
   },
   {
-    "revision": "d53a8c06472628d26890",
-    "url": "/ethe_design/static/css/main.cc88fd67.chunk.css"
+    "revision": "36f40c04b61727db1bb4",
+    "url": "/ethe_design/static/css/main.8316a01c.chunk.css"
   },
   {
-    "revision": "14e8aa7bf73a682ce159",
-    "url": "/ethe_design/static/js/2.dd7f7993.chunk.js"
+    "revision": "1719ac902a89be32f3d3",
+    "url": "/ethe_design/static/js/2.68744883.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/ethe_design/static/js/2.dd7f7993.chunk.js.LICENSE.txt"
+    "url": "/ethe_design/static/js/2.68744883.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "82999df9760235309770",
-    "url": "/ethe_design/static/js/3.36d59f25.chunk.js"
+    "revision": "747ba3d1d2c42d90e741",
+    "url": "/ethe_design/static/js/3.5e627751.chunk.js"
   },
   {
     "revision": "013ef94c4797cb634a8e",
@@ -64,12 +64,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/js/8.00467145.chunk.js"
   },
   {
-    "revision": "d53a8c06472628d26890",
-    "url": "/ethe_design/static/js/main.601e8573.chunk.js"
+    "revision": "36f40c04b61727db1bb4",
+    "url": "/ethe_design/static/js/main.c5900ca8.chunk.js"
   },
   {
-    "revision": "b24330cd6054a50b85ea",
-    "url": "/ethe_design/static/js/runtime-main.2b7567b3.js"
+    "revision": "5fd276b469d5b1389ed9",
+    "url": "/ethe_design/static/js/runtime-main.f2a879f2.js"
+  },
+  {
+    "revision": "fb98ed1700e8dfaf0764c11fc36a0a05",
+    "url": "/ethe_design/static/media/NunitoSans-Regular.fb98ed17.ttf"
   },
   {
     "revision": "50145685042b4df07a1fd19957275b81",
