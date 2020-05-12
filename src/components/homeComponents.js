@@ -108,7 +108,7 @@ export const Projects = ()=>{
         <div id='project-container'>
 
           <div className='project' style={{backgroundImage: `url(${bill_back})`, color: '#FFFFFFC4' }}>
-            <Link to='/ethe_design/bill_app' target='_blank'>
+            <Link to='/ethe_design/bill_app'>
               <div className='overlay' style={{background:`linear-gradient(359deg, ${'#000000B2'}, ${'#00000014'})`}}>
                 <img className='logo' src={bill_logo}></img>
                 <h4 className='tagline' style={{color: '#FFFFFFC4'}}>{'A better way to order'}</h4>
