@@ -29,6 +29,7 @@ const Home2 = (props)=>{
         <AboveFold appState={props} />
         <Services appState={props}/>
         <Projects />
+        <Contact />
         {/* <div id='contact-breaker' style={{width:'100%', position:'relative'}}></div> */}
         
     </div>

@@ -41,14 +41,16 @@
   #footer {
     background-color: #1a1a1a;
     justify-content: flex-end;
+    width: 100vw;
+    position: relative;
+    left: -3.5%;
+    box-sizing: border-box;
   }
   #footer #next-link {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 7%;
-    padding-left: 7%;
     text-decoration: none;
   }
   #footer #next-link #next-text {
@@ -73,9 +75,8 @@
     text-decoration: none;
   }
 
-  #footer #next-link {
-    padding-left: 4.9%;
-    padding-right: 4.9%;
+  #footer {
+    left: -5.5%;
   }
 }
 @media screen and (min-width: 1280px) {

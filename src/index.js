@@ -32,8 +32,8 @@ ReactDOM.render(
 	  <BrowserRouter>
 	    
 			<div id='routes'>
-			<Route path='/ethe_design/' component={Header} />
-			<Route exact='true' path='/ethe_design/' component={Home2}/>
+			<Route path='/ethe_design' component={Header} />
+			<Route exact='true' path='/ethe_design' component={Home2}/>
 			<Suspense fallback={<div style={{height:1, borderColor: 'red', borderWidth:2}}><p style={{color:'white', fontSize:200}}>'loading'</p></div>}>
 				<Route exact='true' path='/ethe_design/values' component={Values}/>
 				<Route exact='true' path='/ethe_design/bill_app' component={BillApp_Mobile}/>
@@ -42,7 +42,7 @@ ReactDOM.render(
 				{/* <Route exact='true' path='/vision' component={Vision} /> */}
 				{/* <Route exact='true' path='/people' component={People}/> */}
 				{/* <Route exact='true' path='/bill' component={Bill}/> */}
-			<Route path='/ethe_design/' component={Contact} />
+			{/* <Route path='/ethe_design' component={Contact} /> */}
 			</Suspense>
 			</div>
 		

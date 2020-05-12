@@ -59,9 +59,9 @@ export const Header = ()=>{
       </div>
       
       <div id='nav-options'>
-        <Link to='/vision' className='nav-option' onClick={()=>{setHeight(58.67); setBack(blackish)}}><h2>Vision</h2></Link>
         <Link to='/values' className='nav-option' onClick={()=>{setHeight(58.67); setBack(blackish)}}><h2>Values</h2></Link>
         <Link to='/lyn' className='nav-option' onClick={()=>{setHeight(58.67); setBack(blackish)}}><h2>People</h2></Link>
+        <Link to='/vision' className='nav-option' onClick={()=>{setHeight(58.67); setBack(blackish)}}><h2>Vision</h2></Link>
       </div>
     
     </div>

@@ -5,9 +5,9 @@ import { HashRouter, Switch, Link, Route, Redirect } from "react-router-dom";
 
 export const Contact = (props)=>{
   return(
-      <div id='footer' style={{display: (window.location.pathname !== '/ethe_design') ? 'none' : 'flex'}}>          
+      <div id='footer' >          
           {/* <div id='next-link'> */}
-          <Link to='/values' id='next-link' className='nav-option'>
+          <Link to='/ethe_design/values' id='next-link' className='nav-option'>
             <h2 id='next-text'>Our Values</h2>
             <img id='little-arrow' src={littleArrow} height={31} width={17}></img>
             </Link>

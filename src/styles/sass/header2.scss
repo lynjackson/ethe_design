@@ -47,12 +47,16 @@
   #footer{
     background-color: $blackish;
     justify-content: flex-end;
+    width:100vw;
+    position:relative;
+    left:-3.5%;
+    box-sizing: border-box;
 
     #next-link{
       @include box(flex, row, flex-end, center);
       // margin-right:14px;
-      padding-right:7%;
-      padding-left:7%;
+      // padding-right:7%;
+      // padding-left:7%;
       text-decoration: none;
       
       #next-text{
@@ -84,10 +88,11 @@
   
   #footer{
     // padding-left: calc((100% - #{$width-iPad})/2);
+    left:-5.5%;
     
     #next-link{
-      padding-left: 4.9%;
-        padding-right:4.9%;
+      // padding-left: 4.9%;
+      //   padding-right:4.9%;
       
     }
     
