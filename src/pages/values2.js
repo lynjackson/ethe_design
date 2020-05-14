@@ -18,76 +18,69 @@ const Values = ()=>{
   ];
   
   const [counter, setCounter] = useState(0)
-  const [valueTitle, setTitle] = useState(title[counter])
-  const [valueText, setText] = useState(text[counter])
-  const [stateChange, setStateChange] = useState(0);
-
-  const [swipeDirection, setSwipeDirection] = useState(0);
+  const [touchStartPoint, setTouchStartPoint] = useState(0);
   
   
-  const valueUp = ()=>{
-    document.getElementById('value-title').style.opacity = 0;
-    document.getElementById('value-text').style.opacity = 0;  
+  const nextValue = ()=>{
+    // document.getElementById('value-title').style.opacity = 0;
+    // document.getElementById('value-text').style.opacity = 0;  
+    
     setTimeout(()=>{
       setCounter(counter + 1)
-      document.getElementById('value-title').style.opacity = 1;
-      document.getElementById('value-text').style.opacity = 1;  
     }, 200)
   }      
   
-  const valueDown = ()=>{
+  const prevValue = ()=>{
     document.getElementById('value-title').style.opacity = 0;
     document.getElementById('value-text').style.opacity = 0;  
     setTimeout(()=>setCounter(counter - 1), 200)
   }      
   
 useEffect(()=>{
-    
     document.getElementById('value-title').style.opacity = 1;
     document.getElementById('value-text').style.opacity = 1;
+    // 1. On render or state change, opacity of value content is set to 1
     
-    const funky = (e)=>{
-      
-      setTimeout(()=>{
-        if(e.deltaY > 0 && counter <= 5){
-          valueUp();
+    const readWheel = (e)=>{
+      window.removeEventListener('wheel', readWheel);
+        
+      if(e.deltaY > 0 && counter <= 5){
+          document.getElementById('value-title').style.opacity = 0;
+          document.getElementById('value-text').style.opacity = 0;  
+          nextValue();
         }  
         else if(e.deltaY < 0 && counter >= 1){
-          valueDown();
+          document.getElementById('value-title').style.opacity = 0;
+          document.getElementById('value-text').style.opacity = 0;
+          prevValue();
         }
-      }, 300)
-      window.removeEventListener('wheel', funky)
+      
+      
     }
 
-    const swiper = (e)=>{
+    const readSwipe = (e)=>{
       setTimeout(()=>{
-        if(e.changedTouches[0].clientY > swipeDirection + 100 && counter <= 5){
-          valueUp();
+        if(e.changedTouches[0].clientY > touchStartPoint + 100 && counter <= 5){
+          nextValue();
         }  
-        else if(e.changedTouches[0].clientY < swipeDirection - 100 && counter >= 1){
-          valueDown();
+        else if(e.changedTouches[0].clientY < touchStartPoint - 100 && counter >= 1){
+          prevValue();
         }
       }, 300)
-      window.removeEventListener('touchend', swiper)
+      window.removeEventListener('touchend', readSwipe)
     }
-
-    // const clicker = () =>{
-    //   (counter <= 5) ? valueUp():console.log('nah')
-    //   window.removeEventListener('click', clicker)
-    // }
     
     setTimeout(()=>{
-      window.addEventListener('wheel', funky)    
+      window.addEventListener('wheel', readWheel)    
     }, 1500)
+    // 2. After 1.25s, wheel event listener is added to the window
 
     window.addEventListener('touchstart', (e)=>{
-      setSwipeDirection(e.changedTouches[0].clientY)
+      window.addEventListener('touchend', readSwipe)
+      setTouchStartPoint(e.changedTouches[0].clientY)
     })
     
-    window.addEventListener('touchend', swiper)
-
-    // window.addEventListener('click', clicker)
-
+    
 
   })
   
@@ -95,10 +88,10 @@ useEffect(()=>{
     <div id='page_value' className='page' >
       <div id='value-con'>
         <h1 id='value-title'>{title[counter]}</h1>
-        <p id='value-text'>{text[counter]} </p>
+        <div id='value-text-div'><p id='value-text'>{text[counter]}</p></div>
         <div id='counterAndArrow'>
           <h4 id='value-counter'>{`0${counter + 1}`}/07</h4>
-          <img src={DownArrow}  onClick={()=>{(counter <= 5) ? valueUp():console.log('nah')}}/>
+          <img src={DownArrow}  onClick={()=>{(counter <= 5) ? nextValue():console.log('nah')}}/>
         </div>
       </div>
     </div>
