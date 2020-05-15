@@ -22,66 +22,73 @@ const Values = ()=>{
   
   
   const nextValue = ()=>{
-    // document.getElementById('value-title').style.opacity = 0;
-    // document.getElementById('value-text').style.opacity = 0;  
-    
-    setTimeout(()=>{
-      setCounter(counter + 1)
-    }, 200)
+    setCounter(counter + 1)
   }      
   
   const prevValue = ()=>{
-    document.getElementById('value-title').style.opacity = 0;
-    document.getElementById('value-text').style.opacity = 0;  
-    setTimeout(()=>setCounter(counter - 1), 200)
-  }      
+    setCounter(counter - 1)
+  } 
+  
+  const readWheel = (e)=>{
+    window.removeEventListener('wheel', readWheel);
+      
+    if(e.deltaY > 0 && counter <= 5){
+        document.getElementById('value-text-div').style.width = 0;
+        document.getElementById('value-text').style.bottom = '10px';
+        document.getElementById('value-text').style.opacity = 0;
+        document.getElementById('value-title').style.opacity = 0;  
+        setTimeout(()=>{ nextValue() }, 500)
+      }  
+      else if(e.deltaY < 0 && counter >= 1){
+        document.getElementById('value-text-div').style.width = 0;
+        document.getElementById('value-text').style.bottom = '10px';
+        document.getElementById('value-text').style.opacity = 0;
+        document.getElementById('value-title').style.opacity = 0;  
+        setTimeout(()=>{ prevValue() }, 500)
+      }
+  }
+
+  const readSwipe = (e)=>{
+    // setTimeout(()=>{
+      window.removeEventListener('touchend', readSwipe)
+      
+      if(e.changedTouches[0].clientY > touchStartPoint + 100 && counter <= 5){
+        document.getElementById('value-text-div').style.width = 0;
+        document.getElementById('value-text').style.bottom = '10px';
+        document.getElementById('value-text').style.opacity = 0;
+        document.getElementById('value-title').style.opacity = 0;  
+        setTimeout(()=>{ nextValue() }, 500)
+      }  
+      else if(e.changedTouches[0].clientY < touchStartPoint - 100 && counter >= 1){
+        document.getElementById('value-text-div').style.width = 0;
+        document.getElementById('value-text').style.bottom = '10px';
+        document.getElementById('value-text').style.opacity = 0;
+        document.getElementById('value-title').style.opacity = 0;  
+        setTimeout(()=>{ prevValue() }, 500)
+        // prevValue();
+      }
+    // }, 300)
+    window.removeEventListener('touchend', readSwipe)
+  }
   
 useEffect(()=>{
     document.getElementById('value-title').style.opacity = 1;
     document.getElementById('value-text').style.opacity = 1;
-    // 1. On render or state change, opacity of value content is set to 1
-    
-    const readWheel = (e)=>{
-      window.removeEventListener('wheel', readWheel);
-        
-      if(e.deltaY > 0 && counter <= 5){
-          document.getElementById('value-title').style.opacity = 0;
-          document.getElementById('value-text').style.opacity = 0;  
-          nextValue();
-        }  
-        else if(e.deltaY < 0 && counter >= 1){
-          document.getElementById('value-title').style.opacity = 0;
-          document.getElementById('value-text').style.opacity = 0;
-          prevValue();
-        }
-      
-      
-    }
-
-    const readSwipe = (e)=>{
-      setTimeout(()=>{
-        if(e.changedTouches[0].clientY > touchStartPoint + 100 && counter <= 5){
-          nextValue();
-        }  
-        else if(e.changedTouches[0].clientY < touchStartPoint - 100 && counter >= 1){
-          prevValue();
-        }
-      }, 300)
-      window.removeEventListener('touchend', readSwipe)
-    }
+    document.getElementById('value-text').style.bottom = '0px';
+    document.getElementById('value-text-div').style.width = '500px';
+    // 1. On render or state change, styles of changing content are set.
     
     setTimeout(()=>{
       window.addEventListener('wheel', readWheel)    
     }, 1500)
     // 2. After 1.25s, wheel event listener is added to the window
 
-    window.addEventListener('touchstart', (e)=>{
-      window.addEventListener('touchend', readSwipe)
-      setTouchStartPoint(e.changedTouches[0].clientY)
-    })
-    
-    
+    window.addEventListener('touchend', readSwipe);
 
+    window.addEventListener('touchstart', (e)=>{  
+      setTouchStartPoint(e.changedTouches[0].clientY);
+    })
+  
   })
   
   return(

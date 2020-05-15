@@ -34,12 +34,14 @@
     justify-content: center;
     align-items: center;
     width: 500px;
+    transition: width 0.4s;
   }
   #value-con #value-text-div #value-text {
-    transition: opacity 0.2s;
+    transition: opacity 0.2s, bottom 0.2s;
     margin: 0;
     width: 500px;
     min-width: 500px;
+    position: relative;
   }
   #value-con #counterAndArrow {
     display: flex;
