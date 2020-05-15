@@ -12,6 +12,7 @@
     top: 0;
     padding-top: 11px;
     box-sizing: border-box;
+    border: 1px solid red;
   }
   #header2 #header-items2 {
     display: flex;
@@ -19,7 +20,7 @@
     justify-content: space-between;
     align-items: center;
     width: 93%;
-    margin: 0 auto;
+    margin: auto;
     position: relative;
   }
   #header2 #header-items2 #logo2 {

@@ -12,11 +12,12 @@
       top:0;
       padding-top:11px;
       box-sizing: border-box;
+      border: 1px solid red;
       
       #header-items2{
         @include box(flex, row, space-between, center);
         width:$width-mobile;
-        margin: 0 auto; 
+        margin: auto; 
         position:relative;
         // top:11px;
 
