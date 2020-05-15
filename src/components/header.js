@@ -16,6 +16,8 @@ export const Header = ()=>{
   const [headerBackground, setBack] = useState((window.location.pathname === '/ethe_design' && window.pageYOffset < 5) ? 'hsla(0,0,96, 1)' : blackish)
   const [headerHeight, setHeight] = useState(58.67)
   const [stateDisplay, setStateDisplay] = useState('none')
+  const [stateJustify, setStateJustify] = useState('center')
+  const [statePadding, setStatePadding] = useState(0)
   const [offset, setOffset] = useState(0);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
@@ -37,18 +39,21 @@ export const Header = ()=>{
   })
   
   return (
-    <div id='header2' style={{height: headerHeight, backgroundColor: (offset < 5 && headerHeight < 60 && window.location.pathname === '/ethe_design') ? whitish : blackish }}>
+    <div id='header2' style={{height: headerHeight, justifyContent: stateJustify, paddingTop:statePadding, backgroundColor: (offset < 5 && headerHeight < 60 && window.location.pathname === '/ethe_design') ? whitish : blackish }}>
       <div id='header-items2' >
         <Link to='/ethe_design'><img src={ethey} id='logo2' style={{filter: (offset >=5 || headerHeight === '100vh' || window.location.pathname !== '/ethe_design') ? 'invert(1)' : 'invert(0)'}} /></Link>
         
         <img src={menuButton} style={{display: (screenWidth < 1024) ? 'flex':'none'}}  id='menu2' onClick={()=>{
           if(headerHeight === 58.67){
             setStateDisplay('flex')
+            setStateJustify('flex-start')
+            setStatePadding(11)
             setHeight('100vh');
          }
          else{
             setHeight(58.67)
             setStateDisplay('none')
+            setTimeout(()=>{setStateJustify('center'); setStatePadding(0)}, 500)
          }
         }}/>
 
