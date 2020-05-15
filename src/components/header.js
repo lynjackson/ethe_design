@@ -60,16 +60,16 @@ export const Header = ()=>{
         <div id='nav-links' style={ (screenWidth < 1024) ? {display: 'none'}:(offset >=5 || headerHeight === '100vh' || window.location.pathname !== '/ethe_design') ? {filter:'invert(1)', display: 'flex'} : {filter:'invert(0)', display: 'flex'} }>
           <Link to='/ethe_design/values' className='nav-link'><h6 style={{fontSize:16, fontWeight:600, color:'black'}}>values</h6></Link>
           <Link to='/ethe_design/lyn' className='nav-link'><h6 style={{fontSize:16, fontWeight:600, color:'black'}}>lyn</h6></Link>  
-          <Link to='/vision' className='nav-link'><h6 style={{fontSize:16, fontWeight:600, color:'black'}}>vision</h6></Link>
+          <Link to='/ethe_design/vision' className='nav-link'><h6 style={{fontSize:16, fontWeight:600, color:'black'}}>vision</h6></Link>
         </div>
       
       
       </div>
       
       <div id='nav-options' style={{display:stateDisplay}}>
-        <Link to='/values' className='nav-option'  onClick={()=>{setHeight(58.67); setBack(blackish)}}><h2>Values</h2></Link>
-        <Link to='/lyn' className='nav-option' onClick={()=>{setHeight(58.67); setBack(blackish)}}><h2>Lyn</h2></Link>
-        <Link to='/vision' className='nav-option' onClick={()=>{setHeight(58.67); setBack(blackish)}}><h2>Vision</h2></Link>
+        <Link to='ethe_design/values' className='nav-option'  onClick={()=>{setHeight(58.67); setBack(blackish)}}><h2>Values</h2></Link>
+        <Link to='ethe_design/lyn' className='nav-option' onClick={()=>{setHeight(58.67); setBack(blackish)}}><h2>Lyn</h2></Link>
+        <Link to='ethe_design/vision' className='nav-option' onClick={()=>{setHeight(58.67); setBack(blackish)}}><h2>Vision</h2></Link>
       </div>
     
     </div>
