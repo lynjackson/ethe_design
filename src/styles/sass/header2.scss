@@ -3,7 +3,7 @@
 @media screen and (min-width:0px){
     
   #header2{
-      @include box(flex, column, auto, auto);  
+      @include box(flex, column, center, center);  
       width:100vw;
       position:relative;
       transition: background-color .5s, height .5s;
@@ -17,7 +17,7 @@
       #header-items2{
         @include box(flex, row, space-between, center);
         width:$width-mobile;
-        margin: auto; 
+        margin: 0 auto; 
         position:relative;
         // top:11px;
 

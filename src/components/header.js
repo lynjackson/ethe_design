@@ -15,6 +15,7 @@ export const Header = ()=>{
 
   const [headerBackground, setBack] = useState((window.location.pathname === '/ethe_design' && window.pageYOffset < 5) ? 'hsla(0,0,96, 1)' : blackish)
   const [headerHeight, setHeight] = useState(58.67)
+  const [stateDisplay, setStateDisplay] = useState('none')
   const [offset, setOffset] = useState(0);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
@@ -42,10 +43,12 @@ export const Header = ()=>{
         
         <img src={menuButton} style={{display: (screenWidth < 1024) ? 'flex':'none'}}  id='menu2' onClick={()=>{
           if(headerHeight === 58.67){
+            setStateDisplay('flex')
             setHeight('100vh');
          }
          else{
             setHeight(58.67)
+            setStateDisplay('none')
          }
         }}/>
 
@@ -58,8 +61,8 @@ export const Header = ()=>{
       
       </div>
       
-      <div id='nav-options'>
-        <Link to='/values' className='nav-option' onClick={()=>{setHeight(58.67); setBack(blackish)}}><h2>Values</h2></Link>
+      <div id='nav-options' style={{display:stateDisplay}}>
+        <Link to='/values' className='nav-option'  onClick={()=>{setHeight(58.67); setBack(blackish)}}><h2>Values</h2></Link>
         <Link to='/lyn' className='nav-option' onClick={()=>{setHeight(58.67); setBack(blackish)}}><h2>Lyn</h2></Link>
         <Link to='/vision' className='nav-option' onClick={()=>{setHeight(58.67); setBack(blackish)}}><h2>Vision</h2></Link>
       </div>
