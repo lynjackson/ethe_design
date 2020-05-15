@@ -15,7 +15,9 @@
       #header-items2{
         @include box(flex, row, space-between, center);
         width:$width-mobile;
-        margin: 11px auto; 
+        margin: auto; 
+        position:relative;
+        top:11px;
 
         #logo2{
           width:37.49px;
