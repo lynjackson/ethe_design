@@ -5,7 +5,7 @@
   #header2{
       @include box(flex, column, center, center);  
       width:100vw;
-      position:relative;
+      position:fixed;
       transition: background-color .5s, height .5s;
       z-index:20;
       overflow:hidden;
