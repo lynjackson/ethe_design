@@ -15,7 +15,7 @@
       #header-items2{
         @include box(flex, row, space-between, center);
         width:$width-mobile;
-        margin: auto; 
+        margin: 0 auto; 
         position:relative;
         top:36px;
 
