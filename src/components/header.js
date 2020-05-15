@@ -67,9 +67,9 @@ export const Header = ()=>{
       </div>
       
       <div id='nav-options' style={{display:stateDisplay}}>
-        <Link to='ethe_design/values' className='nav-option'  onClick={()=>{setHeight(58.67); setBack(blackish)}}><h2>Values</h2></Link>
-        <Link to='ethe_design/lyn' className='nav-option' onClick={()=>{setHeight(58.67); setBack(blackish)}}><h2>Lyn</h2></Link>
-        <Link to='ethe_design/vision' className='nav-option' onClick={()=>{setHeight(58.67); setBack(blackish)}}><h2>Vision</h2></Link>
+        <Link to='/ethe_design/values' className='nav-option'  onClick={()=>{setHeight(58.67); setBack(blackish)}}><h2>Values</h2></Link>
+        <Link to='/ethe_design/lyn' className='nav-option' onClick={()=>{setHeight(58.67); setBack(blackish)}}><h2>Lyn</h2></Link>
+        <Link to='/ethe_design/vision' className='nav-option' onClick={()=>{setHeight(58.67); setBack(blackish)}}><h2>Vision</h2></Link>
       </div>
     
     </div>
