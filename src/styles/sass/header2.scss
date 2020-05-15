@@ -3,7 +3,7 @@
 @media screen and (min-width:0px){
     
   #header2{
-      display:flex;
+      display: flex;
       flex-direction: column;
       width:100vw;
       position:fixed;
@@ -17,7 +17,7 @@
         width:$width-mobile;
         margin: 0 auto; 
         position:relative;
-        top:36px;
+        top:11px;
 
         #logo2{
           width:37.49px;
