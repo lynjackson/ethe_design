@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useLayoutEffect, useCallback} from 'react';
 // import {OurWork, RecentProjects, ContactUs, DigitalMatters, Learn} from './main';
-import {AboveFold} from '../components/homeComponents';
+// import {AboveFold} from '../components/homeComponents';
 import {HeaderMobile, HeaderDesktop} from '../components/header';
 // import Overlay from './overlay';
 // import Values from './values'
@@ -12,7 +12,7 @@ import { selectBook, overlay, menu, valueNextPage, valuePrevPage, defaultView, d
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux';
 import {Services} from '../components/homeComponents';
-import {Projects} from '../components/homeComponents';
+import {Projects, Vision, AboveFold} from '../components/homeComponents';
 import {Contact} from '../components/contact';
 
 const Home2 = (props)=>{
@@ -33,11 +33,8 @@ const Home2 = (props)=>{
   return(
     <div id='home' className='page' style={{opacity: (loadStatus === 'yes')? 1 : 0}}>
         <AboveFold appState={props} />
-        <Services appState={props}/>
         <Projects />
-        <Contact />
-        {/* <div id='contact-breaker' style={{width:'100%', position:'relative'}}></div> */}
-        
+        <Vision />
     </div>
   )
 }

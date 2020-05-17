@@ -43,7 +43,7 @@ export const Header = ()=>{
       <div id='header-items2' >
         <Link to='/ethe_design'><img src={ethey} id='logo2' style={{filter: (offset >=5 || headerHeight === '100vh' || window.location.pathname !== '/ethe_design') ? 'invert(1)' : 'invert(0)'}} /></Link>
         
-        <img src={menuButton} style={{display: (screenWidth < 1024) ? 'flex':'none'}}  id='menu2' onClick={()=>{
+        <img src={menuButton} style={{display:'flex'}}  id='menu2' onClick={()=>{
           if(headerHeight === 58.67){
             setStateDisplay('flex')
             setStateJustify('flex-start')
@@ -57,11 +57,11 @@ export const Header = ()=>{
          }
         }}/>
 
-        <div id='nav-links' style={ (screenWidth < 1024) ? {display: 'none'}:(offset >=5 || headerHeight === '100vh' || window.location.pathname !== '/ethe_design') ? {filter:'invert(1)', display: 'flex'} : {filter:'invert(0)', display: 'flex'} }>
+        {/* <div id='nav-links' style={ (screenWidth < 1024) ? {display: 'none'}:(offset >=5 || headerHeight === '100vh' || window.location.pathname !== '/ethe_design') ? {filter:'invert(1)', display: 'flex'} : {filter:'invert(0)', display: 'flex'} }>
           <Link to='/ethe_design/values' className='nav-link'><h6 style={{fontSize:16, fontWeight:600, color:'black'}}>values</h6></Link>
           <Link to='/ethe_design/lyn' className='nav-link'><h6 style={{fontSize:16, fontWeight:600, color:'black'}}>lyn</h6></Link>  
           <Link to='/ethe_design/vision' className='nav-link'><h6 style={{fontSize:16, fontWeight:600, color:'black'}}>vision</h6></Link>
-        </div>
+        </div> */}
       
       
       </div>

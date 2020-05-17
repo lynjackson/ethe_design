@@ -10,6 +10,7 @@ import Performance from '../assets/icons/speed.png';
 import art from '../assets/images/cover.jpeg'
 import bill_back from '../assets/images/bill-background.jpeg'
 import studio from '../assets/images/studio.png'
+import puddle from '../assets/images/puddle.jpeg'
 import bill_logo from '../assets/icons/bill.png'
 
 
@@ -39,9 +40,8 @@ export const AboveFold = (props)=>{
 
   return(
     <div id='above-fold' style={{display: 'flex'}}>
-        <h1 id='above-title' style={{opacity: titleOpacity}}>Digital products & solutions for modern companies</h1>
-        {/* <div id='arrow-div' onClick={()=>{window.scrollTo({top:document.getElementById('above-fold').offsetHeight -100, behavior: 'smooth'})}}><img src={arrow} id='down-arrow' style={{width:31, height:18, opacity:arrowOpacity}} /></div> */}
-        {/* <div id='above-background'></div> */}
+        <h4 className='home-header'>HEY, WE'RE ETHE.</h4>
+        <h1 id='above-title' style={{opacity: titleOpacity}}>We <span id='team-up'>team up</span> with companies to make meaningful digital <span id='dig-exp'>experiences</span></h1>
     </div>
   )
 }
@@ -84,12 +84,12 @@ export const Projects = ()=>{
   
   useEffect(()=>{
     window.addEventListener('scroll', ()=>{
-      (window.pageYOffset > document.getElementById('projects').offsetTop - 423) ? setOpacity(1) : setOpacity(.18)
+      (window.pageYOffset > 3 && window.pageYOffset < document.getElementById('projects').offsetTop + 100) ? setOpacity(1) : setOpacity(.18)
     })
   })
     const Project = (props) =>{
       return(
-        
+
         <div className='project' style={{backgroundImage: `url(${props.background})`, color: props.textColor }}>
           <a href={props.link} target='_blank'>
             <div className='overlay' style={{background:`linear-gradient(359deg, ${props.color1}, ${props.color2})`}}>
@@ -98,15 +98,13 @@ export const Projects = ()=>{
             </div>
           </a>
         </div>
-        
       )
     }
     
     return(
       <div id='projects' style={{opacity:stateOpacity}}>
-        <h2 id='projects-title'>Projects</h2>
+        <h4 className='home-header'>CLIENT WORK</h4>
         <div id='project-container'>
-
           <div className='project' style={{backgroundImage: `url(${bill_back})`, color: '#FFFFFFC4' }}>
             <a href='https://lynjackson.github.io/bill_page'>
               <div className='overlay' style={{background:`linear-gradient(359deg, ${'#000000B2'}, ${'#00000014'})`}}>
@@ -114,25 +112,49 @@ export const Projects = ()=>{
                 <h4 className='tagline' style={{color: '#FFFFFFC4'}}>{'A better way to order'}</h4>
               </div>
             </a>
-          </div>
-
-
-
-
-
-            {/* <Project background={bill_back} logo={bill_logo} tagline={'A better way to order'} color1={'#000000B2'} color2={'#00000014'} textColor={'#FFFFFFC4'} link={'/ethe_design/bill_app'}>
-              <Link to='/ethe_design/bill_app' className='nav-link'>
-                <div className='overlay' style={{background:`linear-gradient(359deg, ${props.color1}, ${props.color2})`}}>
-                  <img className='logo' src={props.logo}></img>
-                  <h4 className='tagline' style={{color: props.textColor}}>{props.tagline}</h4>
-                </div>
-              </Link>  
-            </Project> */}
-            
-            <Project background={art} logo={studio} tagline={'The creative space'} color1={'#FFFFFFC4'} color2={'#FFFFFF14'} textColor={'#000000B2'} link={'https://studio.ljoconnor5.now.sh/'}>
-            </Project>
+          </div>            
+            <Project background={art} logo={studio} tagline={'The creative space'} color1={'#FFFFFFC4'} color2={'#FFFFFF14'} textColor={'#000000B2'} link={'https://studio.ljoconnor5.now.sh/'}></Project>
         </div>
       </div>
     )
   }
+
+export const Vision = () =>{
+  const [state, stateRefresh] = useState(0)
+  const [stateOpacity, setOpacity] = useState(.18)
+  
+  useEffect(()=>{
+    window.addEventListener('scroll', ()=>{
+      (window.pageYOffset > document.getElementById('vision').offsetTop - 423) ? setOpacity(1) : setOpacity(.18)
+    })
+    window.addEventListener('resize', ()=>{stateRefresh(state + 1)})
+  })
+
+  
+  
+  return(
+    <div id='vision' style={{opacity: stateOpacity}}>
+      <h4 className='home-header'>OUR VALUES</h4>
+      
+       {(window.innerWidth <1024) ?
+        <div id='vision-content'>  
+          <h1 id='vision-title'>Every interaction is a chance to captivate.</h1>
+          <div id='vision-image' src={puddle}></div>
+          <p id='vision-text'>Customers remember how you make them feel. They expect intuitive products with useful information and capability. Our products aim to deliver in a way that maximizes positive feelings, which clients then associate with your brand.</p>
+        </div>
+        :
+        <div id='vision-content'>
+          <div id='titleAndText'>
+            <h1 id='vision-title'>Every interaction is a chance to captivate.</h1>
+            <p id='vision-text'>Customers remember how you make them feel. They expect intuitive products with useful information and capability. Our products aim to deliver in a way that maximizes positive feelings, which clients then associate with your brand.</p>
+          </div>
+          <div id='vision-image' src={puddle}></div>
+        </div>
+      }
+
+      <h4 className='home-header' id='more-values'>MORE VALUES</h4>
+      {/* <div id='sec1-image-div'></div> */}
+    </div>
+  )
+}
 
