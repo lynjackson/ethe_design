@@ -40,6 +40,11 @@
     overscroll-behavior: none;
   }
 
+  #routes {
+    background: url("../../assets/images/whiteBack2.jpg") fixed;
+    background-size: 100% 250%;
+  }
+
   h1 {
     font-family: "Poppins-Bold";
     font-size: 56px;

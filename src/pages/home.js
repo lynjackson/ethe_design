@@ -20,10 +20,16 @@ const Home2 = (props)=>{
   const [loadStatus, setLoad] = useState('no')
 
   useEffect(()=>{
+    window.onload = ()=>setLoad('yes')
     window.scrollTo(0,0);
-    setLoad('yes');
   })
 
+  if(loadStatus === 'no'){
+    return (
+      <div style={{height:'100vh', width:'100vw', backgroundColor:'green'}}><h1>loading</h1></div>
+    )
+  }
+  
   return(
     <div id='home' className='page' style={{opacity: (loadStatus === 'yes')? 1 : 0}}>
         <AboveFold appState={props} />

@@ -52,7 +52,10 @@
   
     #root{}
 
-    #routes{}
+    #routes{
+      background:url('../../assets/images/whiteBack2.jpg') fixed;
+      background-size: 100% 250%
+    }
   
 
     h1{
