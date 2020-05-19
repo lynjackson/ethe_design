@@ -33,11 +33,11 @@ ReactDOM.render(
 	    
 			<div id='routes'>
 			{/* <Route path='/ethe_design' component={Header} /> */}
-			<Route exact='true' path='/ethe_design' component={Home2}/>
+			<Route exact='true' path='/' component={Home2}/>
 			<Suspense fallback={<div style={{height:1, borderColor: 'red', borderWidth:2}}><p style={{color:'white', fontSize:200}}>'loading'</p></div>}>
-				<Route exact='true' path='/ethe_design/values' component={Values}/>
-				<Route exact='true' path='/ethe_design/bill_app' component={BillApp_Mobile}/>
-				<Route exact='true' path='/ethe_design/lyn' component={Lyn2}/>
+				<Route exact='true' path='/values' component={Values}/>
+				<Route exact='true' path='/bill_app' component={BillApp_Mobile}/>
+				<Route exact='true' path='/lyn' component={Lyn2}/>
 				
 				{/* <Route exact='true' path='/vision' component={Vision} /> */}
 				{/* <Route exact='true' path='/people' component={People}/> */}
