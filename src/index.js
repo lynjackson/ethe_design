@@ -15,7 +15,7 @@ import './styles/css/pages.css'
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './reducers';
-import {BrowserRouter, Route} from 'react-router-dom'
+import {BrowserRouter, Route, HashRouter} from 'react-router-dom'
 import{Header} from './components/header.js'
 import{Contact} from './components/contact.js'
 
@@ -29,7 +29,7 @@ const People = lazy(() => import('./pages/people'));
 
 ReactDOM.render(
 	<Provider store={createStore(reducers)}>
-	  <BrowserRouter>
+	  <HashRouter>
 	    
 			<div id='routes'>
 			{/* <Route path='/ethe_design' component={Header} /> */}
@@ -46,7 +46,7 @@ ReactDOM.render(
 			</Suspense>
 			</div>
 		
-	  </BrowserRouter>
+	  </HashRouter>
 	</Provider>,
 	document.getElementById('root')
 )

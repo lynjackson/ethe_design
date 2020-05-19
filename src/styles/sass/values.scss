@@ -26,13 +26,14 @@
             padding: 23.6px 0;
             box-sizing: border-box;
             @include box(flex, column, center, center);
-            width:500px;
+            max-width:500px;
             transition:width .4s;
             #value-text{
                 transition: opacity .2s, bottom .2s;
                 margin: 0;
-                width:500px;
-                min-width:500px;
+                max-width:500px;
+                width:92%;
+                // min-width:500px;
                 position: relative;
             }
         }

@@ -77,7 +77,7 @@ useEffect(()=>{
     document.getElementById('value-title').style.opacity = 1;
     document.getElementById('value-text').style.opacity = 1;
     document.getElementById('value-text').style.bottom = '0px';
-    document.getElementById('value-text-div').style.width = '500px';
+    document.getElementById('value-text-div').style.width = '92%';
     // 1. On render or state change, styles of changing content are set.
     
     setTimeout(()=>{

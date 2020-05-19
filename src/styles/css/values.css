@@ -33,14 +33,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    max-width: 500px;
     transition: width 0.4s;
   }
   #value-con #value-text-div #value-text {
     transition: opacity 0.2s, bottom 0.2s;
     margin: 0;
-    width: 500px;
-    min-width: 500px;
+    max-width: 500px;
+    width: 92%;
     position: relative;
   }
   #value-con #counterAndArrow {
