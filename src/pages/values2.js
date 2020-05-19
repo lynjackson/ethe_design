@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import '../styles/css/values.css';
 import DownArrow from '../assets/icons/values-down-arrow.png'
-import deb from 'lodash.debounce';
-import thot from 'lodash.throttle';
+import {ValuesHeader} from '../components/header'
 
 const Values = ()=>{
   
@@ -30,7 +29,10 @@ const Values = ()=>{
   } 
   
   const readWheel = (e)=>{
-    window.removeEventListener('wheel', readWheel);
+    
+    if(document.getElementById('value-title')){
+      
+      window.removeEventListener('wheel', readWheel);
       
     if(e.deltaY > 0 && counter <= 5){
         document.getElementById('value-text-div').style.width = 0;
@@ -45,7 +47,7 @@ const Values = ()=>{
         document.getElementById('value-text').style.opacity = 0;
         document.getElementById('value-title').style.opacity = 0;  
         setTimeout(()=>{ prevValue() }, 500)
-      }
+      }}
   }
 
   const readSwipe = (e)=>{
@@ -93,6 +95,7 @@ useEffect(()=>{
   
   return(
     <div id='page_value' className='page' >
+      <ValuesHeader />
       <div id='value-con'>
         <h1 id='value-title'>{title[counter]}</h1>
         <div id='value-text-div'><p id='value-text'>{text[counter]}</p></div>

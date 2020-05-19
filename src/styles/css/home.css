@@ -35,6 +35,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  #above-fold #above-title #creatives {
+    background: -webkit-linear-gradient(68deg, #4CB0D5, #4CD5C0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   #above-fold #above-title #dig-exp {
     background: -webkit-linear-gradient(68deg, #E629A5, #6B29E6);
     -webkit-background-clip: text;
@@ -143,6 +148,10 @@
     background: url("../../assets/images/puddle.jpeg") center;
     background-size: cover;
   }
+  #vision #vision-content #vision-text {
+    font-size: 19px;
+    line-height: 23px;
+  }
   #vision #more-values {
     text-align: right;
     margin-top: 19.6px;
@@ -172,29 +181,21 @@
     flex-direction: row;
   }
   #vision #vision-content #titleAndText {
-    width: 55.6%;
-    margin-right: 15%;
+    width: 62.6%;
+    margin-right: 13%;
   }
   #vision #vision-content #vision-title {
     margin-bottom: 19px;
   }
   #vision #vision-content #vision-image {
-    height: 347px;
-    width: 291px;
+    height: 337px;
+    width: 306px;
     margin: 0;
   }
 }
 @media screen and (min-width: 1280px) {
   #projects {
     margin-bottom: 96px;
-  }
-  #projects .project .logo {
-    margin-right: 71px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  #projects .project .logo {
-    margin-right: 96px;
   }
 }
 

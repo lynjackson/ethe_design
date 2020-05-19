@@ -41,7 +41,7 @@ export const AboveFold = (props)=>{
   return(
     <div id='above-fold' style={{display: 'flex'}}>
         <h4 className='home-header'>HEY, WE'RE ETHE.</h4>
-        <h1 id='above-title' style={{opacity: titleOpacity}}>We <span id='team-up'>team up</span> with companies to make meaningful digital <span id='dig-exp'>experiences</span></h1>
+        <h1 id='above-title' style={{opacity: titleOpacity}}>We <span id='team-up'>team up</span> with <span id='creatives'>creatives</span> to make meaningful digital <span id='dig-exp'>experiences</span></h1>
     </div>
   )
 }
@@ -84,7 +84,7 @@ export const Projects = ()=>{
   
   useEffect(()=>{
     window.addEventListener('scroll', ()=>{
-      (window.pageYOffset > 3 && window.pageYOffset < document.getElementById('projects').offsetTop + 100) ? setOpacity(1) : setOpacity(.18)
+      (document.getElementById('projects') && window.pageYOffset > 3 && window.pageYOffset < document.getElementById('projects').offsetTop + 100) ? setOpacity(1) : setOpacity(.18)
     })
   })
     const Project = (props) =>{
@@ -125,7 +125,7 @@ export const Vision = () =>{
   
   useEffect(()=>{
     window.addEventListener('scroll', ()=>{
-      (window.pageYOffset > document.getElementById('vision').offsetTop - 423) ? setOpacity(1) : setOpacity(.18)
+      (document.getElementById('vision') && window.pageYOffset > document.getElementById('vision').offsetTop - 423) ? setOpacity(1) : setOpacity(.18)
     })
     window.addEventListener('resize', ()=>{stateRefresh(state + 1)})
   })
@@ -134,7 +134,7 @@ export const Vision = () =>{
   
   return(
     <div id='vision' style={{opacity: stateOpacity}}>
-      <h4 className='home-header'>OUR VALUES</h4>
+      <h4 className='home-header'>WE THINK</h4>
       
        {(window.innerWidth <1024) ?
         <div id='vision-content'>  

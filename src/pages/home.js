@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useLayoutEffect, useCallback} from 'react';
 // import {OurWork, RecentProjects, ContactUs, DigitalMatters, Learn} from './main';
 // import {AboveFold} from '../components/homeComponents';
-import {HeaderMobile, HeaderDesktop} from '../components/header';
+import {HeaderMobile, HeaderDesktop, HomeHeader, Header} from '../components/header';
 // import Overlay from './overlay';
 // import Values from './values'
 import '../styles/app.css'
@@ -20,8 +20,9 @@ const Home2 = (props)=>{
   const [loadStatus, setLoad] = useState('no')
 
   useEffect(()=>{
-    window.onload = ()=>setLoad('yes')
+    setLoad('yes')
     window.scrollTo(0,0);
+    console.log(loadStatus, 'load')
   })
 
   if(loadStatus === 'no'){
@@ -32,6 +33,7 @@ const Home2 = (props)=>{
   
   return(
     <div id='home' className='page' style={{opacity: (loadStatus === 'yes')? 1 : 0}}>
+        <Header logoVis='hidden' headerItemsJustifyContent='flex-end'/>
         <AboveFold appState={props} />
         <Projects />
         <Vision />
