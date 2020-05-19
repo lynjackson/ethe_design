@@ -1,75 +1,75 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "37b4875e81c66984c776ed6215f63e88",
+    "revision": "1103f8b84c2b68dbbcee36cde7be6cf1",
     "url": "/ethe_design/index.html"
   },
   {
-    "revision": "6489065ea36d595529e2",
+    "revision": "147a5e317f0fc69ccfd5",
     "url": "/ethe_design/static/css/3.ebb43265.chunk.css"
   },
   {
-    "revision": "8e6be5e85a12ff5b7348",
-    "url": "/ethe_design/static/css/4.5d4a9421.chunk.css"
+    "revision": "d7ce5a8b8e321e783f10",
+    "url": "/ethe_design/static/css/4.b54a0cd5.chunk.css"
   },
   {
-    "revision": "3f9e1ecf8d273c1db59a",
+    "revision": "4259dda34131320263eb",
     "url": "/ethe_design/static/css/5.31ed29a4.chunk.css"
   },
   {
-    "revision": "0b09867e6923c8eade61",
+    "revision": "f2ce090e22f0f7879502",
     "url": "/ethe_design/static/css/6.453d8803.chunk.css"
   },
   {
-    "revision": "93034227697c15848396",
+    "revision": "e9ba3d357f4bcaa4a764",
     "url": "/ethe_design/static/css/7.453d8803.chunk.css"
   },
   {
-    "revision": "69709e1f54ced8d0c4fa",
+    "revision": "c8982fde6748d5a4f087",
     "url": "/ethe_design/static/css/8.6a735a72.chunk.css"
   },
   {
-    "revision": "93e3fe97ac7f50fc79ec",
-    "url": "/ethe_design/static/css/main.99785d4c.chunk.css"
+    "revision": "8f6286633d296c69522a",
+    "url": "/ethe_design/static/css/main.a9f6a796.chunk.css"
   },
   {
-    "revision": "8ba67c3798f91f68de4b",
-    "url": "/ethe_design/static/js/2.1c881434.chunk.js"
+    "revision": "1c1193c37ad7a1f7d191",
+    "url": "/ethe_design/static/js/2.c83065d4.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/ethe_design/static/js/2.1c881434.chunk.js.LICENSE.txt"
+    "url": "/ethe_design/static/js/2.c83065d4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6489065ea36d595529e2",
-    "url": "/ethe_design/static/js/3.a2ee098e.chunk.js"
+    "revision": "147a5e317f0fc69ccfd5",
+    "url": "/ethe_design/static/js/3.a8d1506b.chunk.js"
   },
   {
-    "revision": "8e6be5e85a12ff5b7348",
-    "url": "/ethe_design/static/js/4.093c97d5.chunk.js"
+    "revision": "d7ce5a8b8e321e783f10",
+    "url": "/ethe_design/static/js/4.6f53f05d.chunk.js"
   },
   {
-    "revision": "3f9e1ecf8d273c1db59a",
-    "url": "/ethe_design/static/js/5.bd156203.chunk.js"
+    "revision": "4259dda34131320263eb",
+    "url": "/ethe_design/static/js/5.e86bd9d7.chunk.js"
   },
   {
-    "revision": "0b09867e6923c8eade61",
-    "url": "/ethe_design/static/js/6.ac2a3dc3.chunk.js"
+    "revision": "f2ce090e22f0f7879502",
+    "url": "/ethe_design/static/js/6.7095983f.chunk.js"
   },
   {
-    "revision": "93034227697c15848396",
-    "url": "/ethe_design/static/js/7.c0b5dd27.chunk.js"
+    "revision": "e9ba3d357f4bcaa4a764",
+    "url": "/ethe_design/static/js/7.e15558bf.chunk.js"
   },
   {
-    "revision": "69709e1f54ced8d0c4fa",
-    "url": "/ethe_design/static/js/8.00467145.chunk.js"
+    "revision": "c8982fde6748d5a4f087",
+    "url": "/ethe_design/static/js/8.8b978512.chunk.js"
   },
   {
-    "revision": "93e3fe97ac7f50fc79ec",
-    "url": "/ethe_design/static/js/main.21c7a991.chunk.js"
+    "revision": "8f6286633d296c69522a",
+    "url": "/ethe_design/static/js/main.7042b015.chunk.js"
   },
   {
-    "revision": "a56fa008b1e2b6a81dbc",
-    "url": "/ethe_design/static/js/runtime-main.47bfe98e.js"
+    "revision": "2f901ef02e4df9a1187e",
+    "url": "/ethe_design/static/js/runtime-main.445a83ef.js"
   },
   {
     "revision": "fb98ed1700e8dfaf0764c11fc36a0a05",
@@ -148,6 +148,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/media/campaign.8dfe236e.png"
   },
   {
+    "revision": "83fd8d2110604e946705c09ef1f074ed",
+    "url": "/ethe_design/static/media/closeX.83fd8d21.png"
+  },
+  {
     "revision": "d46f5955d0179758fd59d7173b38a109",
     "url": "/ethe_design/static/media/cover.d46f5955.jpeg"
   },
@@ -180,8 +184,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/media/little-arrow.f1fb22b5.png"
   },
   {
-    "revision": "9df41233f36d9135e309085b370649aa",
-    "url": "/ethe_design/static/media/logo-semibold.9df41233.png"
+    "revision": "07759feddea313794af9def870fccf27",
+    "url": "/ethe_design/static/media/logo-semibold.07759fed.png"
   },
   {
     "revision": "3b77511b00323e72c498a86da3386a28",
@@ -208,8 +212,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/media/poppins-bold-webfont.1124ae2f.woff"
   },
   {
+    "revision": "0aca950ff11dc2a7183a44780d9278a8",
+    "url": "/ethe_design/static/media/poppins-v9-latin-800.0aca950f.svg"
+  },
+  {
+    "revision": "21ca2c4ad34a5775b3fa54d3012fe3a8",
+    "url": "/ethe_design/static/media/poppins-v9-latin-800.21ca2c4a.ttf"
+  },
+  {
+    "revision": "b5cd7d83a71851bd0d449c3cd5ddadfc",
+    "url": "/ethe_design/static/media/poppins-v9-latin-800.b5cd7d83.woff2"
+  },
+  {
+    "revision": "bde99287fe27e0e3ee89058a0affd4cd",
+    "url": "/ethe_design/static/media/poppins-v9-latin-800.bde99287.woff"
+  },
+  {
     "revision": "13ddacc7e927a258bfd2e476de90d327",
     "url": "/ethe_design/static/media/ptstudio.13ddacc7.jpeg"
+  },
+  {
+    "revision": "bac12e7faa7670f83ce30f9e2844dc01",
+    "url": "/ethe_design/static/media/puddle.bac12e7f.jpeg"
   },
   {
     "revision": "576747892893e421554fbfbbd794211f",
@@ -230,6 +254,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "29337b1b12d288662a0a7a2ec6066e88",
     "url": "/ethe_design/static/media/values-down-arrow.29337b1b.png"
+  },
+  {
+    "revision": "b67efad966625e4e6bf2271b3a52a3b6",
+    "url": "/ethe_design/static/media/whiteBack2.b67efad9.jpg"
   },
   {
     "revision": "61742a4e85e57118995250ef93329e97",
