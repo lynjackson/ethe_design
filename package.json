@@ -61,7 +61,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://lynjackson.github.io/",
+  "homepage": "http://lynjackson.github.io/ethe_design",
   "eslintConfig": {
     "extends": "react-app"
   },
