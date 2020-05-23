@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "adaae1f3c950b9961239851494d715fd",
+    "revision": "a0b2e96b4dc9be4871dd21526bba2d70",
     "url": "/ethe_design/index.html"
   },
   {
-    "revision": "1bac25a8e8b19373e290",
+    "revision": "d4849b2bb8bff714822c",
     "url": "/ethe_design/static/css/3.7b500f54.chunk.css"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/css/8.6a735a72.chunk.css"
   },
   {
-    "revision": "45587c459339e20b02d9",
-    "url": "/ethe_design/static/css/main.dba85953.chunk.css"
+    "revision": "2ea416d7f19227adf724",
+    "url": "/ethe_design/static/css/main.9ca04c4f.chunk.css"
   },
   {
     "revision": "1c1193c37ad7a1f7d191",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/js/2.c83065d4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1bac25a8e8b19373e290",
-    "url": "/ethe_design/static/js/3.2d8e9bd3.chunk.js"
+    "revision": "d4849b2bb8bff714822c",
+    "url": "/ethe_design/static/js/3.389b049f.chunk.js"
   },
   {
     "revision": "d7ce5a8b8e321e783f10",
@@ -64,16 +64,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/js/8.8b978512.chunk.js"
   },
   {
-    "revision": "45587c459339e20b02d9",
+    "revision": "2ea416d7f19227adf724",
     "url": "/ethe_design/static/js/main.a01cbd1b.chunk.js"
   },
   {
-    "revision": "f08e41b3f60e4b63e5d7",
-    "url": "/ethe_design/static/js/runtime-main.c01d6d7d.js"
-  },
-  {
-    "revision": "fb98ed1700e8dfaf0764c11fc36a0a05",
-    "url": "/ethe_design/static/media/NunitoSans-Regular.fb98ed17.ttf"
+    "revision": "0f0ec2c709f961c953ee",
+    "url": "/ethe_design/static/js/runtime-main.cabf3d80.js"
   },
   {
     "revision": "50145685042b4df07a1fd19957275b81",
@@ -200,30 +196,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/media/phone2.e898756c.png"
   },
   {
-    "revision": "09c1c70ad7a0def1a25edbebf968db5f",
-    "url": "/ethe_design/static/media/poppins-bold-webfont.09c1c70a.woff2"
-  },
-  {
-    "revision": "1124ae2f22dda9358a8142f905913597",
-    "url": "/ethe_design/static/media/poppins-bold-webfont.1124ae2f.woff"
-  },
-  {
-    "revision": "0aca950ff11dc2a7183a44780d9278a8",
-    "url": "/ethe_design/static/media/poppins-v9-latin-800.0aca950f.svg"
-  },
-  {
-    "revision": "21ca2c4ad34a5775b3fa54d3012fe3a8",
-    "url": "/ethe_design/static/media/poppins-v9-latin-800.21ca2c4a.ttf"
-  },
-  {
-    "revision": "b5cd7d83a71851bd0d449c3cd5ddadfc",
-    "url": "/ethe_design/static/media/poppins-v9-latin-800.b5cd7d83.woff2"
-  },
-  {
-    "revision": "bde99287fe27e0e3ee89058a0affd4cd",
-    "url": "/ethe_design/static/media/poppins-v9-latin-800.bde99287.woff"
-  },
-  {
     "revision": "13ddacc7e927a258bfd2e476de90d327",
     "url": "/ethe_design/static/media/ptstudio.13ddacc7.jpeg"
   },
@@ -250,10 +222,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "29337b1b12d288662a0a7a2ec6066e88",
     "url": "/ethe_design/static/media/values-down-arrow.29337b1b.png"
-  },
-  {
-    "revision": "f503561c26e6225c12ff2e69ad521f29",
-    "url": "/ethe_design/static/media/whiteBack2.f503561c.jpg"
   },
   {
     "revision": "61742a4e85e57118995250ef93329e97",
