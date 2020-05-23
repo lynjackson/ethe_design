@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ed8af067a7b976c3cacd1051e8091fd5",
+    "revision": "345ff0376041a7d8486fa87761ed7116",
     "url": "/ethe_design/index.html"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/css/8.6a735a72.chunk.css"
   },
   {
-    "revision": "21eff39d991bc1e5d545",
-    "url": "/ethe_design/static/css/main.bce1382a.chunk.css"
+    "revision": "88348ba7183c4d3df2d5",
+    "url": "/ethe_design/static/css/main.4703ab8d.chunk.css"
   },
   {
     "revision": "1c1193c37ad7a1f7d191",
@@ -64,7 +64,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/js/8.8b978512.chunk.js"
   },
   {
-    "revision": "21eff39d991bc1e5d545",
+    "revision": "88348ba7183c4d3df2d5",
     "url": "/ethe_design/static/js/main.f7a21c68.chunk.js"
   },
   {
