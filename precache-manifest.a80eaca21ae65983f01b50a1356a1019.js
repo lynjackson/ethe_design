@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a0b2e96b4dc9be4871dd21526bba2d70",
+    "revision": "6529bdc16a876105c4a04991a35d5685",
     "url": "/ethe_design/index.html"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/css/8.6a735a72.chunk.css"
   },
   {
-    "revision": "2ea416d7f19227adf724",
-    "url": "/ethe_design/static/css/main.9ca04c4f.chunk.css"
+    "revision": "5c6e52d568ab6df2f035",
+    "url": "/ethe_design/static/css/main.51db8807.chunk.css"
   },
   {
     "revision": "1c1193c37ad7a1f7d191",
@@ -64,12 +64,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/js/8.8b978512.chunk.js"
   },
   {
-    "revision": "2ea416d7f19227adf724",
+    "revision": "5c6e52d568ab6df2f035",
     "url": "/ethe_design/static/js/main.a01cbd1b.chunk.js"
   },
   {
     "revision": "0f0ec2c709f961c953ee",
     "url": "/ethe_design/static/js/runtime-main.cabf3d80.js"
+  },
+  {
+    "revision": "fb98ed1700e8dfaf0764c11fc36a0a05",
+    "url": "/ethe_design/static/media/NunitoSans-Regular.fb98ed17.ttf"
   },
   {
     "revision": "50145685042b4df07a1fd19957275b81",
@@ -196,6 +200,38 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/media/phone2.e898756c.png"
   },
   {
+    "revision": "84273157bed00cc8b895763ebef11d89",
+    "url": "/ethe_design/static/media/poppins-v9-latin-700.84273157.ttf"
+  },
+  {
+    "revision": "a02d5c2b023be148d8d23d3b877d4745",
+    "url": "/ethe_design/static/media/poppins-v9-latin-700.a02d5c2b.svg"
+  },
+  {
+    "revision": "bc1e47a3976358aa868a72de5a85de5a",
+    "url": "/ethe_design/static/media/poppins-v9-latin-700.bc1e47a3.woff"
+  },
+  {
+    "revision": "e535f7856b24153e0f3146e8f90a45c5",
+    "url": "/ethe_design/static/media/poppins-v9-latin-700.e535f785.woff2"
+  },
+  {
+    "revision": "0aca950ff11dc2a7183a44780d9278a8",
+    "url": "/ethe_design/static/media/poppins-v9-latin-800.0aca950f.svg"
+  },
+  {
+    "revision": "21ca2c4ad34a5775b3fa54d3012fe3a8",
+    "url": "/ethe_design/static/media/poppins-v9-latin-800.21ca2c4a.ttf"
+  },
+  {
+    "revision": "b5cd7d83a71851bd0d449c3cd5ddadfc",
+    "url": "/ethe_design/static/media/poppins-v9-latin-800.b5cd7d83.woff2"
+  },
+  {
+    "revision": "bde99287fe27e0e3ee89058a0affd4cd",
+    "url": "/ethe_design/static/media/poppins-v9-latin-800.bde99287.woff"
+  },
+  {
     "revision": "13ddacc7e927a258bfd2e476de90d327",
     "url": "/ethe_design/static/media/ptstudio.13ddacc7.jpeg"
   },
@@ -222,6 +258,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "29337b1b12d288662a0a7a2ec6066e88",
     "url": "/ethe_design/static/media/values-down-arrow.29337b1b.png"
+  },
+  {
+    "revision": "f503561c26e6225c12ff2e69ad521f29",
+    "url": "/ethe_design/static/media/whiteBack2.f503561c.jpg"
   },
   {
     "revision": "61742a4e85e57118995250ef93329e97",
