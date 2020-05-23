@@ -70,6 +70,11 @@ useEffect(()=>{
     document.getElementById('value-text-div').style.width = '92%';
     // 1. On render or state change, styles of changing content are set.
     
+    window.removeEventListener('wheel', readWheel)    
+    window.removeEventListener('touchend', readSwipe);
+    window.removeEventListener('touchstart', touchStart);
+    window.removeEventListener('keyup', keyReaders);
+    
     setTimeout(()=>{
       window.addEventListener('wheel', readWheel)    
     }, 1250)

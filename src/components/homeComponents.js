@@ -18,8 +18,8 @@ export const AboveFold = (props)=>{
   
   const topSpace = window.pageYOffset;
   
-  const [arrowOpacity, setArrowOpacity] = useState((topSpace < 5) ? 1 : 0);
-  const [titleOpacity, setTitleOpacity] = useState((topSpace < 5 ) ? 1 : .1);
+  // const [arrowOpacity, setArrowOpacity] = useState((topSpace < 5) ? 1 : 0);
+  // const [titleOpacity, setTitleOpacity] = useState((topSpace < 5 ) ? 1 : .1);
   const [state, setState] = useState(1);
   
   useEffect(()=>{
@@ -50,7 +50,7 @@ export const AboveFold = (props)=>{
 
 
 export const Services = ()=>{
-  const [servicesOpacity, setOpacity] = useState(.18)
+  // const [servicesOpacity, setOpacity] = useState(.18)
   
   useEffect(()=>{
     window.addEventListener('scroll', ()=>{
@@ -82,7 +82,7 @@ export const Services = ()=>{
 
 export const Projects = ()=>{
   
-  const [stateOpacity, setOpacity] = useState(.18)
+  // const [stateOpacity, setOpacity] = useState(.18)
   
   useEffect(()=>{
     window.addEventListener('scroll', ()=>{
@@ -123,7 +123,7 @@ export const Projects = ()=>{
 
 export const Vision = () =>{
   const [state, stateRefresh] = useState(0)
-  const [stateOpacity, setOpacity] = useState(.18)
+  // const [stateOpacity, setOpacity] = useState(.18)
   
   useEffect(()=>{
     window.addEventListener('scroll', ()=>{
