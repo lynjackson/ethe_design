@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7549b587ceeb84618c83b80f91711595",
+    "revision": "6d4343a35ebd0f5d5c45cc76fcec3fc5",
     "url": "/ethe_design/index.html"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/css/8.6a735a72.chunk.css"
   },
   {
-    "revision": "e1aaae48d6cad8f1864b",
-    "url": "/ethe_design/static/css/main.8f0344f2.chunk.css"
+    "revision": "0a5d763c131262360272",
+    "url": "/ethe_design/static/css/main.5e22089d.chunk.css"
   },
   {
     "revision": "1c1193c37ad7a1f7d191",
@@ -64,7 +64,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/js/8.8b978512.chunk.js"
   },
   {
-    "revision": "e1aaae48d6cad8f1864b",
+    "revision": "0a5d763c131262360272",
     "url": "/ethe_design/static/js/main.a01cbd1b.chunk.js"
   },
   {
@@ -200,20 +200,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/media/phone2.e898756c.png"
   },
   {
-    "revision": "84273157bed00cc8b895763ebef11d89",
-    "url": "/ethe_design/static/media/poppins-v9-latin-700.84273157.ttf"
-  },
-  {
     "revision": "a02d5c2b023be148d8d23d3b877d4745",
     "url": "/ethe_design/static/media/poppins-v9-latin-700.a02d5c2b.svg"
-  },
-  {
-    "revision": "bc1e47a3976358aa868a72de5a85de5a",
-    "url": "/ethe_design/static/media/poppins-v9-latin-700.bc1e47a3.woff"
-  },
-  {
-    "revision": "e535f7856b24153e0f3146e8f90a45c5",
-    "url": "/ethe_design/static/media/poppins-v9-latin-700.e535f785.woff2"
   },
   {
     "revision": "0aca950ff11dc2a7183a44780d9278a8",
