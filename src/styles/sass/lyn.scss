@@ -55,7 +55,7 @@ $greyy: rgba(0,0,0,.55);
             font-weight:400;
         }
         #contact-div{
-            @include font(nunito sans, 16px, 400, 23.13px, 0px);
+            @include font("Nunito-Sans-Regular", 16px, 400, 23.13px, 0px);
             margin:0;
             @include box(flex, column, space-between, auto);
             height:76px;
