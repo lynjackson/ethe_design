@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "387bf2985e8186dc04235e3a289a95e2",
+    "revision": "c188c7d0abc444d8f3a0a1778f964330",
     "url": "/ethe_design/index.html"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/css/8.6a735a72.chunk.css"
   },
   {
-    "revision": "a28e42bdef8089cdcdae",
-    "url": "/ethe_design/static/css/main.b3a5913d.chunk.css"
+    "revision": "1e001452aa1fdba9fd5d",
+    "url": "/ethe_design/static/css/main.943a734c.chunk.css"
   },
   {
     "revision": "1c1193c37ad7a1f7d191",
@@ -64,7 +64,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/js/8.8b978512.chunk.js"
   },
   {
-    "revision": "a28e42bdef8089cdcdae",
+    "revision": "1e001452aa1fdba9fd5d",
     "url": "/ethe_design/static/js/main.f7a21c68.chunk.js"
   },
   {
@@ -194,10 +194,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "55103c5959343a12a55d56ada720fd21",
     "url": "/ethe_design/static/media/menu.55103c59.png"
-  },
-  {
-    "revision": "59c1b87f1eac29e3e490fbb39f368e0f",
-    "url": "/ethe_design/static/media/nunito-sans-v5-latin-regular.59c1b87f.svg"
   },
   {
     "revision": "e898756cb2d522113f39c5c6e9ee3a34",
