@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c188c7d0abc444d8f3a0a1778f964330",
+    "revision": "49894122984e8e3bbb877bd785e3b734",
     "url": "/ethe_design/index.html"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/css/8.6a735a72.chunk.css"
   },
   {
-    "revision": "1e001452aa1fdba9fd5d",
-    "url": "/ethe_design/static/css/main.943a734c.chunk.css"
+    "revision": "87c5a8184b76e5df7bb5",
+    "url": "/ethe_design/static/css/main.176c69c2.chunk.css"
   },
   {
     "revision": "1c1193c37ad7a1f7d191",
@@ -64,16 +64,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/js/8.8b978512.chunk.js"
   },
   {
-    "revision": "1e001452aa1fdba9fd5d",
+    "revision": "87c5a8184b76e5df7bb5",
     "url": "/ethe_design/static/js/main.f7a21c68.chunk.js"
   },
   {
     "revision": "f9f2a42cc9969bc2c1cb",
     "url": "/ethe_design/static/js/runtime-main.77cdec6d.js"
-  },
-  {
-    "revision": "fb98ed1700e8dfaf0764c11fc36a0a05",
-    "url": "/ethe_design/static/media/NunitoSans-Regular.fb98ed17.ttf"
   },
   {
     "revision": "50145685042b4df07a1fd19957275b81",
@@ -194,6 +190,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "55103c5959343a12a55d56ada720fd21",
     "url": "/ethe_design/static/media/menu.55103c59.png"
+  },
+  {
+    "revision": "49ffe17ecbcd39ee72e4646616db3d80",
+    "url": "/ethe_design/static/media/nunito-sans-v5-latin-regular.49ffe17e.ttf"
+  },
+  {
+    "revision": "59c1b87f1eac29e3e490fbb39f368e0f",
+    "url": "/ethe_design/static/media/nunito-sans-v5-latin-regular.59c1b87f.svg"
   },
   {
     "revision": "e898756cb2d522113f39c5c6e9ee3a34",
