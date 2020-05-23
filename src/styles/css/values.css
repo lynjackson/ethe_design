@@ -27,7 +27,7 @@
   #value-con #value-text-div {
     border-top: 0.1px solid #707070;
     border-bottom: 0.1px solid #707070;
-    padding: 23.6px 0;
+    padding: 40.6px 0 23.6px 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@
     transition: opacity 0.2s, bottom 0.2s;
     margin: 0;
     max-width: 500px;
-    width: 92%;
+    width: 92vw;
     position: relative;
   }
   #value-con #counterAndArrow {
@@ -69,11 +69,11 @@
     margin: 27.5px auto;
     font-size: 44px;
   }
-  #value-con p {
-    padding: 30.5px 0;
-  }
   #value-con h2 {
     margin: 37.5px auto 104px auto;
+  }
+  #value-con #counterAndArrow {
+    height: 165px;
   }
 }
 

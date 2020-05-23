@@ -5,6 +5,8 @@ import {ValuesHeader} from '../components/header'
 
 const Values = ()=>{
   
+  const [counter, setCounter] = useState(0)
+  const [touchStartPoint, setTouchStartPoint] = useState(0);
   const title = ['Openness', 'Service', 'Evaluation', 'experience', 'renounce', 'enjoy', 'diligence'];
   const text = [
     'Only by embracing the unknown and staying open are we free to find solutions we can’t initially imagine.',
@@ -16,81 +18,65 @@ const Values = ()=>{
     'If something is worth doing, its worth doing wholeheartedly.'
   ];
   
-  const [counter, setCounter] = useState(0)
-  const [touchStartPoint, setTouchStartPoint] = useState(0);
   
-  
+
   const nextValue = ()=>{
-    setCounter(counter + 1)
-  }      
-  
+    shrinkContent();
+    setTimeout(()=>{setCounter(counter + 1)}, 500)
+  }
   const prevValue = ()=>{
-    setCounter(counter - 1)
-  } 
+    shrinkContent();
+    setTimeout(()=>{setCounter(counter - 1)}, 500)
+  }
+
+  const shrinkContent = ()=>{
+      document.getElementById('value-text-div').style.width = 0;
+      document.getElementById('value-text').style.bottom = '10px';
+      document.getElementById('value-text').style.opacity = 0;
+      document.getElementById('value-title').style.opacity = 0;  
+  }
   
   const readWheel = (e)=>{
-    
     if(document.getElementById('value-title')){
-      
       window.removeEventListener('wheel', readWheel);
-      
-    if(e.deltaY > 0 && counter <= 5){
-        document.getElementById('value-text-div').style.width = 0;
-        document.getElementById('value-text').style.bottom = '10px';
-        document.getElementById('value-text').style.opacity = 0;
-        document.getElementById('value-title').style.opacity = 0;  
-        setTimeout(()=>{ nextValue() }, 500)
-      }  
+      if(e.deltaY > 0 && counter <= 5){
+          nextValue();
+        }  
       else if(e.deltaY < 0 && counter >= 1){
-        document.getElementById('value-text-div').style.width = 0;
-        document.getElementById('value-text').style.bottom = '10px';
-        document.getElementById('value-text').style.opacity = 0;
-        document.getElementById('value-title').style.opacity = 0;  
-        setTimeout(()=>{ prevValue() }, 500)
+        prevValue();
       }}
   }
 
   const readSwipe = (e)=>{
     // setTimeout(()=>{
       window.removeEventListener('touchend', readSwipe)
-      
-      if(e.changedTouches[0].clientY > touchStartPoint + 100 && counter <= 5){
-        document.getElementById('value-text-div').style.width = 0;
-        document.getElementById('value-text').style.bottom = '10px';
-        document.getElementById('value-text').style.opacity = 0;
-        document.getElementById('value-title').style.opacity = 0;  
-        setTimeout(()=>{ nextValue() }, 500)
+      if(e.changedTouches[0].screenY > touchStartPoint + 100 && counter <= 5){
+        nextValue();
       }  
-      else if(e.changedTouches[0].clientY < touchStartPoint - 100 && counter >= 1){
-        document.getElementById('value-text-div').style.width = 0;
-        document.getElementById('value-text').style.bottom = '10px';
-        document.getElementById('value-text').style.opacity = 0;
-        document.getElementById('value-title').style.opacity = 0;  
-        setTimeout(()=>{ prevValue() }, 500)
-        // prevValue();
-      }
-    // }, 300)
-    window.removeEventListener('touchend', readSwipe)
+      else if(e.changedTouches[0].screenY < touchStartPoint - 100 && counter >= 1){
+        prevValue();
+      }  
   }
-  
+  const touchStart = (e)=>{ setTouchStartPoint(e.changedTouches[0].clientY); }
+  const keyReaders = (e)=>{
+    window.removeEventListener('keyup', keyReaders);
+    if(e.keyCode === 40 && counter <= 5 ){ nextValue() }
+    else if(e.keyCode === 38 && counter >= 1){ prevValue() }
+  }
+
 useEffect(()=>{
     document.getElementById('value-title').style.opacity = 1;
     document.getElementById('value-text').style.opacity = 1;
-    document.getElementById('value-text').style.bottom = '0px';
     document.getElementById('value-text-div').style.width = '92%';
     // 1. On render or state change, styles of changing content are set.
     
     setTimeout(()=>{
       window.addEventListener('wheel', readWheel)    
-    }, 1500)
-    // 2. After 1.25s, wheel event listener is added to the window
-
+    }, 1250)
+    // 2. After 1.5s, wheel event listener is added to the window.
     window.addEventListener('touchend', readSwipe);
-
-    window.addEventListener('touchstart', (e)=>{  
-      setTouchStartPoint(e.changedTouches[0].clientY);
-    })
-  
+    window.addEventListener('touchstart', touchStart);
+    window.addEventListener('keyup', keyReaders);
   })
   
   return(
@@ -101,7 +87,13 @@ useEffect(()=>{
         <div id='value-text-div'><p id='value-text'>{text[counter]}</p></div>
         <div id='counterAndArrow'>
           <h4 id='value-counter'>{`0${counter + 1}`}/07</h4>
-          <img src={DownArrow}  onClick={()=>{(counter <= 5) ? nextValue():console.log('nah')}}/>
+          <img src={DownArrow}  onClick={()=>{
+            document.getElementById('value-text-div').style.width = 0;
+            document.getElementById('value-text').style.bottom = '10px';
+            document.getElementById('value-text').style.opacity = 0;
+            document.getElementById('value-title').style.opacity = 0;  
+            setTimeout(()=>{ nextValue() }, 500)
+          }}/>
         </div>
       </div>
     </div>

@@ -27,7 +27,7 @@ const Home2 = (props)=>{
 
   if(loadStatus === 'no'){
     return (
-      <div style={{height:'100vh', width:'100vw', backgroundColor:'green'}}><h1>loading</h1></div>
+      <div style={{height:'100vh', width:'100vw', background:'linear-gradient(#212121, #3D3D3D)'}}><h1>loading</h1></div>
     )
   }
   

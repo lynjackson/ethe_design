@@ -23,16 +23,17 @@
         #value-text-div{
             border-top: .1px solid rgba(112, 112, 112, 1);
             border-bottom: .1px solid rgba(112, 112, 112, 1);
-            padding: 23.6px 0;
+            padding: 40.6px 0 23.6px 0;
             box-sizing: border-box;
             @include box(flex, column, center, center);
             max-width:500px;
             transition:width .4s;
+            
             #value-text{
                 transition: opacity .2s, bottom .2s;
                 margin: 0;
                 max-width:500px;
-                width:92%;
+                width:92vw;
                 // min-width:500px;
                 position: relative;
             }
@@ -56,6 +57,9 @@
     #value-con{
         @include hw(54%, 615px);
         margin: 20% auto;
+        #value-text-div{
+            // padding: 40.6px 0 23.6px 0;
+        }
     }
 }
 
@@ -66,11 +70,11 @@
             margin: 27.5px auto;
             font-size: 44px;
         }
-        p{
-            padding: 30.5px 0;
-        }
         h2{
             margin:37.5px auto 104px auto ;
+        }
+        #counterAndArrow{
+            height:165px;
         }
     }
 }

@@ -74,11 +74,11 @@
         margin:0;
     }
     h2{
-      @include font('Poppins-Semibold', 34px, 700, 61px, -1px);  
+      @include font('Poppins-Bold', 34px, 700, 61px, -1px);  
       margin:0;
     }
     h3{
-      @include font('Poppins-Semibold', 18.4px, 700, 23.48px, 0px);
+      @include font('Poppins-Bold', 18.4px, 700, 23.48px, 0px);
       margin: 0;
     }
     h4{

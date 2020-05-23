@@ -29,15 +29,15 @@ const People = lazy(() => import('./pages/people'));
 
 ReactDOM.render(
 	<Provider store={createStore(reducers)}>
-	  <HashRouter>
+	  <BrowserRouter>
 	    
 			<div id='routes'>
 			{/* <Route path='/ethe_design' component={Header} /> */}
 			<Route exact='true' path='/ethe_design/' component={Home2}/>
-			<Suspense fallback={<div style={{height:1, borderColor: 'red', borderWidth:2}}><p style={{color:'white', fontSize:200}}>'loading'</p></div>}>
-				<Route exact='true' path='values' component={Values}/>
-				<Route exact='true' path='/bill_app' component={BillApp_Mobile}/>
-				<Route exact='true' path='/lyn' component={Lyn2}/>
+			<Suspense fallback={<div style={{height:1, borderColor: 'red', borderWidth:10}}><p style={{color:'white', fontSize:200}}>'loading'</p></div>}>
+				<Route exact='true' path='/ethe_design/values' component={Values}/>
+				<Route exact='true' path='/ethe_design/bill_app' component={BillApp_Mobile}/>
+				<Route exact='true' path='/ethe_design/lyn' component={Lyn2}/>
 				
 				{/* <Route exact='true' path='/vision' component={Vision} /> */}
 				{/* <Route exact='true' path='/people' component={People}/> */}
@@ -46,7 +46,7 @@ ReactDOM.render(
 			</Suspense>
 			</div>
 		
-	  </HashRouter>
+	  </BrowserRouter>
 	</Provider>,
 	document.getElementById('root')
 )
