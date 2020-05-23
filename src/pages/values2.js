@@ -74,6 +74,7 @@ useEffect(()=>{
     window.removeEventListener('touchend', readSwipe);
     window.removeEventListener('touchstart', touchStart);
     window.removeEventListener('keyup', keyReaders);
+    document.getElementById('down-arrow').removeEventListener('click', nextValue);
     
     setTimeout(()=>{
       window.addEventListener('wheel', readWheel)    
@@ -82,6 +83,7 @@ useEffect(()=>{
     window.addEventListener('touchend', readSwipe);
     window.addEventListener('touchstart', touchStart);
     window.addEventListener('keyup', keyReaders);
+    document.getElementById('down-arrow').addEventListener('click', nextValue);
   })
   
   return(
@@ -92,13 +94,7 @@ useEffect(()=>{
         <div id='value-text-div'><p id='value-text'>{text[counter]}</p></div>
         <div id='counterAndArrow'>
           <h4 id='value-counter'>{`0${counter + 1}`}/07</h4>
-          <img src={DownArrow}  onClick={()=>{
-            document.getElementById('value-text-div').style.width = 0;
-            document.getElementById('value-text').style.bottom = '10px';
-            document.getElementById('value-text').style.opacity = 0;
-            document.getElementById('value-title').style.opacity = 0;  
-            setTimeout(()=>{ nextValue() }, 500)
-          }}/>
+          <img src={DownArrow} id='down-arrow' />
         </div>
       </div>
     </div>
