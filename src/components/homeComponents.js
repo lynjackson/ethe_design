@@ -25,12 +25,14 @@ export const AboveFold = (props)=>{
   useEffect(()=>{
     window.addEventListener('scroll', ()=>{
       if (window.pageYOffset < 5){
-        setArrowOpacity(1);
-        setTitleOpacity(1);
+        // setArrowOpacity(1);
+        document.getElementById('above-title').style.opacity = 1;
+        // setTitleOpacity(1);
       }
       else{
-        setArrowOpacity(0);
-        setTitleOpacity(.1);
+        // setArrowOpacity(0);
+        document.getElementById('above-title').style.opacity = .1;
+        // setTitleOpacity(.1);
       }
     })
     window.addEventListener('resize',()=>{
@@ -41,7 +43,7 @@ export const AboveFold = (props)=>{
   return(
     <div id='above-fold' style={{display: 'flex'}}>
         <h4 className='home-header'>HEY, WE'RE ETHE.</h4>
-        <h1 id='above-title' style={{opacity: titleOpacity}}>We <span id='team-up'>team up</span> with <span id='creatives'>creatives</span> to make meaningful digital <span id='dig-exp'>experiences</span></h1>
+        <h1 id='above-title' style={{opacity: 1}}>We <span id='team-up'>team up</span> with <span id='creatives'>creatives</span> to make meaningful digital <span id='dig-exp'>experiences</span></h1>
     </div>
   )
 }
@@ -52,7 +54,7 @@ export const Services = ()=>{
   
   useEffect(()=>{
     window.addEventListener('scroll', ()=>{
-      (window.pageYOffset > 5 && window.pageYOffset < 500) ? setOpacity(1) : setOpacity(.18)
+      (window.pageYOffset > 5 && window.pageYOffset < 500) ? document.getElementById('services').style.opacity = 1 : document.getElementById('services').style.opacity = .18
     })
   })
 
@@ -69,7 +71,7 @@ export const Services = ()=>{
   }
 
   return(
-    <div id='services' style={{opacity: servicesOpacity}}>
+    <div id='services' style={{opacity: .18}}>
       <Service img={Experiences} title={'Crafting digital experiences'} description={'We aim to associate your brand with joy in the minds of users.'}/>
       <Service img={Data} title={'Finding knowledge in data'} description={'Data adds science to your art, taking you from guesswork to informed decisions.'}/>
       <Service img={Performance} title={'Improving through strategy'} description={'We analyze performance to enhance the experience further.'}/>
@@ -84,7 +86,7 @@ export const Projects = ()=>{
   
   useEffect(()=>{
     window.addEventListener('scroll', ()=>{
-      (document.getElementById('projects') && window.pageYOffset > 3 && window.pageYOffset < document.getElementById('projects').offsetTop + 100) ? setOpacity(1) : setOpacity(.18)
+      (document.getElementById('projects') && window.pageYOffset > 3 && window.pageYOffset < document.getElementById('projects').offsetTop + 100) ? document.getElementById('projects').style.opacity = 1 : document.getElementById('projects').style.opacity = .18
     })
   })
     const Project = (props) =>{
@@ -102,7 +104,7 @@ export const Projects = ()=>{
     }
     
     return(
-      <div id='projects' style={{opacity:stateOpacity}}>
+      <div id='projects' style={{opacity:.18}}>
         <h4 className='home-header'>CLIENT WORK</h4>
         <div id='project-container'>
           <div className='project' style={{backgroundImage: `url(${bill_back})`, color: '#FFFFFFC4' }}>
@@ -125,7 +127,7 @@ export const Vision = () =>{
   
   useEffect(()=>{
     window.addEventListener('scroll', ()=>{
-      (document.getElementById('vision') && window.pageYOffset > document.getElementById('vision').offsetTop - 423) ? setOpacity(1) : setOpacity(.18)
+      (document.getElementById('vision') && window.pageYOffset > document.getElementById('vision').offsetTop - 423) ? document.getElementById('vision').style.opacity = 1 : document.getElementById('vision').style.opacity = .18
     })
     window.addEventListener('resize', ()=>{stateRefresh(state + 1)})
   })
@@ -133,7 +135,7 @@ export const Vision = () =>{
   
   
   return(
-    <div id='vision' style={{opacity: stateOpacity}}>
+    <div id='vision' style={{opacity: .18}}>
       <h4 className='home-header'>WE THINK</h4>
       
        {(window.innerWidth <1024) ?
