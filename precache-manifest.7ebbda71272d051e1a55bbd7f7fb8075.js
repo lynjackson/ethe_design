@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ef4cac4568adfbcb1a67bbce635dc95e",
+    "revision": "92cbfed7e461e2caf575c75741d6a77a",
     "url": "/ethe_design/index.html"
   },
   {
@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/css/4.b54a0cd5.chunk.css"
   },
   {
-    "revision": "530122ccefec817928db",
+    "revision": "c1be18d5c67514f3c459",
     "url": "/ethe_design/static/css/5.77b86205.chunk.css"
   },
   {
@@ -48,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/js/4.6f53f05d.chunk.js"
   },
   {
-    "revision": "530122ccefec817928db",
-    "url": "/ethe_design/static/js/5.06bbcc9a.chunk.js"
+    "revision": "c1be18d5c67514f3c459",
+    "url": "/ethe_design/static/js/5.50dd93b9.chunk.js"
   },
   {
     "revision": "f2ce090e22f0f7879502",
@@ -68,8 +68,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/js/main.f7a21c68.chunk.js"
   },
   {
-    "revision": "9400ffc45bf49c46c869",
-    "url": "/ethe_design/static/js/runtime-main.a265ebe1.js"
+    "revision": "1ce119e8170c543bbd1c",
+    "url": "/ethe_design/static/js/runtime-main.b52eadfd.js"
   },
   {
     "revision": "50145685042b4df07a1fd19957275b81",
@@ -248,8 +248,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethe_design/static/media/studio.9a0b054f.png"
   },
   {
-    "revision": "29337b1b12d288662a0a7a2ec6066e88",
-    "url": "/ethe_design/static/media/values-down-arrow.29337b1b.png"
+    "revision": "a1312e82094ff954f07cbdef6afd6984",
+    "url": "/ethe_design/static/media/values-down-arrow.a1312e82.png"
   },
   {
     "revision": "f503561c26e6225c12ff2e69ad521f29",
