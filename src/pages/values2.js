@@ -50,10 +50,10 @@ const Values = ()=>{
   const readSwipe = (e)=>{
     // setTimeout(()=>{
       window.removeEventListener('touchend', readSwipe)
-      if(e.changedTouches[0].screenY > touchStartPoint + 100 && counter <= 5){
+      if(e.changedTouches[0].screenY < touchStartPoint - 50 && counter <= 5){
         nextValue();
       }  
-      else if(e.changedTouches[0].screenY < touchStartPoint - 100 && counter >= 1){
+      else if(e.changedTouches[0].screenY > touchStartPoint + 50 && counter >= 1){
         prevValue();
       }  
   }
