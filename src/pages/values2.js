@@ -17,8 +17,6 @@ const Values = ()=>{
     'We try to find joy in whatever we do.',
     'If something is worth doing, its worth doing wholeheartedly.'
   ];
-  
-  
 
   const nextValue = ()=>{
     shrinkContent();
@@ -50,10 +48,10 @@ const Values = ()=>{
   const readSwipe = (e)=>{
     // setTimeout(()=>{
       window.removeEventListener('touchend', readSwipe)
-      if(e.changedTouches[0].screenY < touchStartPoint - 50 && counter <= 5){
+      if(e.changedTouches[0].screenY < touchStartPoint - 0 && counter <= 5){
         nextValue();
       }  
-      else if(e.changedTouches[0].screenY > touchStartPoint + 50 && counter >= 1){
+      else if(e.changedTouches[0].screenY > touchStartPoint + 0 && counter >= 1){
         prevValue();
       }  
   }
@@ -68,6 +66,7 @@ useEffect(()=>{
     document.getElementById('value-title').style.opacity = 1;
     document.getElementById('value-text').style.opacity = 1;
     document.getElementById('value-text-div').style.width = '92%';
+    document.getElementById('value-text').style.bottom = '0px';
     // 1. On render or state change, styles of changing content are set.
     
     window.removeEventListener('wheel', readWheel)    
@@ -90,8 +89,10 @@ useEffect(()=>{
     <div id='page_value' className='page' >
       <ValuesHeader />
       <div id='value-con'>
-        <h1 id='value-title'>{title[counter]}</h1>
-        <div id='value-text-div'><p id='value-text'>{text[counter]}</p></div>
+        <div id='title-and-text'>
+          <h1 id='value-title'>{title[counter]}</h1>
+          <div id='value-text-div'><p id='value-text'>{text[counter]}</p></div>
+        </div>
         <div id='counterAndArrow'>
           <h4 id='value-counter'>{`0${counter + 1}`}/07</h4>
           <img src={DownArrow} id='down-arrow' />
