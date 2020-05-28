@@ -108,14 +108,14 @@ export const Projects = ()=>{
         <h4 className='home-header'>CLIENT WORK</h4>
         <div id='project-container'>
           <div className='project' style={{backgroundImage: `url(${bill_back})`, color: '#FFFFFFC4' }}>
-            <a href='https://lynjackson.github.io/bill_page'>
+            <a href='https://lynjackson.github.io/bill_page' target='_blank'>
               <div className='overlay' style={{background:`linear-gradient(359deg, ${'#000000B2'}, ${'#00000014'})`}}>
                 <img className='logo' src={bill_logo}></img>
                 <h4 className='tagline' style={{color: '#FFFFFFC4'}}>{'A better way to order'}</h4>
               </div>
             </a>
           </div>            
-            <Project background={art} logo={studio} tagline={'The creative space'} color1={'#FFFFFFC4'} color2={'#FFFFFF14'} textColor={'#000000B2'} link={'https://studio.ljoconnor5.now.sh/'}></Project>
+            <Project background={art} logo={studio} tagline={'The creative space'} color1={'#FFFFFFC4'} color2={'#FFFFFF14'} textColor={'#000000B2'} link={'https://ptstudio.ljoconnor5.now.sh/'}></Project>
         </div>
       </div>
     )
