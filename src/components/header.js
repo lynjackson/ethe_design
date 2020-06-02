@@ -42,9 +42,9 @@ export const Header = (props)=>{
   //rendered content
   return (
     <div id='header' style={headerStyle}>
-      <div id='header-items2' style={{justifyContent: props.headerItemsJustifyContent}}>
+      <div id='header-items2' >
         
-      <Link to='/ethe_design'><img src={ethey} id='logo2' style={{visibility:props.logoVis}} /></Link>
+      <Link to='/ethe_design'><img src={ethey} id='logo2' style={(headerStyle.height !== 58.67)?{visibility: 'visible'}:{visibility:props.logoVis}} /></Link>
         
         <img src={menuOption.icon} style={menuOption.style} onClick={()=>{
           if(headerStyle.height === 58.67){

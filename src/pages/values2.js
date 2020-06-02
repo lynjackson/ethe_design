@@ -36,12 +36,13 @@ const Values = ()=>{
   
   const readWheel = (e)=>{
     if(document.getElementById('value-title')){
-      window.removeEventListener('wheel', readWheel);
       if(e.deltaY < 0 && counter <= 5){
           nextValue();
+          window.removeEventListener('wheel', readWheel);
         }  
       else if(e.deltaY > 0 && counter >= 1){
         prevValue();
+        window.removeEventListener('wheel', readWheel);
       }}
   }
 

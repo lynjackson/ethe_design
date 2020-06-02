@@ -16,7 +16,7 @@
       padding-top:12.8px;
       
       #header-items2{
-        @include box(flex, row, flex-end, center);
+        @include box(flex, row, space-between, center);
         width:$width-mobile;
         margin: 0 auto; 
         position:relative;
