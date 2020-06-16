@@ -5,6 +5,7 @@ import {ValuesHeader} from '../components/header2'
 
 const Values = ()=>{
   
+  const [loadStatus, setLoad] = useState('no')
   const [counter, setCounter] = useState(0)
   const [touchStartPoint, setTouchStartPoint] = useState(0);
   const title = ['Openness', 'Service', 'Evaluation', 'experience', 'renounce', 'enjoy', 'diligence'];
@@ -63,12 +64,23 @@ const Values = ()=>{
     else if(e.keyCode === 38 && counter >= 1){ prevValue() }
   }
 
-useEffect(()=>{
+  
+
+  useEffect(()=>{
+    // window.onload = ()=> {setLoad('yes'); console.log('loaded!')};
+    // setTimeout(()=>{
+    //   if(loadStatus === 'no'){
+    //     setLoad('yes')
+    //   }
+    // }, 2500)
+
     document.getElementById('value-title').style.opacity = 1;
     document.getElementById('value-text').style.opacity = 1;
     document.getElementById('value-text-div').style.width = '92%';
     document.getElementById('value-text').style.bottom = '0px';
     // 1. On render or state change, styles of changing content are set.
+
+    
     
     window.removeEventListener('wheel', readWheel)    
     window.removeEventListener('touchend', readSwipe);
@@ -85,6 +97,12 @@ useEffect(()=>{
     window.addEventListener('keyup', keyReaders);
     document.getElementById('down-arrow').addEventListener('click', nextValue);
   })
+  
+  // if(loadStatus === 'no'){
+  //   return (
+  //     <div style={{height:'100vh', width:'100vw', background:'linear-gradient(#212121, #3D3D3D)'}}><h1>loading</h1></div>
+  //   )
+  // }
   
   return(
     <div id='page_value' className='page' >

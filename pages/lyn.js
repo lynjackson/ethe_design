@@ -17,6 +17,11 @@ const Lyn2 = ()=>{
   
   useEffect(()=>{
     window.onload = ()=>{setLoadStatus('yes')}
+    setTimeout(()=>{
+      if(loadStatus === 'no'){
+        setLoadStatus('yes')
+      }
+    }, 2000)
     document.getElementsByTagName("html")[0].style.backgroundImage = 'url(/assets/images/back_lyn.jpg)'
   })
   

@@ -14,7 +14,7 @@
     align-items: center;
     width: 100vw;
     position: fixed;
-    transition: background-color 0.3s, height 0.3s;
+    transition: background-color 0.3s, height 0.3s, padding-top 0.4s;
     z-index: 20;
     overflow: hidden;
     top: 0;

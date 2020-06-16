@@ -14,7 +14,7 @@
     align-items: center;
     width: 100vw;
     position: fixed;
-    transition: background-color 0.3s, height 0.3s;
+    transition: background-color 0.3s, height 0.3s, padding-top 0.4s;
     z-index: 20;
     overflow: hidden;
     top: 0;
@@ -154,6 +154,226 @@
 }
 
 /*# sourceMappingURL=header2.css.map */
+
+@media screen and (min-width: 0px) {
+  .grey-title {
+    font-family: "Poppins-Bold";
+    font-size: 32px;
+    font-weight: 800;
+    line-height: auto;
+    letter-spacing: -0.5px;
+  }
+
+  .lyn-section {
+    margin-bottom: 53px;
+    overflow: hidden;
+    transition: height 1s;
+  }
+  .lyn-section .tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 37.5px;
+    height: 57px;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+    color: #b3b3b3;
+  }
+  .lyn-section .tab .little-arrow {
+    height: 13.5px;
+    width: 23.62px;
+  }
+
+  #profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 49px;
+    margin-top: 58.67px;
+    overflow: visible;
+  }
+  #profile #image {
+    background-image: url("/assets/images/lyn-page/profile.jpg");
+    background-size: cover;
+    height: 487px;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    margin-bottom: 35px;
+    background-position-y: -96px;
+  }
+  #profile #nameTitleLocation {
+    z-index: 3;
+    height: 218px;
+    width: 100vw;
+    left: calc((100% - 93%)/-2);
+    position: relative;
+    color: white;
+    background: transparent linear-gradient(180deg, #333333E0 0%, #000000 100%) 0% 0% no-repeat padding-box;
+    margin-top: 268px;
+    padding: calc((100% - 93%)/2);
+    box-sizing: border-box;
+  }
+  #profile #name {
+    line-height: 51px;
+    margin-bottom: 3px;
+  }
+  #profile #title {
+    color: #b3b3b3;
+    line-height: 32px;
+    margin-bottom: 3px;
+  }
+  #profile #location {
+    margin-bottom: 22px;
+    font-weight: 400;
+  }
+  #profile #contact-div {
+    font-family: "Nunito-Sans-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.13px;
+    letter-spacing: 0px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: auto;
+    height: 76px;
+    text-decoration: none;
+    margin-top: 17px;
+  }
+  #profile #contact-div .contact-link {
+    color: white;
+  }
+
+  .portfolio-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60.2px;
+  }
+  .portfolio-project .project-image-link {
+    width: 44.1%;
+    overflow: hidden;
+    height: 120px;
+  }
+  .portfolio-project .project-image-link .portfolio-image {
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  }
+  .portfolio-project .project-info-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 49.6%;
+    height: 120px;
+  }
+  .portfolio-project .title {
+    color: #1a1a1a;
+  }
+  .portfolio-project .tech {
+    margin: 3% 0;
+  }
+  .portfolio-project .design-doc-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .portfolio-project .design-doc-div .xd-icon {
+    width: 21px;
+    margin-right: 4.5px;
+  }
+  .portfolio-project .design-doc-div .design-doc-text {
+    color: #1a1a1a;
+  }
+
+  .experience-item {
+    margin-bottom: 37px;
+  }
+  .experience-item .place {
+    color: #b3b3b3;
+    margin: 1% 0;
+  }
+  .experience-item .time {
+    margin-bottom: 18px;
+  }
+
+  .education-item {
+    margin-bottom: 27.8px;
+  }
+  .education-item .degree {
+    color: #b3b3b3;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #profile {
+    width: 294px;
+  }
+  #profile #image {
+    width: 100%;
+    position: relative;
+    left: 0px;
+    margin: 22px auto 0px auto;
+    height: 227px;
+  }
+  #profile #nameTitleLocation {
+    margin-top: 0px;
+    height: 322px;
+    width: 100%;
+    left: 0;
+  }
+
+  #right-side {
+    width: 551px;
+    margin: 86px 0 0 61px;
+  }
+  #right-side .portfolio-project {
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 40.5px;
+  }
+  #right-side .portfolio-project .project-image-link {
+    width: 34.1%;
+    margin-right: 51px;
+  }
+  #right-side .portfolio-project .project-info-div {
+    height: 72px;
+  }
+  #right-side .portfolio-project .portfolio-image {
+    margin-right: 51px;
+  }
+  #right-side .portfolio-project .design-doc-div {
+    margin-top: 5px;
+    text-decoration: underline;
+  }
+  #right-side .portfolio-project .xd-icon {
+    margin-right: 7px;
+    width: 18px;
+  }
+  #right-side .experience-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #right-side .experience-item .item-stats {
+    width: 119px;
+  }
+  #right-side .experience-item .description {
+    width: 386px;
+  }
+}
+
+/*# sourceMappingURL=lyn.css.map */
 
 @font-face {
   font-family: "Nunito-Sans-Regular";
@@ -348,6 +568,34 @@
       left: 0;
     }
   }
+  @keyframes loadUp {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @keyframes spinner {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  #triangle {
+    animation: spinner 2s infinite linear;
+    transform: rotate(45deg);
+  }
+
+  #load-bar {
+    animation: loadUp 2s forwards;
+    width: 0%;
+    height: 10px;
+    background-color: white;
+  }
+
   .home-header {
     color: #707070;
     margin-bottom: 10.4px;
@@ -616,226 +864,6 @@
 }
 
 /*# sourceMappingURL=pages.css.map */
-
-@media screen and (min-width: 0px) {
-  .grey-title {
-    font-family: "Poppins-Bold";
-    font-size: 32px;
-    font-weight: 800;
-    line-height: auto;
-    letter-spacing: -0.5px;
-  }
-
-  .lyn-section {
-    margin-bottom: 53px;
-    overflow: hidden;
-    transition: height 1s;
-  }
-  .lyn-section .tab {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 37.5px;
-    height: 57px;
-    border-bottom: 1px solid rgba(112, 112, 112, 0.2);
-    color: #b3b3b3;
-  }
-  .lyn-section .tab .little-arrow {
-    height: 13.5px;
-    width: 23.62px;
-  }
-
-  #profile {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 49px;
-    margin-top: 58.67px;
-    overflow: visible;
-  }
-  #profile #image {
-    background-image: url("/assets/images/lyn-page/profile.jpg");
-    background-size: cover;
-    height: 487px;
-    width: 100vw;
-    position: absolute;
-    left: 0;
-    margin-bottom: 35px;
-    background-position-y: -96px;
-  }
-  #profile #nameTitleLocation {
-    z-index: 3;
-    height: 218px;
-    width: 100vw;
-    left: calc((100% - 93%)/-2);
-    position: relative;
-    color: white;
-    background: transparent linear-gradient(180deg, #333333E0 0%, #000000 100%) 0% 0% no-repeat padding-box;
-    margin-top: 268px;
-    padding: calc((100% - 93%)/2);
-    box-sizing: border-box;
-  }
-  #profile #name {
-    line-height: 51px;
-    margin-bottom: 3px;
-  }
-  #profile #title {
-    color: #b3b3b3;
-    line-height: 32px;
-    margin-bottom: 3px;
-  }
-  #profile #location {
-    margin-bottom: 22px;
-    font-weight: 400;
-  }
-  #profile #contact-div {
-    font-family: "Nunito-Sans-Regular";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 23.13px;
-    letter-spacing: 0px;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: auto;
-    height: 76px;
-    text-decoration: none;
-    margin-top: 17px;
-  }
-  #profile #contact-div .contact-link {
-    color: white;
-  }
-
-  .portfolio-project {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 60.2px;
-  }
-  .portfolio-project .project-image-link {
-    width: 44.1%;
-    overflow: hidden;
-    height: 120px;
-  }
-  .portfolio-project .project-image-link .portfolio-image {
-    width: 100%;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-  }
-  .portfolio-project .project-info-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 49.6%;
-    height: 120px;
-  }
-  .portfolio-project .title {
-    color: #1a1a1a;
-  }
-  .portfolio-project .tech {
-    margin: 3% 0;
-  }
-  .portfolio-project .design-doc-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .portfolio-project .design-doc-div .xd-icon {
-    width: 21px;
-    margin-right: 4.5px;
-  }
-  .portfolio-project .design-doc-div .design-doc-text {
-    color: #1a1a1a;
-  }
-
-  .experience-item {
-    margin-bottom: 37px;
-  }
-  .experience-item .place {
-    color: #b3b3b3;
-    margin: 1% 0;
-  }
-  .experience-item .time {
-    margin-bottom: 18px;
-  }
-
-  .education-item {
-    margin-bottom: 27.8px;
-  }
-  .education-item .degree {
-    color: #b3b3b3;
-  }
-
-  p {
-    margin-bottom: 15px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #profile {
-    width: 294px;
-  }
-  #profile #image {
-    width: 100%;
-    position: relative;
-    left: 0px;
-    margin: 22px auto 0px auto;
-    height: 227px;
-  }
-  #profile #nameTitleLocation {
-    margin-top: 0px;
-    height: 322px;
-    width: 100%;
-    left: 0;
-  }
-
-  #right-side {
-    width: 551px;
-    margin: 86px 0 0 61px;
-  }
-  #right-side .portfolio-project {
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 40.5px;
-  }
-  #right-side .portfolio-project .project-image-link {
-    width: 34.1%;
-    margin-right: 51px;
-  }
-  #right-side .portfolio-project .project-info-div {
-    height: 72px;
-  }
-  #right-side .portfolio-project .portfolio-image {
-    margin-right: 51px;
-  }
-  #right-side .portfolio-project .design-doc-div {
-    margin-top: 5px;
-    text-decoration: underline;
-  }
-  #right-side .portfolio-project .xd-icon {
-    margin-right: 7px;
-    width: 18px;
-  }
-  #right-side .experience-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  #right-side .experience-item .item-stats {
-    width: 119px;
-  }
-  #right-side .experience-item .description {
-    width: 386px;
-  }
-}
-
-/*# sourceMappingURL=lyn.css.map */
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

@@ -20,7 +20,7 @@ const Home2 = (props)=>{
       if(loadStatus === 'no'){
         setLoad('yes')
       }
-    }, 2500)
+    }, 2000)
     
     window.scrollTo(0,0);
     console.log(loadStatus, 'load')
@@ -30,7 +30,11 @@ const Home2 = (props)=>{
 
   if(loadStatus === 'no'){
     return (
-      <div style={{height:'100vh', width:'100vw', background:'linear-gradient(#212121, #3D3D3D)'}}><h1>loading</h1></div>
+      <div style={{height:'100vh', width:'100vw', background:'linear-gradient(#FFFFFF, #BDBDBD)', display:'flex', flexDirection:'column', justifyContent:'center'}}>
+        {/* <h1>loading</h1> */}
+        <img id='triangle'width={30} src={'/assets/icons/header/triangle.png'} style={{alignSelf:'center'}} />
+        {/* <div id='load-bar'></div> */}
+      </div>
     )
   }
   

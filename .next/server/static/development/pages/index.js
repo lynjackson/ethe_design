@@ -97,7 +97,7 @@ module.exports =
 /*!*******************************!*\
   !*** ./components/header2.js ***!
   \*******************************/
-/*! exports provided: Header, HomeHeader, ValuesHeader, LynHeader, HomeHeader2, Headerz */
+/*! exports provided: Header, HomeHeader, ValuesHeader, LynHeader */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -106,8 +106,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeHeader", function() { return HomeHeader; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ValuesHeader", function() { return ValuesHeader; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LynHeader", function() { return LynHeader; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeHeader2", function() { return HomeHeader2; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Headerz", function() { return Headerz; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _public_styles_css_header2_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../public/styles/css/header2.css */ "./public/styles/css/header2.css");
@@ -125,11 +123,14 @@ const Header = props => {
   //component variables
   const menuOpen = {
     height: '100vh',
-    background: 'linear-gradient(#212121, #3D3D3D)'
+    background: 'linear-gradient(#212121, #3D3D3D)',
+    logo: props.logo
   };
   const defaultHeader = {
     height: 58.67,
-    background: props.headerBackground
+    background: props.headerBackground,
+    paddingTop: props.paddingTop,
+    logo: props.logoImage
   };
   const MenuButtonStyle = {
     display: 'flex',
@@ -157,7 +158,8 @@ const Header = props => {
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
     height: 58.67,
     paddingTop: props.paddingTop,
-    background: props.headerBackground
+    background: props.headerBackground,
+    logo: props.logoImage
   });
   const {
     0: menuOption,
@@ -191,29 +193,29 @@ const Header = props => {
     style: headerStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 52
     },
     __self: undefined
   }, __jsx("div", {
     id: "header-items2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 53
     },
     __self: undefined
   }, __jsx("a", {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 55
     },
     __self: undefined
   }, __jsx("img", {
-    src: props.logoImage,
+    src: headerStyle.logo,
     id: "logo2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 55
     },
     __self: undefined
   })), __jsx("img", {
@@ -242,14 +244,14 @@ const Header = props => {
           opacity: 0
         });
         changeMenuOption({
-          icon: 'assets/icons/header/menu-black.png',
+          icon: props.menuIcon,
           style: MenuButtonStyle
         });
       }
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 57
     },
     __self: undefined
   })), __jsx("div", {
@@ -257,24 +259,24 @@ const Header = props => {
     style: navOpStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 71
     },
     __self: undefined
   }, __jsx("a", {
-    href: "/lyn",
+    href: "/values2",
     className: "nav-option",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 72
     },
     __self: undefined
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 72
     },
     __self: undefined
-  }, "our designer")), __jsx("hr", {
+  }, "values")), __jsx("hr", {
     id: "divider",
     style: {
       borderWidth: 1,
@@ -283,24 +285,24 @@ const Header = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 73
     },
     __self: undefined
   }), __jsx("a", {
-    href: "/values2",
+    href: "/lyn",
     className: "nav-option",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 74
     },
     __self: undefined
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 74
     },
     __self: undefined
-  }, "our values"))));
+  }, "creator"))));
 };
 const HomeHeader = () => {
   return __jsx(Header, {
@@ -308,9 +310,10 @@ const HomeHeader = () => {
     menuIcon: "assets/icons/header/menu-black.png",
     headerItemsJustifyContent: "space-between",
     headerBackground: "rgba(0,0,0,0)",
+    logo: window.location.pathname === '/' ? '/assets/icons/header/logo-white.png' : props.logoImage,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 83
     },
     __self: undefined
   });
@@ -322,9 +325,10 @@ const ValuesHeader = () => {
     logoDisplay: "flex",
     headerItemsJustifyContent: "space-between",
     headerBackground: "rgba(0,0,0,0)",
+    logo: "/assets/icons/header/logo-white.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 89
     },
     __self: undefined
   });
@@ -337,340 +341,13 @@ const LynHeader = () => {
     paddingTop: 22,
     headerItemsJustifyContent: "space-between",
     headerBackground: "linear-gradient(#212121, #3D3D3D)",
+    logo: "/assets/icons/header/logo-white.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 95
     },
     __self: undefined
   });
-};
-const HomeHeader2 = () => {
-  const blackish = 'rgb(26,26,26)';
-  const whitish = 'rgb(244,244,244)';
-  const {
-    0: headerBackground,
-    1: setBack
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(window.location.pathname === '/ethe_design' && window.pageYOffset < 5 ? 'hsla(0,0,96, 1)' : blackish);
-  const {
-    0: headerHeight,
-    1: setHeight
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(58.67);
-  const {
-    0: stateDisplay,
-    1: setStateDisplay
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('none');
-  const {
-    0: stateJustify,
-    1: setStateJustify
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('center');
-  const {
-    0: statePadding,
-    1: setStatePadding
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
-  const {
-    0: offset,
-    1: setOffset
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
-  const {
-    0: screenWidth,
-    1: setScreenWidth
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(window.innerWidth);
-  const {
-    0: headerStyle,
-    1: setHeaderStyle
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
-    height: 58.67,
-    justifyContent: 'center',
-    paddingTop: 0,
-    background: 'rgba(0,0,0,0)'
-  });
-  console.log(screenWidth, 'screenWidth');
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    window.addEventListener('resize', e => {
-      setScreenWidth(window.innerWidth);
-    });
-    window.addEventListener('scroll', e => {
-      setOffset(window.pageYOffset);
-      console.log(offset, 'offset');
-    }); // document.getElementById('home-header').addEventListener('wheel', (e)=>{
-    //   if(headerHeight === '100vh'){ e.preventDefault() }
-    // })
-  });
-  return __jsx("div", {
-    id: "home-header",
-    style: {
-      height: headerHeight,
-      justifyContent: stateJustify,
-      paddingTop: statePadding,
-      background: headerHeight < 60 && window.location.pathname === '/ethe_design' ? 'rgba(0,0,0,0)' : 'linear-gradient(red, blue)'
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 155
-    },
-    __self: undefined
-  }, __jsx("div", {
-    id: "header-items2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 156
-    },
-    __self: undefined
-  }, __jsx("img", {
-    src: 'assets/icons/header/menu.png',
-    style: {
-      display: 'flex'
-    },
-    id: "menu2",
-    onClick: () => {
-      if (headerHeight === 58.67) {
-        setStateJustify('flex-start');
-        setStatePadding(11);
-        setHeight('100vh');
-        setStateDisplay('flex');
-      } else {
-        setHeight(58.67);
-        setStateDisplay('none');
-        setTimeout(() => {
-          setStateJustify('center');
-          setStatePadding(0);
-        }, 500);
-      }
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 158
-    },
-    __self: undefined
-  })), __jsx("div", {
-    id: "nav-options",
-    style: {
-      display: stateDisplay
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 174
-    },
-    __self: undefined
-  }, __jsx(Link, {
-    to: "/ethe_design/values",
-    className: "nav-option",
-    onClick: () => {
-      setHeight(58.67);
-      setBack(blackish);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 175
-    },
-    __self: undefined
-  }, __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 175
-    },
-    __self: undefined
-  }, "our values")), __jsx("hr", {
-    id: "divider",
-    style: {
-      borderWidth: 1,
-      borderColor: '#A3A3A3',
-      width: '100%'
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 176
-    },
-    __self: undefined
-  }), __jsx(Link, {
-    to: "/ethe_design/lyn",
-    className: "nav-option",
-    onClick: () => {
-      setHeight(58.67);
-      setBack(blackish);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 177
-    },
-    __self: undefined
-  }, __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 177
-    },
-    __self: undefined
-  }, "our designer"))));
-};
-const Headerz = () => {
-  const blackish = 'rgb(26,26,26)';
-  const whitish = 'rgb(244,244,244)';
-  const {
-    0: headerBackground,
-    1: setBack
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(window.location.pathname === '/ethe_design' && window.pageYOffset < 5 ? 'hsla(0,0,96, 1)' : blackish);
-  const {
-    0: headerHeight,
-    1: setHeight
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(58.67);
-  const {
-    0: stateDisplay,
-    1: setStateDisplay
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('none');
-  const {
-    0: stateJustify,
-    1: setStateJustify
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('center');
-  const {
-    0: statePadding,
-    1: setStatePadding
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
-  const {
-    0: offset,
-    1: setOffset
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
-  const {
-    0: screenWidth,
-    1: setScreenWidth
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(window.innerWidth);
-  console.log(screenWidth, 'screenWidth');
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    window.addEventListener('resize', e => {
-      setScreenWidth(window.innerWidth);
-    });
-    window.addEventListener('scroll', e => {
-      setOffset(window.pageYOffset);
-      console.log(offset, 'offset');
-    });
-    document.getElementById('header2').addEventListener('wheel', e => {
-      if (headerHeight === '100vh') {
-        e.preventDefault();
-      }
-    });
-  });
-  return __jsx("div", {
-    id: "header2",
-    style: {
-      height: headerHeight,
-      justifyContent: stateJustify,
-      paddingTop: statePadding,
-      backgroundColor: headerHeight < 60 && window.location.pathname === '/ethe_design' ? whitish : blackish
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 216
-    },
-    __self: undefined
-  }, __jsx("div", {
-    id: "header-items2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 217
-    },
-    __self: undefined
-  }, __jsx(Link, {
-    to: "/ethe_design",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 218
-    },
-    __self: undefined
-  }, __jsx("img", {
-    src: 'assets/icons/header/logo-semibold.png',
-    id: "logo2",
-    style: {
-      filter: headerHeight === '100vh' || window.location.pathname !== '/ethe_design' ? 'invert(1)' : 'invert(0)'
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 218
-    },
-    __self: undefined
-  })), __jsx("img", {
-    src: 'assets/icons/header/menu.png',
-    style: {
-      display: 'flex'
-    },
-    id: "menu2",
-    onClick: () => {
-      if (headerHeight === 58.67) {
-        setStateDisplay('flex');
-        setStateJustify('flex-start');
-        setStatePadding(11);
-        setHeight('100vh');
-      } else {
-        setHeight(58.67);
-        setStateDisplay('none');
-        setTimeout(() => {
-          setStateJustify('center');
-          setStatePadding(0);
-        }, 500);
-      }
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 220
-    },
-    __self: undefined
-  })), __jsx("div", {
-    id: "nav-options",
-    style: {
-      display: stateDisplay
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 243
-    },
-    __self: undefined
-  }, __jsx(Link, {
-    to: "/ethe_design/values",
-    className: "nav-option",
-    onClick: () => {
-      setHeight(58.67);
-      setBack(blackish);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 244
-    },
-    __self: undefined
-  }, __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 244
-    },
-    __self: undefined
-  }, "our values")), __jsx("hr", {
-    id: "divider",
-    style: {
-      borderWidth: 1,
-      borderColor: '#A3A3A3',
-      width: '100%'
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 245
-    },
-    __self: undefined
-  }), __jsx(Link, {
-    to: "/ethe_design/lyn",
-    className: "nav-option",
-    onClick: () => {
-      setHeight(58.67);
-      setBack(blackish);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 246
-    },
-    __self: undefined
-  }, __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 246
-    },
-    __self: undefined
-  }, "our designer"))));
 };
 
 /***/ }),
@@ -1160,14 +837,13 @@ const Home2 = props => {
     window.onload = () => {
       setLoad('yes');
       console.log('loaded!');
-    }; // window.onload = ()=> console.log('loaded!');
-    // if (loadStatus === 'no'){
-    //   window.addEventListener('load', ()=>{
-    //     setLoad('yes');
-    //   })
-    // }
+    };
 
-
+    setTimeout(() => {
+      if (loadStatus === 'no') {
+        setLoad('yes');
+      }
+    }, 2000);
     window.scrollTo(0, 0);
     console.log(loadStatus, 'load');
     document.getElementsByTagName("html")[0].style.backgroundImage = 'url(/assets/images/back_home.jpg)';
@@ -1178,20 +854,29 @@ const Home2 = props => {
       style: {
         height: '100vh',
         width: '100vw',
-        background: 'linear-gradient(#212121, #3D3D3D)'
+        background: 'linear-gradient(#FFFFFF, #BDBDBD)',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center'
       },
       __source: {
         fileName: _jsxFileName,
         lineNumber: 33
       },
       __self: undefined
-    }, __jsx("h1", {
+    }, __jsx("img", {
+      id: "triangle",
+      width: 30,
+      src: '/assets/icons/header/triangle.png',
+      style: {
+        alignSelf: 'center'
+      },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33
+        lineNumber: 35
       },
       __self: undefined
-    }, "loading"));
+    }));
   }
 
   return __jsx("div", {
@@ -1202,7 +887,7 @@ const Home2 = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 42
     },
     __self: undefined
   }, __jsx(_components_header2__WEBPACK_IMPORTED_MODULE_1__["HomeHeader"], {
@@ -1210,26 +895,26 @@ const Home2 = props => {
     headerItemsJustifyContent: "flex-end",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 43
     },
     __self: undefined
   }), __jsx(_components_homeComponents__WEBPACK_IMPORTED_MODULE_5__["AboveFold"], {
     appState: props,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 44
     },
     __self: undefined
   }), __jsx(_components_homeComponents__WEBPACK_IMPORTED_MODULE_5__["Projects"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 45
     },
     __self: undefined
   }), __jsx(_components_homeComponents__WEBPACK_IMPORTED_MODULE_5__["Vision"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 46
     },
     __self: undefined
   }));

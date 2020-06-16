@@ -17,6 +17,30 @@
     0%{left:-500px;}
     100%{left:0;}
   }
+  
+  @keyframes loadUp {
+    0%{width:0%;}
+    100%{width:100%;}
+  }
+  @keyframes spinner {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(359deg);
+    }
+  }
+
+  #triangle{
+    animation: spinner 2s infinite linear;
+    transform: rotate(45deg);
+  }
+  #load-bar{
+    animation: loadUp 2s forwards;
+    width:0%;
+    height:10px;
+    background-color:white;
+  }
 
   .home-header{
     color:$darkGrey;
