@@ -67,12 +67,7 @@ const Values = ()=>{
   
 
   useEffect(()=>{
-    // window.onload = ()=> {setLoad('yes'); console.log('loaded!')};
-    // setTimeout(()=>{
-    //   if(loadStatus === 'no'){
-    //     setLoad('yes')
-    //   }
-    // }, 2500)
+    
 
     document.getElementById('value-title').style.opacity = 1;
     document.getElementById('value-text').style.opacity = 1;
