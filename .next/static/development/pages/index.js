@@ -1101,12 +1101,18 @@ var Home2 = function Home2(props) {
       setLoad = _useState[1];
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    // window.onload = ()=>{setLoad('yes')}
-    if (loadStatus === 'no') {
-      window.addEventListener('load', function () {
-        setLoad('yes');
-      });
-    }
+    var setLoadYes = function setLoadYes() {
+      setLoad('yes');
+    };
+
+    window.onload = function () {
+      return setLoadYes();
+    }; // if (loadStatus === 'no'){
+    //   window.addEventListener('load', ()=>{
+    //     setLoad('yes');
+    //   })
+    // }
+
 
     window.scrollTo(0, 0);
     console.log(loadStatus, 'load');
@@ -1122,13 +1128,13 @@ var Home2 = function Home2(props) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
+        lineNumber: 33
       },
       __self: this
     }, __jsx("h1", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
+        lineNumber: 33
       },
       __self: this
     }, "loading"));
@@ -1142,7 +1148,7 @@ var Home2 = function Home2(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 38
     },
     __self: this
   }, __jsx(_components_header2__WEBPACK_IMPORTED_MODULE_1__["HomeHeader"], {
@@ -1150,26 +1156,26 @@ var Home2 = function Home2(props) {
     headerItemsJustifyContent: "flex-end",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 39
     },
     __self: this
   }), __jsx(_components_homeComponents__WEBPACK_IMPORTED_MODULE_5__["AboveFold"], {
     appState: props,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   }), __jsx(_components_homeComponents__WEBPACK_IMPORTED_MODULE_5__["Projects"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: this
   }), __jsx(_components_homeComponents__WEBPACK_IMPORTED_MODULE_5__["Vision"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: this
   }));
@@ -1179,7 +1185,7 @@ var Home2 = function Home2(props) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 0:
 /*!*************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2FLyn%2FDesktop%2FProjects%2Fethe_design%2Fpages%2Findex.js ***!
   \*************************************************************************************************************************************/
@@ -1202,5 +1208,5 @@ module.exports = dll_e9ad7d891b372a4221cf;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

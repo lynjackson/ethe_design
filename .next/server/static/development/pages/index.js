@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1157,12 +1157,16 @@ const Home2 = props => {
     1: setLoad
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('no');
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    // window.onload = ()=>{setLoad('yes')}
-    if (loadStatus === 'no') {
-      window.addEventListener('load', () => {
-        setLoad('yes');
-      });
-    }
+    const setLoadYes = () => {
+      setLoad('yes');
+    };
+
+    window.onload = () => setLoadYes(); // if (loadStatus === 'no'){
+    //   window.addEventListener('load', ()=>{
+    //     setLoad('yes');
+    //   })
+    // }
+
 
     window.scrollTo(0, 0);
     console.log(loadStatus, 'load');
@@ -1178,13 +1182,13 @@ const Home2 = props => {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
+        lineNumber: 33
       },
       __self: undefined
     }, __jsx("h1", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
+        lineNumber: 33
       },
       __self: undefined
     }, "loading"));
@@ -1198,7 +1202,7 @@ const Home2 = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 38
     },
     __self: undefined
   }, __jsx(_components_header2__WEBPACK_IMPORTED_MODULE_1__["HomeHeader"], {
@@ -1206,26 +1210,26 @@ const Home2 = props => {
     headerItemsJustifyContent: "flex-end",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 39
     },
     __self: undefined
   }), __jsx(_components_homeComponents__WEBPACK_IMPORTED_MODULE_5__["AboveFold"], {
     appState: props,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: undefined
   }), __jsx(_components_homeComponents__WEBPACK_IMPORTED_MODULE_5__["Projects"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: undefined
   }), __jsx(_components_homeComponents__WEBPACK_IMPORTED_MODULE_5__["Vision"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: undefined
   }));
@@ -1279,7 +1283,7 @@ const Home2 = props => {
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
