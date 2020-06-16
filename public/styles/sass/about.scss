@@ -48,7 +48,7 @@
 
         #sec1-image-div{
             @include hw(187px, 100vw);
-            background-image: url('../../assets/images/fisherman.png');
+            background-image: url('/assets/images/fisherman.png');
             background-position-x: center;
             background-size:cover;
         }
@@ -84,7 +84,7 @@
         margin-bottom: 50px;
         #sec3-image{
             margin-bottom: 31px;
-            background-image: url('../../assets/images/sec3.jpeg');
+            background-image: url('/assets/images/sec3.jpeg');
             background-size:cover;
             height: 276px;
         }
@@ -132,7 +132,7 @@
         #sec1-image-div{
             @include hw(344px, 28.8%);
             overflow:hidden;
-            background-image: url('../../assets/images/fisherman.png');
+            background-image: url('/assets/images/fisherman.png');
             background-position-x: center;
             background-size:cover;
         }
