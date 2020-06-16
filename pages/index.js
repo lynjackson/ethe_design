@@ -9,7 +9,6 @@ import '../public/styles/css/pages.css';
 // import { connect } from 'react-redux';
 // import {Services} from '../components/homeComponents';
 import {Projects, Vision, AboveFold} from '../components/homeComponents';
-import {Contact} from '../components/contact';
 
 const Home2 = (props)=>{
   
