@@ -15,8 +15,8 @@ const Home2 = (props)=>{
   const [loadStatus, setLoad] = useState('no')
 
   useEffect(()=>{
-    const setLoadYes = ()=>{setLoad('yes')}
-    window.onload = ()=> setLoadYes();
+    window.onload = ()=> {setLoad('yes'); console.log('loaded!')};
+    // window.onload = ()=> console.log('loaded!');
     // if (loadStatus === 'no'){
     //   window.addEventListener('load', ()=>{
     //     setLoad('yes');

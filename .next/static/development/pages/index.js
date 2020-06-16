@@ -1101,13 +1101,11 @@ var Home2 = function Home2(props) {
       setLoad = _useState[1];
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    var setLoadYes = function setLoadYes() {
-      setLoad('yes');
-    };
-
     window.onload = function () {
-      return setLoadYes();
-    }; // if (loadStatus === 'no'){
+      setLoad('yes');
+      console.log('loaded!');
+    }; // window.onload = ()=> console.log('loaded!');
+    // if (loadStatus === 'no'){
     //   window.addEventListener('load', ()=>{
     //     setLoad('yes');
     //   })

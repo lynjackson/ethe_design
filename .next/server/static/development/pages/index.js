@@ -1157,11 +1157,11 @@ const Home2 = props => {
     1: setLoad
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('no');
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    const setLoadYes = () => {
+    window.onload = () => {
       setLoad('yes');
-    };
-
-    window.onload = () => setLoadYes(); // if (loadStatus === 'no'){
+      console.log('loaded!');
+    }; // window.onload = ()=> console.log('loaded!');
+    // if (loadStatus === 'no'){
     //   window.addEventListener('load', ()=>{
     //     setLoad('yes');
     //   })
