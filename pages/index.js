@@ -16,12 +16,12 @@ const Home2 = (props)=>{
 
   useEffect(()=>{
     window.onload = ()=> {setLoad('yes'); console.log('loaded!')};
-    // window.onload = ()=> console.log('loaded!');
-    // if (loadStatus === 'no'){
-    //   window.addEventListener('load', ()=>{
-    //     setLoad('yes');
-    //   })
-    // }
+    setTimeout(()=>{
+      if(loadStatus === 'no'){
+        setLoad('yes')
+      }
+    }, 2500)
+    
     window.scrollTo(0,0);
     console.log(loadStatus, 'load')
 
