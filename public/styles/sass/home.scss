@@ -295,6 +295,9 @@
 }
 
 @media screen and (min-width: 1440px){
+  html{
+    background-size: cover;
+  }
   #projects{
     .project{
       

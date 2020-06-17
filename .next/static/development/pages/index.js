@@ -170,7 +170,7 @@ var Header = function Header(props) {
     },
     __self: this
   }, __jsx("a", {
-    href: "/values2",
+    href: "/lyn",
     className: "nav-option",
     __source: {
       fileName: _jsxFileName,
@@ -183,7 +183,7 @@ var Header = function Header(props) {
       lineNumber: 72
     },
     __self: this
-  }, "values")), __jsx("hr", {
+  }, "creator")), __jsx("hr", {
     id: "divider",
     style: {
       borderWidth: 1,
@@ -196,7 +196,7 @@ var Header = function Header(props) {
     },
     __self: this
   }), __jsx("a", {
-    href: "/lyn",
+    href: "/values2",
     className: "nav-option",
     __source: {
       fileName: _jsxFileName,
@@ -209,7 +209,7 @@ var Header = function Header(props) {
       lineNumber: 74
     },
     __self: this
-  }, "creator"))));
+  }, "values"))));
 };
 var HomeHeader = function HomeHeader() {
   return __jsx(Header, {
@@ -866,7 +866,7 @@ var Home2 = function Home2(props) {
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!*************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2FLyn%2FDesktop%2FProjects%2Fethe_design%2Fpages%2Findex.js ***!
   \*************************************************************************************************************************************/
@@ -889,5 +889,5 @@ module.exports = dll_e9ad7d891b372a4221cf;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js","styles"]]]);
+},[[1,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

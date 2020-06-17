@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -263,7 +263,7 @@ const Header = props => {
     },
     __self: undefined
   }, __jsx("a", {
-    href: "/values2",
+    href: "/lyn",
     className: "nav-option",
     __source: {
       fileName: _jsxFileName,
@@ -276,7 +276,7 @@ const Header = props => {
       lineNumber: 72
     },
     __self: undefined
-  }, "values")), __jsx("hr", {
+  }, "creator")), __jsx("hr", {
     id: "divider",
     style: {
       borderWidth: 1,
@@ -289,7 +289,7 @@ const Header = props => {
     },
     __self: undefined
   }), __jsx("a", {
-    href: "/lyn",
+    href: "/values2",
     className: "nav-option",
     __source: {
       fileName: _jsxFileName,
@@ -302,7 +302,7 @@ const Header = props => {
       lineNumber: 74
     },
     __self: undefined
-  }, "creator"))));
+  }, "values"))));
 };
 const HomeHeader = () => {
   return __jsx(Header, {
@@ -968,7 +968,7 @@ const Home2 = props => {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
