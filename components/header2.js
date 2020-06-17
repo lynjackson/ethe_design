@@ -71,7 +71,7 @@ export const Header = (props)=>{
       <div id='nav-options' style={navOpStyle}>
         <a href='/lyn' className='nav-option'><h2>creator</h2></a>
         <hr id='divider' style={{borderWidth:1, borderColor:'#A3A3A3', width:'100%'}}/>
-        <a href='/values2' className='nav-option'><h2>values</h2></a>
+        <a href='/values' className='nav-option'><h2>values</h2></a>
       </div>
     
     </div>

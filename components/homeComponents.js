@@ -152,7 +152,7 @@ export const Vision = () =>{
         </div>
       }
 
-      <a href='/ethe_design/values' className='nav-option'><h4 className='home-header' id='more-values'>MORE VALUES</h4></a>
+      <a href='/values' className='nav-option'><h4 className='home-header' id='more-values'>MORE VALUES</h4></a>
       {/* <div id='sec1-image-div'></div> */}
     </div>
   )

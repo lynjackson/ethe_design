@@ -289,7 +289,7 @@ const Header = props => {
     },
     __self: undefined
   }), __jsx("a", {
-    href: "/values2",
+    href: "/values",
     className: "nav-option",
     __source: {
       fileName: _jsxFileName,
@@ -776,7 +776,7 @@ const Vision = () => {
     },
     __self: undefined
   })), __jsx("a", {
-    href: "/ethe_design/values",
+    href: "/values",
     className: "nav-option",
     __source: {
       fileName: _jsxFileName,

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -289,7 +289,7 @@ const Header = props => {
     },
     __self: undefined
   }), __jsx("a", {
-    href: "/values2",
+    href: "/values",
     className: "nav-option",
     __source: {
       fileName: _jsxFileName,
@@ -1015,7 +1015,7 @@ const Lyn2 = () => {
 
 /***/ }),
 
-/***/ 6:
+/***/ 5:
 /*!****************************!*\
   !*** multi ./pages/lyn.js ***!
   \****************************/

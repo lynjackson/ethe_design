@@ -196,7 +196,7 @@ var Header = function Header(props) {
     },
     __self: this
   }), __jsx("a", {
-    href: "/values2",
+    href: "/values",
     className: "nav-option",
     __source: {
       fileName: _jsxFileName,
@@ -684,7 +684,7 @@ var Vision = function Vision() {
     },
     __self: this
   })), __jsx("a", {
-    href: "/ethe_design/values",
+    href: "/values",
     className: "nav-option",
     __source: {
       fileName: _jsxFileName,
