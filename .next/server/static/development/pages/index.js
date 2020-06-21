@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -113,11 +113,6 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "/Users/Lyn/Desktop/Projects/ethe_design/components/header2.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
- // import { HashRouter, Switch, Link, Route, Redirect } from "react-router-dom";
-// import ethey from 'assets/icons/header/logo-semibold.png';
-// import menuButton from 'assets/icons/header/menu.png'
-// import closeX from 'assets/icons/header/closeX.png'
-// import plus from '../assets/images/plus-sign.png';
 
 const Header = props => {
   //component variables
@@ -165,7 +160,6 @@ const Header = props => {
     0: menuOption,
     1: changeMenuOption
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
-    // icon: 'assets/icons/header/menu.png',
     icon: props.menuIcon,
     style: {
       display: 'flex',
@@ -193,21 +187,21 @@ const Header = props => {
     style: headerStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 44
     },
     __self: undefined
   }, __jsx("div", {
     id: "header-items2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 45
     },
     __self: undefined
   }, __jsx("a", {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 47
     },
     __self: undefined
   }, __jsx("img", {
@@ -215,7 +209,7 @@ const Header = props => {
     id: "logo2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 47
     },
     __self: undefined
   })), __jsx("img", {
@@ -251,7 +245,7 @@ const Header = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 49
     },
     __self: undefined
   })), __jsx("div", {
@@ -259,7 +253,7 @@ const Header = props => {
     style: navOpStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 63
     },
     __self: undefined
   }, __jsx("a", {
@@ -267,13 +261,13 @@ const Header = props => {
     className: "nav-option",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 64
     },
     __self: undefined
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 64
     },
     __self: undefined
   }, "creator")), __jsx("hr", {
@@ -285,7 +279,7 @@ const Header = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 65
     },
     __self: undefined
   }), __jsx("a", {
@@ -293,13 +287,13 @@ const Header = props => {
     className: "nav-option",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 66
     },
     __self: undefined
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 66
     },
     __self: undefined
   }, "values"))));
@@ -313,7 +307,7 @@ const HomeHeader = () => {
     logo: window.location.pathname === '/' ? '/assets/icons/header/logo-white.png' : props.logoImage,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 75
     },
     __self: undefined
   });
@@ -328,7 +322,7 @@ const ValuesHeader = () => {
     logo: "/assets/icons/header/logo-white.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 81
     },
     __self: undefined
   });
@@ -344,7 +338,7 @@ const LynHeader = () => {
     logo: "/assets/icons/header/logo-white.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 87
     },
     __self: undefined
   });
@@ -371,17 +365,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _public_styles_css_home_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_public_styles_css_home_css__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/Lyn/Desktop/Projects/ethe_design/components/homeComponents.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
- // import '../../styles/home/aboveFold.css';
 
- // import { HashRouter, Switch, Link, Route, Redirect } from "react-router-dom";
-// import Experiences from '/assets/icons/campaign.png';
-// import Data from '/assets/icons/report.png';
-// import Performance from '/assets/icons/speed.png';
-// import art from '/assets/images/cover.jpeg'
-// import bill_back from '/assets/images/bill-background.jpeg'
-// import studio from '/assets/images/studio.png'
-// import puddle from '/assets/images/puddle.jpeg'
-// import bill_logo from '../public/assets/icons/bill.png'
 
 const AboveFold = props => {
   const topSpace = window.pageYOffset;
@@ -410,48 +394,47 @@ const AboveFold = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 25
     },
     __self: undefined
   }, __jsx("h4", {
     className: "home-header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 26
     },
     __self: undefined
   }, "HEY, WE'RE ETHE."), __jsx("h1", {
     id: "above-title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 27
     },
     __self: undefined
   }, "We ", __jsx("span", {
     id: "team-up",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 27
     },
     __self: undefined
   }, "team up"), " with ", __jsx("span", {
     id: "creatives",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 27
     },
     __self: undefined
   }, "creatives"), " to make meaningful digital ", __jsx("span", {
     id: "dig-exp",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 27
     },
     __self: undefined
   }, "experiences")));
 };
 const Services = () => {
-  // const [servicesOpacity, setOpacity] = useState(.18)
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     window.addEventListener('scroll', () => {
       window.pageYOffset > 5 && window.pageYOffset < 500 ? document.getElementById('services').style.opacity = 1 : document.getElementById('services').style.opacity = .18;
@@ -463,35 +446,35 @@ const Services = () => {
       className: "service",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 60
+        lineNumber: 43
       },
       __self: undefined
     }, __jsx("img", {
       src: props.img,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 61
+        lineNumber: 44
       },
       __self: undefined
     }), __jsx("div", {
       className: "service-text",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 62
+        lineNumber: 45
       },
       __self: undefined
     }, __jsx("h3", {
       className: "service-header",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 63
+        lineNumber: 46
       },
       __self: undefined
     }, props.title), __jsx("p", {
       className: "service-para",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 64
+        lineNumber: 47
       },
       __self: undefined
     }, props.description)));
@@ -504,7 +487,7 @@ const Services = () => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 54
     },
     __self: undefined
   }, __jsx(Service, {
@@ -513,7 +496,7 @@ const Services = () => {
     description: 'We aim to associate your brand with joy in the minds of users.',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 55
     },
     __self: undefined
   }), __jsx(Service, {
@@ -522,7 +505,7 @@ const Services = () => {
     description: 'Data adds science to your art, taking you from guesswork to informed decisions.',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 56
     },
     __self: undefined
   }), __jsx(Service, {
@@ -531,13 +514,12 @@ const Services = () => {
     description: 'We analyze performance to enhance the experience further.',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 57
     },
     __self: undefined
   }));
 };
 const Projects = () => {
-  // const [stateOpacity, setOpacity] = useState(.18)
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     window.addEventListener('scroll', () => {
       document.getElementById('projects') && window.pageYOffset > 3 && window.pageYOffset < document.getElementById('projects').offsetTop + 100 ? document.getElementById('project-container').style.opacity = 1 : document.getElementById('project-container').style.opacity = .19;
@@ -554,7 +536,7 @@ const Projects = () => {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 93
+        lineNumber: 74
       },
       __self: undefined
     }, __jsx("a", {
@@ -562,7 +544,7 @@ const Projects = () => {
       target: "_blank",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 94
+        lineNumber: 75
       },
       __self: undefined
     }, __jsx("div", {
@@ -572,7 +554,7 @@ const Projects = () => {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 95
+        lineNumber: 76
       },
       __self: undefined
     }, __jsx("img", {
@@ -580,7 +562,7 @@ const Projects = () => {
       src: props.logo,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 96
+        lineNumber: 77
       },
       __self: undefined
     }), __jsx("h4", {
@@ -590,7 +572,7 @@ const Projects = () => {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 97
+        lineNumber: 78
       },
       __self: undefined
     }, props.tagline))));
@@ -600,21 +582,21 @@ const Projects = () => {
     id: "projects",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 86
     },
     __self: undefined
   }, __jsx("h4", {
     className: "home-header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 87
     },
     __self: undefined
   }, "CLIENT WORK"), __jsx("div", {
     id: "project-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107
+      lineNumber: 88
     },
     __self: undefined
   }, __jsx("div", {
@@ -625,7 +607,7 @@ const Projects = () => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108
+      lineNumber: 89
     },
     __self: undefined
   }, __jsx("a", {
@@ -633,7 +615,7 @@ const Projects = () => {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 90
     },
     __self: undefined
   }, __jsx("div", {
@@ -643,7 +625,7 @@ const Projects = () => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 91
     },
     __self: undefined
   }, __jsx("img", {
@@ -651,7 +633,7 @@ const Projects = () => {
     src: '/assets/icons/bill.png',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 92
     },
     __self: undefined
   }), __jsx("h4", {
@@ -661,7 +643,7 @@ const Projects = () => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112
+      lineNumber: 93
     },
     __self: undefined
   }, 'A better way to order')))), __jsx(Project, {
@@ -674,7 +656,7 @@ const Projects = () => {
     link: 'https://ptstudio.ljoconnor5.now.sh/',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 97
     },
     __self: undefined
   })));
@@ -683,8 +665,7 @@ const Vision = () => {
   const {
     0: state,
     1: stateRefresh
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0); // const [stateOpacity, setOpacity] = useState(.18)
-
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     window.addEventListener('scroll', () => {
       document.getElementById('vision') && window.pageYOffset > document.getElementById('vision').offsetTop - 423 ? document.getElementById('vision').style.opacity = 1 : document.getElementById('vision').style.opacity = .18;
@@ -700,28 +681,28 @@ const Vision = () => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 114
     },
     __self: undefined
   }, __jsx("h4", {
     className: "home-header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 115
     },
     __self: undefined
   }, "WE THINK"), window.innerWidth < 1024 ? __jsx("div", {
     id: "vision-content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140
+      lineNumber: 118
     },
     __self: undefined
   }, __jsx("h1", {
     id: "vision-title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 141
+      lineNumber: 119
     },
     __self: undefined
   }, "Every interaction is a chance to captivate."), __jsx("div", {
@@ -729,42 +710,42 @@ const Vision = () => {
     src: '/assets/images/puddle.jpeg',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142
+      lineNumber: 120
     },
     __self: undefined
   }), __jsx("p", {
     id: "vision-text",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143
+      lineNumber: 121
     },
     __self: undefined
   }, "Customers remember how you make them feel. They expect intuitive products with useful information and capability. Our products aim to deliver in a way that maximizes positive feelings, which clients then associate with your brand.")) : __jsx("div", {
     id: "vision-content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 146
+      lineNumber: 124
     },
     __self: undefined
   }, __jsx("div", {
     id: "titleAndText",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 147
+      lineNumber: 125
     },
     __self: undefined
   }, __jsx("h1", {
     id: "vision-title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 148
+      lineNumber: 126
     },
     __self: undefined
   }, "Every interaction is a chance to captivate."), __jsx("p", {
     id: "vision-text",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149
+      lineNumber: 127
     },
     __self: undefined
   }, "Customers remember how you make them feel. They expect intuitive products with useful information and capability. Our products aim to deliver in a way that maximizes positive feelings, which clients then associate with your brand.")), __jsx("div", {
@@ -772,7 +753,7 @@ const Vision = () => {
     src: '/assets/images/puddle.jpeg',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 151
+      lineNumber: 129
     },
     __self: undefined
   })), __jsx("a", {
@@ -780,7 +761,7 @@ const Vision = () => {
     className: "nav-option",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 155
+      lineNumber: 133
     },
     __self: undefined
   }, __jsx("h4", {
@@ -788,7 +769,7 @@ const Vision = () => {
     id: "more-values",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 155
+      lineNumber: 133
     },
     __self: undefined
   }, "MORE VALUES")));
@@ -821,10 +802,6 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
- // import { selectBook, overlay, menu, valueNextPage, valuePrevPage, defaultView, defaultHeader, invertHeader, menuHeader, scrollHeader, values} from '../actions/index.js'
-// import { bindActionCreators } from 'redux'
-// import { connect } from 'react-redux';
-// import {Services} from '../components/homeComponents';
 
 
 
@@ -861,7 +838,7 @@ const Home2 = props => {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33
+        lineNumber: 29
       },
       __self: undefined
     }, __jsx("img", {
@@ -873,7 +850,7 @@ const Home2 = props => {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35
+        lineNumber: 30
       },
       __self: undefined
     }));
@@ -887,7 +864,7 @@ const Home2 = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 36
     },
     __self: undefined
   }, __jsx(_components_header2__WEBPACK_IMPORTED_MODULE_1__["HomeHeader"], {
@@ -895,26 +872,26 @@ const Home2 = props => {
     headerItemsJustifyContent: "flex-end",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 37
     },
     __self: undefined
   }), __jsx(_components_homeComponents__WEBPACK_IMPORTED_MODULE_5__["AboveFold"], {
     appState: props,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 38
     },
     __self: undefined
   }), __jsx(_components_homeComponents__WEBPACK_IMPORTED_MODULE_5__["Projects"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 39
     },
     __self: undefined
   }), __jsx(_components_homeComponents__WEBPACK_IMPORTED_MODULE_5__["Vision"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 40
     },
     __self: undefined
   }));
@@ -968,7 +945,7 @@ const Home2 = props => {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

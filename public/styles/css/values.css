@@ -41,13 +41,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 500px;
+    max-width: 604px;
     transition: width 0.4s;
   }
   #value-con #title-and-text #value-text {
     transition: opacity 0.2s, bottom 0.2s;
     margin: 0;
-    max-width: 500px;
+    max-width: 604px;
     width: 92vw;
     position: relative;
   }
@@ -72,12 +72,16 @@
 }
 @media screen and (min-width: 1024px) {
   #value-con {
-    height: 54%;
+    height: 64%;
     width: 615px;
     margin: 20% auto;
   }
 }
 @media screen and (min-width: 1280px) {
+  #value-con {
+    height: 54%;
+    width: 615px;
+  }
   #value-con h3 {
     margin: 27.5px auto;
     font-size: 44px;

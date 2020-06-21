@@ -1,24 +1,9 @@
 import React, {useState, useEffect, useCallback} from 'react';
-// import '../../styles/home/aboveFold.css';
 import '../public/styles/css/home.css';
-// import { HashRouter, Switch, Link, Route, Redirect } from "react-router-dom";
-
-// import Experiences from '/assets/icons/campaign.png';
-// import Data from '/assets/icons/report.png';
-// import Performance from '/assets/icons/speed.png';
-
-// import art from '/assets/images/cover.jpeg'
-// import bill_back from '/assets/images/bill-background.jpeg'
-// import studio from '/assets/images/studio.png'
-// import puddle from '/assets/images/puddle.jpeg'
-// import bill_logo from '../public/assets/icons/bill.png'
-
 
 export const AboveFold = (props)=>{
   
   const topSpace = window.pageYOffset;
-  
-  
   const [state, setState] = useState(1);
   
   useEffect(()=>{
@@ -34,7 +19,6 @@ export const AboveFold = (props)=>{
     window.addEventListener('resize',()=>{
       setState(state + 1)
     })
-
   })
 
   return(
@@ -47,7 +31,6 @@ export const AboveFold = (props)=>{
 
 
 export const Services = ()=>{
-  // const [servicesOpacity, setOpacity] = useState(.18)
   
   useEffect(()=>{
     window.addEventListener('scroll', ()=>{
@@ -78,8 +61,6 @@ export const Services = ()=>{
 
 
 export const Projects = ()=>{
-  
-  // const [stateOpacity, setOpacity] = useState(.18)
   
   useEffect(()=>{
     window.addEventListener('scroll', ()=>{
@@ -121,7 +102,6 @@ export const Projects = ()=>{
 
 export const Vision = () =>{
   const [state, stateRefresh] = useState(0)
-  // const [stateOpacity, setOpacity] = useState(.18)
   
   useEffect(()=>{
     window.addEventListener('scroll', ()=>{
@@ -130,8 +110,6 @@ export const Vision = () =>{
     window.addEventListener('resize', ()=>{stateRefresh(state + 1)})
   })
 
-  
-  
   return(
     <div id='vision' style={{opacity: .18}}>
       <h4 className='home-header'>WE THINK</h4>
@@ -153,7 +131,6 @@ export const Vision = () =>{
       }
 
       <a href='/values' className='nav-option'><h4 className='home-header' id='more-values'>MORE VALUES</h4></a>
-      {/* <div id='sec1-image-div'></div> */}
     </div>
   )
 }

@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
-// import {ContactLink} from './lyn/contact-link';
 import '../public/styles/css/lyn.css';
-// import LynImage from '../assets/images/lyn2.jpg';
 
 
 export const Profile = ()=>{
@@ -39,7 +37,6 @@ export const Portfolio = ()=>{
     (tabStyle.height === 'auto') ? setTabStyle({height: 69, transform: 'rotate(-90deg)', marginBottom: 0}):setTabStyle({height: 'auto', transform: 'rotate(0deg)', marginBottom: 49})
   }
   
-
   const Project = (props)=>{
     return(
       <div className='portfolio-project'>
@@ -56,9 +53,9 @@ export const Portfolio = ()=>{
   
   return(
     <LynTab title={'Projects'}>
-      <Project image={'/assets/images/ethe.png'} projectName={'Ethe Design Site'} projectTech={'Built view layer with React and Sass. Optimized with React.lazy. Hosted with Next.js.'} imageLink={'/ethe_design'} xdLink={'https://xd.adobe.com/view/5c54b440-3964-4159-7353-f2eb278083b7-2a65/screen/26a9b51d-f537-4eb0-be5c-214f3870daf8/Vision-15-1'}/>
-      <Project image={'/assets/images/phone2.png'} projectName={'Diner Android App'} projectTech={'Built with React Native. Fetches REST API menu data and uses global Redux state and Firebase Database.'} imageLink={'https://lynjackson.github.io/bill_page'} xdLink={'https://xd.adobe.com/view/5ec009d3-2a06-4639-40a6-b639838c3164-28f1/'}/>
-      <Project image={'/assets/images/ptstudio.jpeg'} projectName={'Perfect Touch Studio Site'} projectTech={'Designed in Adobe XD. Built view layer with React and Sass. Used Next.js as a framework.'} imageLink={'https://ptstudio.ljoconnor5.now.sh/'} />
+      <Project image={'/assets/images/ethe.png'} projectName={'Ethe Design Site'} projectTech={'Built view layer with React and Sass. Optimized with React.lazy. Hosted with Next.js.'} imageLink={'/'} xdLink={'https://xd.adobe.com/view/5c54b440-3964-4159-7353-f2eb278083b7-2a65/grid/'}/>
+      <Project image={'/assets/images/phone2.png'} projectName={'Diner Android App'} projectTech={'Built with React Native. Fetches REST API menu data and uses global Redux state and Firebase Database.'} imageLink={'https://lynjackson.github.io/bill_page'} xdLink={'https://xd.adobe.com/view/5ec009d3-2a06-4639-40a6-b639838c3164-28f1/grid/'}/>
+      <Project image={'/assets/images/ptstudio.jpeg'} projectName={'Perfect Touch Studio Site'} projectTech={'Designed in Adobe XD. Built view layer with React and Sass. Used Next.js as a framework.'} imageLink={'https://ptstudio.ljoconnor5.now.sh/'} xdLink={'https://xd.adobe.com/view/6f8d950c-f4fb-489c-41da-49f00099f610-19bc/grid/'}/>
     </LynTab>
   )
 }

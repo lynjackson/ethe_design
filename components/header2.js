@@ -1,18 +1,11 @@
 import React, {useState, useEffect, useLayoutEffect, useCallback} from 'react';
 import '../public/styles/css/header2.css';
-// import { HashRouter, Switch, Link, Route, Redirect } from "react-router-dom";
-// import ethey from 'assets/icons/header/logo-semibold.png';
-// import menuButton from 'assets/icons/header/menu.png'
-// import closeX from 'assets/icons/header/closeX.png'
-// import plus from '../assets/images/plus-sign.png';
-
 
 export const Header = (props)=>{
   
   //component variables
   const menuOpen = { height: '100vh', background: 'linear-gradient(#212121, #3D3D3D)', logo: props.logo}
   const defaultHeader = { height: 58.67, background: props.headerBackground, paddingTop: props.paddingTop, logo: props.logoImage}
-
   const MenuButtonStyle = { display:'flex', width:26.63, height: 17.08, zIndex: 100 }
   const closeXStyle = { display:'flex', width:18.83, height: 19.29, zIndex: 100 }
 
@@ -30,7 +23,6 @@ export const Header = (props)=>{
   });
   
   const [menuOption, changeMenuOption] = useState({
-    // icon: 'assets/icons/header/menu.png',
     icon: props.menuIcon,
     style:{ display:'flex', width:26.63, height: 17.08, zIndex: 100 }
   });

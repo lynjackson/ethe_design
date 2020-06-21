@@ -8,15 +8,13 @@ const Values = ()=>{
   const [loadStatus, setLoad] = useState('no')
   const [counter, setCounter] = useState(0)
   const [touchStartPoint, setTouchStartPoint] = useState(0);
-  const title = ['Openness', 'Service', 'Evaluation', 'experience', 'renounce', 'enjoy', 'diligence'];
+  const title = ['diligence', 'joy', 'service', 'courage', 'receptivity'];
   const text = [
-    'Only by embracing the unknown and staying open are we free to find solutions we can’t initially imagine.',
-    'We try to empathize with the experiences of others, and help out where we can.',
-    'We regularly assess the productive value of things and adjust accordingly. We’re not that cool with convention.',
-    'Experience is all we really have. We don’t take our’s or others’ lightly.',
-    'We live for the process more than the result. And somehow, the result is usually better for it.',
-    'We try to find joy in whatever we do.',
-    'If something is worth doing, its worth doing wholeheartedly.'
+    'If doing something, do it all the way.',
+    'We try to focus on the pleasant elements.',
+    'Let’s empathize with the experiences of others, and help out where we can.',
+    'Though the future is ours to shape, we acknowledge the present as it is.',
+    'Only by embracing the unknown are we free to find solutions we can’t initially imagine.',
   ];
 
   const nextValue = ()=>{
@@ -37,7 +35,7 @@ const Values = ()=>{
   
   const readWheel = (e)=>{
     if(document.getElementById('value-title')){
-      if(e.deltaY > 0 && counter <= 5){
+      if(e.deltaY > 0 && counter <= 3){
           nextValue();
           window.removeEventListener('wheel', readWheel);
         }  
@@ -50,7 +48,7 @@ const Values = ()=>{
   const readSwipe = (e)=>{
     // setTimeout(()=>{
       window.removeEventListener('touchend', readSwipe)
-      if(e.changedTouches[0].screenY < touchStartPoint - 0 && counter <= 5){
+      if(e.changedTouches[0].screenY < touchStartPoint - 0 && counter <= 3){
         nextValue();
       }  
       else if(e.changedTouches[0].screenY > touchStartPoint + 0 && counter >= 1){
@@ -60,11 +58,9 @@ const Values = ()=>{
   const touchStart = (e)=>{ setTouchStartPoint(e.changedTouches[0].clientY); }
   const keyReaders = (e)=>{
     window.removeEventListener('keyup', keyReaders);
-    if(e.keyCode === 40 && counter <= 5 ){ nextValue() }
+    if(e.keyCode === 40 && counter <= 3 ){ nextValue() }
     else if(e.keyCode === 38 && counter >= 1){ prevValue() }
   }
-
-  
 
   useEffect(()=>{
     
@@ -108,7 +104,7 @@ const Values = ()=>{
           <div id='value-text-div'><p id='value-text'>{text[counter]}</p></div>
         </div>
         <div id='counterAndArrow'>
-          <h4 id='value-counter'>{`0${counter + 1}`}/07</h4>
+          <h4 id='value-counter'>{`0${counter + 1}`}/05</h4>
           <img src={'/assets/icons/values-down-arrow.png'} id='down-arrow' />
         </div>
       </div>

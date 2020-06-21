@@ -4,10 +4,6 @@ import {HeaderMobile, HeaderDesktop, HomeHeader, Header} from '../components/hea
 import '../public/styles/css/app.css'
 import '../public/styles/css/home.css';
 import '../public/styles/css/pages.css';
-// import { selectBook, overlay, menu, valueNextPage, valuePrevPage, defaultView, defaultHeader, invertHeader, menuHeader, scrollHeader, values} from '../actions/index.js'
-// import { bindActionCreators } from 'redux'
-// import { connect } from 'react-redux';
-// import {Services} from '../components/homeComponents';
 import {Projects, Vision, AboveFold} from '../components/homeComponents';
 
 const Home2 = (props)=>{
@@ -31,9 +27,7 @@ const Home2 = (props)=>{
   if(loadStatus === 'no'){
     return (
       <div style={{height:'100vh', width:'100vw', background:'linear-gradient(#FFFFFF, #BDBDBD)', display:'flex', flexDirection:'column', justifyContent:'center'}}>
-        {/* <h1>loading</h1> */}
         <img id='triangle'width={30} src={'/assets/icons/header/triangle.png'} style={{alignSelf:'center'}} />
-        {/* <div id='load-bar'></div> */}
       </div>
     )
   }
