@@ -538,7 +538,7 @@ var Projects = function Projects() {
     __self: this
   }, __jsx("img", {
     className: "logo",
-    src: '/assets/icons/bill.png',
+    src: '/assets/icons/divy_logo.png',
     __source: {
       fileName: _jsxFileName,
       lineNumber: 92

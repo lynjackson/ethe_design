@@ -89,7 +89,7 @@ export const Projects = ()=>{
           <div className='project' style={{backgroundImage: `url(${'/assets/images/bill-background.jpeg'})`, color: '#FFFFFFC4' }}>
             <a href='https://lynjackson.github.io/bill_page' target='_blank'>
               <div className='overlay' style={{background:`linear-gradient(359deg, ${'#000000B2'}, ${'#00000014'})`}}>
-                <img className='logo' src={'/assets/icons/bill.png'}></img>
+                <img className='logo' src={'/assets/icons/divy_logo.png'}></img>
                 <h4 className='tagline' style={{color: '#FFFFFFC4'}}>{'A better way to order'}</h4>
               </div>
             </a>

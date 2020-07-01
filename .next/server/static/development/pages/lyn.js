@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -574,7 +574,7 @@ const Portfolio = () => {
   }, __jsx(Project, {
     image: '/assets/images/ethe.png',
     projectName: 'Ethe Design Site',
-    projectTech: 'Built view layer with React and Sass. Optimized with React.lazy. Hosted with Next.js.',
+    projectTech: 'Interface with React and Sass in Next.js architecture. Redux managed state. Optimized with React.lazy & Webpack.',
     imageLink: '/',
     xdLink: 'https://xd.adobe.com/view/5c54b440-3964-4159-7353-f2eb278083b7-2a65/grid/',
     __source: {
@@ -584,8 +584,8 @@ const Portfolio = () => {
     __self: undefined
   }), __jsx(Project, {
     image: '/assets/images/phone2.png',
-    projectName: 'Diner Android App',
-    projectTech: 'Built with React Native. Fetches REST API menu data and uses global Redux state and Firebase Database.',
+    projectName: 'Divy Mobile App',
+    projectTech: 'Built with React Native on Expo. Fetches REST API data and uses global Redux state and Firebase database.',
     imageLink: 'https://lynjackson.github.io/bill_page',
     xdLink: 'https://xd.adobe.com/view/5ec009d3-2a06-4639-40a6-b639838c3164-28f1/grid/',
     __source: {
@@ -596,7 +596,7 @@ const Portfolio = () => {
   }), __jsx(Project, {
     image: '/assets/images/ptstudio.jpeg',
     projectName: 'Perfect Touch Studio Site',
-    projectTech: 'Designed in Adobe XD. Built view layer with React and Sass. Used Next.js as a framework.',
+    projectTech: 'Interface built with React and CSS from Adobe XD mockups. Next.js architecture. State managed with Redux and optimized with Webpack.',
     imageLink: 'https://ptstudio.ljoconnor5.now.sh/',
     xdLink: 'https://xd.adobe.com/view/6f8d950c-f4fb-489c-41da-49f00099f610-19bc/grid/',
     __source: {
@@ -663,8 +663,8 @@ const Experience = props => {
   }, __jsx(ExperienceItem, {
     place: "Bill, Inc.",
     title: "UI Developer",
-    time: "12/19 - 05/19",
-    description: "I lead a team of three creating an iOS/Android application that allows restaurant diners to pay with mobile devices. We used a human centered design process to devise the app\u2019s flow. I created wireframes using UI design principles and Adobe XD, then translated them into React Native syntax down to the pixel. I connected and manage the app\u2019s REST API and Firebase database. I\u2019m continuously learning about mobile UI design and development, and how it differs from browser focused development.",
+    time: "09/18 - 06/20",
+    description: "Leading a team of three creating an application that allows restaurant diners to pay with mobile devices. We used a human centered design process to devise the app\u2019s flow. I created wireframes using UI design principles and Adobe XD, then translated them into React Native syntax down to the pixel. I connected and manage the app\u2019s REST API and Firebase database. I\u2019m continuously learning about mobile UI design and development, and how it differs from browser focused development.",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 80
@@ -673,7 +673,7 @@ const Experience = props => {
   }), __jsx(ExperienceItem, {
     place: "Freelance",
     title: "Frontend Developer",
-    time: "12/18 - 07/19",
+    time: "07/17 - 09/18",
     description: "I designed and built websites for several clients. For each project, I designed the interface with Adobe XD, and built the views with React. Each project was built responsively using 375px and 2560px as general outer limits. I used a variety of other technologies for each project, depending on need. These projects helped me develop a nuanced understanding of React\u2019s lifecycle and data flow. I learned to skillfully write functional JavaScript and efficient and responsive CSS using Sass. ",
     __source: {
       fileName: _jsxFileName,
@@ -683,7 +683,7 @@ const Experience = props => {
   }), __jsx(ExperienceItem, {
     place: "Jones Day",
     title: "Counsel",
-    time: "10/15 - 06/18",
+    time: "10/15 - 01/18",
     description: "I led large teams of lawyers in identifying potential legal issues and creating company snapshots for corporate transactions. Teams usually changed from deal to deal, so quickly learning to work with people was important. I usually served as a principal point of communication between my team and our clients. My experience taught me the meaning of professionalism, and the importance of owning the larger mission and being a good teammate.",
     __source: {
       fileName: _jsxFileName,
@@ -726,16 +726,16 @@ const Education = props => {
     },
     __self: undefined
   }, __jsx(EducationItem, {
-    school: "University of Pennsylvania",
-    degree: "Juris Doctor, 2015",
+    school: "J.D., 2015",
+    degree: "University of Pennsylvania",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 101
     },
     __self: undefined
   }), __jsx(EducationItem, {
-    school: "Johns Hopkins University",
-    degree: "B.A., 2012",
+    school: "B.A., 2012",
+    degree: "Johns Hopkins University",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 102
@@ -757,25 +757,19 @@ const More = props => {
       lineNumber: 110
     },
     __self: undefined
-  }, "I believe in the power of the interface to influence the hearts and minds of users. I strive to create fast, useful products that give users a sense of ease, and enjoy working with individuals who think similarly. I am always trying to grow my body of knowledge, and have committed to thinking my way around problems. "), __jsx("p", {
+  }, "My driving force as a developer is the idea that others might find what I make useful and delightful. An interface can give users actual joy, or cause them intense frustration. I believe we should strive for the former, not just because it endears customers to our products and brands, but because it\u2019s our opportunity to make the world more pleasant to live in."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 111
     },
     __self: undefined
-  }, "I\u2019m a student of both development and design; adherent to UI principles and best practices of development. Developers are users too, perhaps not of the product, but of the code that comprises it. It\u2019s important to me that code be clean, efficient and readable."), __jsx("p", {
+  }, "I\u2019m at my best when working on a team that\u2019s committed to its mission. I thrive on the sense of accountability to my teammates and believe professionalism comes down to bringing 100% every day, good and bad. Extensive experience contributing large, time-sensitive projects has taught me to own my part, communicate well and often, and cherish opportunities to learn from those around me."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 112
     },
     __self: undefined
-  }, "I enjoy working as part of team, collectively trying to solve a problem we all care about. I understand the importance of communication and flexibility in teamwork, and prioritize and enjoy finding ways to streamline my workflow. "), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 113
-    },
-    __self: undefined
-  }, "I try to learn from my mistakes, and live with a balance of humility, diligence, empathy and patience. "));
+  }, "I\u2019m a disciple of both development and design, adherent to best practices in code and UI design principles. I strive for mastery of the frontend landscape, always open to new tech and creative solutions to speed up applications and implement designs with precision. I\u2019m committed to thinking my way around problems, and try to live with a balance of openness, diligence, courage and joy. "));
 };
 
 const LynTab = props => {
@@ -816,7 +810,7 @@ const LynTab = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 128
     },
     __self: undefined
   }, __jsx("div", {
@@ -827,14 +821,14 @@ const LynTab = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130
+      lineNumber: 129
     },
     __self: undefined
   }, " ", __jsx("h2", {
     className: "grey-title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130
+      lineNumber: 129
     },
     __self: undefined
   }, props.title), " ", __jsx("img", {
@@ -845,7 +839,7 @@ const LynTab = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130
+      lineNumber: 129
     },
     __self: undefined
   }), " "), props.children);
@@ -1008,7 +1002,7 @@ const Lyn2 = () => {
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!****************************!*\
   !*** multi ./pages/lyn.js ***!
   \****************************/
